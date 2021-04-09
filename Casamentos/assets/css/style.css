@@ -1,0 +1,1069 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+.container {
+    width: 82vw;
+    margin: 0 auto;
+}
+.sessao--1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/primeira_foto_fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.sessao--1--fundo-branco {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+.sessao--1--fundo-preto {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessao--1 h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    text-align: center;
+    width: 80vw;
+    min-width: 62vw;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 85px;
+    height: 34vh;
+}
+.sessao--1--description{
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    width: 80vw;
+    min-width: 62vw;
+    margin-top: 2%;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 1px;
+}
+.sessao--2 {
+    width: 100vw;
+    height: 70vh;
+    background-color: #F9F5ED;
+}
+.sessao--2--content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessao--2--flua {
+    width: 65vw;
+    max-width: 67vw;
+    height: 69vh;
+    background-color: #FFF;
+    position: absolute;
+    margin-top: 135px;
+    padding: 3% 2%;
+    display: grid;
+    grid-template-areas: "texto texto img";
+    justify-content: space-evenly;
+}
+
+.sessao--2--text {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sessao--2--img {
+    grid-area: img;
+    background-image: url(../images/jeremy-wong-weddings-K8KiCHh4WU4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 26vw;
+}
+.titulo--com--borda {
+    width: 20vw;
+    height: 7vh;
+    margin-top: 25px;
+}
+.titulo--com--borda h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.borda--titulo {
+    width: 8vw;
+    height: 3px;
+    background-color: #616157;
+    margin-top: 15px;
+}
+.sessao--2 h2 {
+    font-family: 'Abril Fatface', cursive;
+    width: 24vw;
+    height: 23vh;
+    font-size: 29px;
+    margin-top: 3%;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: justify;
+}
+.sessao--2 p {
+    width: 30vw;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4%;
+    height: 23vh;
+}
+.sessao--3 {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../images/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sessao--3--fundo-branco {
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.sessao--3--fundo-preto {
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: flex;
+    align-items: center;
+}
+.sessao--3--content {
+    width: 82vw;
+    height: 65vh;
+    display: grid;
+    grid-template-areas: "img1 img2 text ";
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sessao--3--img1 {
+    grid-area: img1;
+    width: 253px;
+    height: 274px;
+    background-image: url(../images/alvaro-cvg-mW8IZdX7n8E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: -9%;
+}
+.sessao--3--img2 {
+    grid-area: img2;
+    width: 250px;
+    height: 338px;
+    background-image: url(../images/vitor-pinto-3bAJYaK37yE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sessao--3--text {
+    width: 500px;
+    height: 338px;
+    grid-area: text;
+    padding: 2% 0%;
+}
+.sessao--3--text h2 {
+    font-family: 'Abril Fatface', cursive;
+    width: 26vw;
+    height: 14vh;
+    font-size: 34px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.sessao--3--text p {
+    width: 470px;
+    color: #FFF;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.2;
+    text-align: justify;
+}
+.sessao--4 {
+    width: 100vw;
+    height: 100vh;
+    
+}
+.sessao--4--content {
+    width: 82vw;
+    height: 100vh;
+    padding: 3% 8%;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 text"
+    "img1 img2 text"
+    "text2 text2 text"
+    ;
+}
+.sessao--4--img1 {
+    grid-area: img1;
+    height: 320px;
+    width: 300px;
+    background-image: url(../images/nick-karvounis-UA3zSV9ze8U-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 18%;
+}
+.sessao--4--img2 {
+    grid-area: img2;
+    height: 320px;
+    width: 300px;
+    background-image: url(../images/luis-tosta-MEZDyn98La8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 18%;
+}
+
+.sessao--4--text1 {
+    grid-area: text;
+    width: 300px;
+    height: 100%;
+    background-color: #DFDFD6;
+    padding: 38% 6% 10% 6%;
+}
+.borda--titulo--sessao--4 {
+    width: 4vw;
+    height: 3px;
+    background-color: #616157;
+    margin-top: 15px;
+}
+.sessao--4--text1 h2{
+    font-family: 'Abril Fatface', cursive;
+    width: 15vw;
+    height: 15vh;
+    font-size: 36px;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 6%;
+}
+.sessao--4--text1 p {
+    margin-top: 6%;
+    height: 34.5vh;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 17px;
+}
+.sessao--4--text2 {
+    grid-area: text2;
+    width: 630px;
+    height: 28vh;
+    padding: 6% 5%;
+    display: flex;
+    align-items: center;
+}
+.sessao--4--text2--content {
+    border-left: 4px solid #A68053;
+    height: 11vh;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+}
+.sessao--4--text2--content p {
+    font-family: 'Open Sans',sans-serif ;
+    font-style: italic;
+    font-size: 16px;
+    color: #111;
+}
+.sessao--5 {
+    width: 100vw;
+    height: 120vh;
+    background-color: #dfdfd6
+}
+.sessao--5--img {
+    height: 60vh;
+    width: 100vw;
+    background-image: url(../images/pk-pearry-ptSkLp4Rn0s-unsplash4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sessao--5--fundo-preto {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.sessao--5--fundo-branco {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.sessao--5--content {
+    height: 60vh;
+    width: 82vw;
+    position: absolute;
+    margin-top: -70px;
+}
+.sessao--5--content--area {
+    height: 60vh;
+    width: 82vw;
+    padding: 0% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.sessao--5--content--01,
+.sessao--5--content--02,
+.sessao--5--content--03 {
+    width: 300px;
+    height: 60vh;
+    background-color: #FFF;
+    padding: 3% 2%;
+}
+.sessao--5--content--01 h2,
+.sessao--5--content--02 h2,
+.sessao--5--content--03 h2 {
+    font-family: 'Abril Fatface', cursive;
+    width: 19vw;
+    height: 10.5vh;
+    font-size: 28px;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.sessao--5--content--01 p,
+.sessao--5--content--02 p,
+.sessao--5--content--03 p {
+    margin-top: 7%;
+    height: 34vh;
+    text-align: inherit;
+    line-height: 20px;
+    font-size: 16px;
+    color: #616157;
+}
+.sessao--5--content--01 button,
+.sessao--5--content--02 button,
+.sessao--5--content--03 button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #616157;
+}
+.sessao--6 {
+    height: 50vh;
+    width: 100vw;
+    background-color:#F9F5ED;
+}
+.sessao--6--content {
+    display: flex;
+    width: 82vw;
+}
+.sessao--6--area1 {
+    width: 27.3vw;
+    height: 50vh;
+    padding: 4.2% 0%;
+}
+.sessao--6--area1 h2  {
+    font-family: 'Abril Fatface', cursive;
+    width: 25vw;
+    height: 8vh;
+    font-size: 28px;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.sessao--6--area1 p {
+    height: 27vh;
+    width: 25vw;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 16px;
+    color: #111;
+}
+.sessao--6--area2 {
+    width: 54.6vw;
+    height: 50vh;
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6"
+    ;
+    padding: 4.2% 0% 4.2% 2%;
+}
+.sessao--6--img1 {
+    grid-area: img1;
+    background-image: url(../images/76b4363d2a0849d731a638995e0113b7.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--6--img2 {
+    grid-area: img2;
+    background-image: url(../images/4b8479f5935dcc95902e7d6679aef4e9.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--6--img3 {
+    grid-area: img3;
+    background-image: url(../images/081d9bdbe2e8082cb4f0ecec21b556bc.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--6--img4 {
+    grid-area: img4;
+    background-image: url(../images/4ee0c76e309ac0a0a3193452d0dd64a1.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--6--img5 {
+    grid-area: img5;
+    background-image: url(../images/777a01f8d006a6e88db7ea0c9a3d2c4f.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--6--img6 {
+    grid-area: img6;
+    background-image: url(../images/d7d29e2427921465c031dd526530e9fe.png);
+    background-size:contain;
+    background-position: center;
+    width: 15vw;
+    height: 14vh;
+    background-repeat: no-repeat;
+}
+.sessao--7 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/taylor-harding-Wc348VEiamY-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.sessao--7--fundo-branco {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.sessao--7--fundo-preto {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.56);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.sessao--7 h2 {
+    font-family: 'Abril Fatface', cursive;
+    width: 82vw;
+    height: 8vh;
+    font-size: 38px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.sessao--7 p {
+    height: 15vh;
+    width: 55vw;
+    line-height: 25px;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+}
+footer {
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #333333;
+    padding: 2%;
+    color: #FFF;
+}
+@media (max-width: 2000px){
+    .sessao--3--text {
+        height: 400px;
+    }
+    .sessao--5--content--area {
+        justify-content: space-between;
+    }
+    .sessao--5--content--01 h2, .sessao--5--content--02 h2, .sessao--5--content--03 h2 {
+        width: 13vw;
+    }
+    .sessao--4--text1 h2 {
+        width: 13vw;
+    }
+    .sessao--7 h2 {
+        height: 15vh;
+        font-size: 100px;
+    }
+    .sessao--7 p {
+        font-size: 20px;
+        width: 40vw;
+    }
+    footer {
+        height: 10vh;
+    }
+}
+@media (max-width: 1500px) {
+    .sessao--4--img1, .sessao--4--img2 {
+        margin-top: 30%;
+    }
+    .sessao--4--text1 {
+        height: 80vh;
+        margin-top: 10%;
+        padding: 10% 6% 10% 6%;
+    }
+    .sessao--4--text1 h2 {
+        width: 17vw;
+    }
+    .sessao--5--content--01 h2, .sessao--5--content--02 h2, .sessao--5--content--03 h2 {
+        width: 17vw;
+    }
+    .sessao--7 h2 {
+        font-size: 77px;
+        height: 20vh;
+    }
+    .sessao--7 p {
+        font-size: 18px;
+        width: 40vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 1024px) {
+    .sessao--3--text {
+        height: 50vh;
+        width: 30vw;
+        padding: 2% 3%;
+    }
+    .sessao--3--text h2 {
+        width: 26vw;
+        height: 13vh;
+    }
+    .sessao--3--text p {
+        width: 28vw;
+        height: 34vh;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .sessao--4--content {
+        justify-content: center;
+    }
+    .sessao--4--img1,
+    .sessao--4--img2 {
+        height: 30vh;
+        margin-top: 35%;
+        width: 25vw;
+    }
+    .sessao--4--text1 {
+        width: 35vw;
+        height: 80vh;
+        margin-top: 10%;
+        padding: 10% 6% 10% 6%;
+    }
+    .sessao--4--text1 h2 {
+        width: 22vw;
+    }
+    .sessao--4--text1 p {
+        height: 38vh;
+        width: 23vw;
+    }
+    .sessao--4 .titulo--com--borda {
+        width: 24vw;
+    }
+    .sessao--4  .titulo--com--borda h4 {
+        width: 25vw;
+    }
+    .sessao--4--text2 {
+        width: 55vw;
+        margin-left: 5%;
+    }
+    .sessao--4--text2--content {
+        width: 45vw;
+    }
+    .sessao--5--img {
+        background-position: left;
+    }
+    .sessao--5--content {
+        margin-top: -120px;
+    }
+    .sessao--5--content--01, .sessao--5--content--02, .sessao--5--content--03 {
+        width: 22vw;
+    }
+    .sessao--5--content--01 h2, .sessao--5--content--02 h2, .sessao--5--content--03 h2 {
+        width: 18vw;
+        height: 12vh;
+        font-size: 26px;
+    }
+    .sessao--5--content--01 p, .sessao--5--content--02 p, .sessao--5--content--03 p {
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    .sessao--6--area1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sessao--6--area1 h2 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+    .sessao--6--area1 p {
+        height: 28vh;
+        margin-top: 5%;
+        line-height: 23px;
+        font-size: 15px;
+    }
+    .sessao--6--area2 {
+        align-items: center;
+        justify-content: space-around
+    }
+    .sessao--7 {
+        background-position: left;
+    }
+    .sessao--7 h2 {
+        font-size: 60px;
+        height: 13vh;
+    }
+    .sessao--7 p {
+        font-size: 18px;
+    }
+    footer {
+        height: 10vh;
+        font-size: 14px;
+    }
+}
+@media (max-width: 764px) {
+    .sessao--2 {
+        height: 90vh;
+    }
+    .sessao--2--flua {
+        height: 95vh;
+        margin-top: 300px;
+        grid-template-areas: 
+        "texto"
+         "img";
+    }
+    .sessao--2--text {
+        width: 62vw;
+    }
+    .titulo--com--borda {
+        width: 45vw;
+        height: 5vh;
+        margin-top: 5px;
+    }
+    .sessao--2 h2 {
+        width: 60vw;
+        height: 18vh;
+        text-align: left;
+        font-size: 36px;
+        margin-top: 10%;
+    }
+    .sessao--2 p {
+        width: 60vw;
+        height: 15vh;
+        font-size: 18px;
+    }
+    .sessao--2--img {
+        width: 60vw;
+        height: 30vh;
+    }
+    .sessao--3--content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sessao--3--text {
+        flex: 2;
+        height: 60vh;
+    }
+    .sessao--3--text h2 {
+        width: 31vw;
+        height: 11.5vh;
+        line-height: 1.0;
+        margin-top: 2%;
+    }
+    .sessao--3--text p {
+        width: 310px;
+        height: 45vh;
+        line-height: 1;
+        text-align: justify;
+        
+        font-size: 20px;
+    }
+    .sessao--3--img1 {
+        flex: 1;
+        width: 170px;
+        height: 190px;
+        margin-right: 2%;
+    }
+    .sessao--3--img2 {
+        flex: 1;
+        margin-right: 2%;
+    }
+    .sessao--4--content {
+        grid-template-areas: 
+        "img1 img2 "
+        "text2 text2"
+        "text text"
+        ;
+    }
+    .sessao--4--text1 {
+        width: 82vw;
+        height: 32vh;
+        padding: 3% 6% 3% 6%;
+    }
+    .titulo--com--borda {
+        width: 35vw;
+        height: 4vh;
+        margin-top: 10px;
+    }
+    .sessao--4--text1 h2 {
+        margin-top: 2%;
+        width: 61vw;
+        height: 5vh;
+    }
+    .sessao--4--text1 p {
+        margin-top: 2%;
+        height: 13vh;
+        width: 66vw;
+        text-align: justify;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+    .sessao--5--img {
+        background-position: initial;
+    }
+    .sessao--5--content {
+        margin-top: -140px;
+    }
+    .sessao--5--content--area {
+        padding: 0% 0%;
+    }
+    .sessao--5--content--01, .sessao--5--content--02, .sessao--5--content--03 {
+        width: 25vw;
+        padding: 3% 1%;
+    }
+    .sessao--5--content--01 h2, .sessao--5--content--02 h2, .sessao--5--content--03 h2 {
+        width: 22vw;
+        font-size: 23px;
+    }
+    .sessao--5--content--01 p, .sessao--5--content--02 p, .sessao--5--content--03 p {
+        height: 42vh;
+        line-height: 23px;
+        font-size: 18px;
+    }
+    .sessao--6 {
+        height:120vh;
+    }
+    .sessao--6--content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sessao--6--area1 {
+        width: 45vw;
+        height: 30vh;
+    }
+    .sessao--6--area1 h2 {
+        width: 45vw;
+        text-align: center;
+    }
+    .sessao--6--area1 p {
+        width: 45vw;
+        height: 15vh;
+    }
+    .sessao--6--area2 {
+        height: 90vh;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 0% 0% 0%;
+    }
+    .sessao--7 {
+        background-position: initial;
+    }
+    .sessao--7 h2 {
+        font-size: 45px;
+    }
+    footer {
+        height: 10vh;
+    }
+}
+@media (max-width: 550px) {
+    .sessao--1 h1 {
+        height: 17vh;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .sessao--2 {
+        height: 90vh;
+    }
+    .sessao--2--flua {
+        height: 95vh;
+        margin-top: 300px;
+        grid-template-areas: 
+        "texto"
+         "img";
+    }
+    .sessao--2--text {
+        width: 62vw;
+    }
+    .titulo--com--borda {
+        width: 45vw;
+        height: 5vh;
+        margin-top: 5px;
+    }
+    .sessao--2 h2 {
+        width: 60vw;
+        height: 24vh;
+        text-align: left;
+        font-size: 24px;
+    }
+    .sessao--2 p {
+        width: 60vw;
+        height: 29vh;
+        font-size: 12px;
+    }
+    .sessao--2--img {
+        width: 60vw;
+        height: 30vh;
+    }
+    .sessao--3,
+    .sessao--3--fundo-branco,
+    .sessao--3--fundo-preto {
+        height: 100vh;
+    }
+
+    
+    .sessao--3--img1 {
+        margin-left: 0%;
+        margin-right: 20px;
+    }
+    .sessao--3--text {
+        width: 82vw;
+        height: 50vh;
+        margin: auto;
+        padding: 5% 0%;
+        margin-top: 2%;
+    }
+    .sessao--3--content {
+        width: 82vw;
+        height: 95vh;
+        display: grid;
+        grid-template-areas: 
+        "img1 img2" 
+        "text text";
+        margin-top: 7%;
+    }
+    .sessao--3--text h2 {
+        width: 82vw;
+        height: 10vh;
+        font-size: 28px;
+    }
+    .sessao--3--text p {
+        width: 82vw;
+        height: 30vh;
+        font-size: 14px;
+    }
+
+    .sessao--4 {
+        height: 150vh;
+    }
+
+    .sessao--4--content {
+        height: 150vh;
+        grid-template-areas: 
+        "img1" 
+        "img2"
+        "text2"
+        "text"
+        ;
+        width: 82vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .sessao--4--img1 {
+        margin-top: 10%;
+        margin: auto;
+        width: 82vw;
+        height: 30vh;
+    }
+    .sessao--4--img2 {
+        margin-top: 0%;
+        margin: auto;
+        width: 82vw;
+        height: 30vh;
+    }
+    .sessao--4--text1 {
+        width: 82vw;
+        height: 51vh;
+        padding: 4% 6% 3% 6%;
+    }
+    .titulo--com--borda {
+        width: 60vw;
+        margin-top: 20px;
+    }
+    .sessao--4  .titulo--com--borda {
+        height: 5vh;
+    }
+    .borda--titulo--sessao--4 {
+        width: 15vw;
+    }
+    .sessao--4--text1 h2 {
+        margin-top: 10%;
+        width: 65vw;
+        height: 8vh;
+        font-size: 26px;
+    }
+    .sessao--4--text1 p {
+        margin-top: 5%;
+        height: 25vh;
+        width: 65vw;
+        text-align: justify;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    .sessao--4--text2 {
+        width: 80vw;
+        padding: 6% 0%;
+        height: 20vh;
+    }
+    .sessao--4--text2--content {
+        height: 14vh;
+    }
+    .sessao--4--text2--content p {
+        font-size: 12px;
+        width: 65vw;
+    }
+    .titulo--com--borda h4 {
+        font-size: 14px;
+    }
+    .sessao--5 {
+        height: 175vh;
+    }
+    .sessao--5--img {
+        background-position: left;
+    }
+    .sessao--5--content {
+        height: 131vh;
+        margin-top: -145px;
+    }
+    .sessao--5--content--area {
+        height: 131vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessao--5--content--01, .sessao--5--content--02, .sessao--5--content--03 {
+        height: 42vh;
+        width: 75vw;
+        margin-bottom: 6%;
+        padding: 3% 5%;
+    }
+    .sessao--5--content--01 h2, .sessao--5--content--02 h2, .sessao--5--content--03 h2 {
+        width: 68vw;
+        height: 7vh;
+        line-height: 1.2;
+    }
+    .sessao--5--content--01 p, .sessao--5--content--02 p, .sessao--5--content--03 p {
+        height: 26vh;
+        margin-top: 7%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sessao--6 {
+        height: 160vh;
+    }
+    .sessao--6--content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 160vh;
+    }
+    .sessao--6--area1 {
+        width: 70vw;
+        height: 38vh;
+    }
+    .sessao--6--area1 h2 {
+        width: 70vw;
+        text-align: center;
+        font-size: 24px;
+    }
+    .sessao--6--area1 p {
+        width: 70vw;
+        height: 24vh;
+        line-height: 21px;
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .sessao--6--area2 {
+        height: 120vh;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 0% 0% 0%;
+    }
+    .sessao--6--img1,
+    .sessao--6--img2,
+    .sessao--6--img3,
+    .sessao--6--img4,
+    .sessao--6--img5,
+    .sessao--6--img6 {
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .sessao--7 {
+        background-position: right;
+    }
+    .sessao--7 h2 {
+        height: 15vh;
+        font-size: 44px;
+    }
+    .sessao--7 p {
+        height: 30vh;
+        width: 70vw;
+        font-size: 14px;
+    }
+    footer {
+        height: 10vh;
+        font-size: 14px;
+    }    
+}
+
+
+
+
+
