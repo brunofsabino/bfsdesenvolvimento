@@ -23,9 +23,7 @@ if($name && $email && $messages) {
    
 
 
-} else {
-    echo '<script>window.alert("Preenche os dados corretamente!")</script>';
-}
+} 
 
 ?>
 
