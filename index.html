@@ -326,22 +326,22 @@
            </section>
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
-               <form action="">
+               <form action="recebedor.php" method="POST">
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
                             <label for="name">Nome</label><br>
-                            <input type="text" name="" id="name"><br>
+                            <input type="text" name="name" id="name"><br>
                             <label for="email">E-mail</label><br>
                             <input type="email" name="email" id="email"><br>
                             <label for="celular">Telefone (Opcional)</label><br>
-                            <input type="email" name="celular" id="celular"><br>
+                            <input type="text" name="celular" id="celular"><br>
                         </div>
                         <div class="message--flua">
                             <label for="message">Mensagem:</label><br>
                             <textarea name="message" id="message" cols="30" rows="7"></textarea>
                         </div>    
-                        <button>Enviar</button>
+                        <button type="submit">Enviar</button>
                    </fieldset>
                </form>
            </section>
