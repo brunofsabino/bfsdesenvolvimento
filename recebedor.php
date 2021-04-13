@@ -8,7 +8,7 @@ $messages = filter_input(INPUT_POST, 'message',FILTER_SANITIZE_SPECIAL_CHARS);
 //echo $name.'<br>'.$email.'<br>'.$telefone.'<br>'.$messages;
 
 $destinoEmail = 'brunoferrazsabino@gmail.com';
-$assuntoEmail = "Pergunta do Contato";
+$assuntoEmail = "Mensagem do BFS Desenvolvimento";
 $corpoEmail = "Nome: ".$name." - E-mail: ".$email." - Telefone: ".$telefone ." - Mensagem: ".$messages;
 $cabecalho = "From: contato@bfsdesenvolvimento.com"."\r\n". 
               "Reply-To: ".$email."\r\n". 
@@ -19,10 +19,12 @@ if($name && $email && $messages) {
 
     mail($destinoEmail, $assuntoEmail, $corpoEmail, $cabecalho);
 
-    echo '<h3>Email enviado com sucesso</h3>';
-    exit;
+    echo '<script>window.alert("E-mail enviado com sucesso!")</script>';
+   
 
 
 } else {
-    header("Location: index.html");
+    echo '<script>window.alert("Preenche os dados corretamente!")</script>';
 }
+
+?>
