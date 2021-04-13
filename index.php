@@ -19,7 +19,7 @@ if($name && $email && $messages) {
 
     mail($destinoEmail, $assuntoEmail, $corpoEmail, $cabecalho);
 
-    echo '<script>window.alert("E-mail enviado com sucesso!")</script>';
+    echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
    
 
 
