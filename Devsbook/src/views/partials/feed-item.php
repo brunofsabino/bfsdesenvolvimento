@@ -8,7 +8,7 @@
                 <a href=""><span class="fidi-name"><?=$data->user->name;?></span></a>
                 <span class="fidi-action"><?php 
                     switch($data->type){
-                        case 'text':
+                        case 'text': 
                             echo "fez um post";
                             break;
                         case 'photo':

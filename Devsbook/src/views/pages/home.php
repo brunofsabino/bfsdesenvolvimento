@@ -1,6 +1,6 @@
 <?=$render('header', ['loggedUser' => $loggedUser]);?>
 <section class="container main">
-        <?=$render('sidebar'); ?>
+        <?=$render('sidebar', ['activeMenu' => 'home']); ?>
         
         <section class="feed mt-10">
 
@@ -41,7 +41,7 @@
                     <div class="box">
                         <div class="box-body m-10">
                             Criado com ❤️ por B7Web
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
