@@ -1,6 +1,6 @@
 <?=$render('header', ['loggedUser' => $loggedUser]);?>
 <section class="container main">
-    <?=$render('sidebar', ['activeMenu' => 'search']); ?>
+    <?=$render('sidebar', ['activeMenu' => 'config']); ?>
 
     <section class="feed mt-10">
         <div class="row">
@@ -8,16 +8,23 @@
                 <h1>Configurações</h1>
                 <br><br>
 
-                <form action="<?=$base;?>/perfil/<?=$user->id;?>/config" method="POST">
-                
-                    Novo Avatar: <br><br>
-                    <input type="file" value="Escolher arquivo">
-
-                    <br><br>
-                    Nova Capa: <br><br>
-                    <input type="file" value="Escolher arquivo">
-                    <br><br>
-
+                <form action="<?=$base;?>/config" method="POST" enctype="multipart/form-data" class="config-form">
+                    <?php if(!empty($recado)): ?>
+                        <div class="flash"> <?php echo $recado;?> </div>
+                    <?php endif; ?> 
+                    <label for="">
+                        Novo Avatar: <br><br>
+                        <input type="file"  name="avatar"><br>
+                        <img src="<?=$base;?>/media/avatars/<?=$user->avatar;?>" class="image-edit" >    
+                        <br><br>
+                    </label>
+                    <label for="">
+                        Nova Capa: <br><br>
+                        <input type="file"  name="cover"> <br>
+                        <img src="<?=$base;?>/media/covers/<?=$user->cover;?>" class="image-edit" > 
+                        <br><br>
+                    </label>
+                    
                     <hr>
                     <br><br>
                 
@@ -27,7 +34,7 @@
                     </label><br><br>
                     <label for="">
                         Data de nascimento:<br>
-                        <input type="text" name="birthdate" value="<?= date('d/m/Y', strtotime($user->birthdate)) ;?>">
+                        <input type="text" name="birthdate" id="birthdate" value="<?= date('d/m/Y', strtotime($user->birthdate)) ;?>">
                     </label><br><br>
                     <label for="">
                         E-mail:<br>
@@ -52,7 +59,7 @@
                         <input type="password" name="password_new_repeat" >
                     </label><br><br>
 
-                    <input type="submit" value="Salvar" class="button">
+                    <button type="submit" value="Salvar" class="button">Salvar</button
                 </form>
             </div>
             <!-- <div class="column side pl-5">
@@ -65,4 +72,13 @@
 
 
 </section>
+<script src="https://unpkg.com/imask"></script>
+    <script>
+        IMask(
+            document.getElementById('birthdate'), 
+            {
+                mask: '00/00/0000'
+            }
+        );
+    </script>
 <?= $render('footer');?>
