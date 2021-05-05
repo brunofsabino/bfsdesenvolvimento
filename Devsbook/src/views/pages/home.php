@@ -4,7 +4,7 @@
         <?=$render('sidebar', ['activeMenu' => 'home']); ?>
         
         <section class="feed mt-10">
-
+ 
             <div class="row">
                 <div class="column pr-5">
 
@@ -33,4 +33,4 @@
 
         </section>
     </section>
-   <?= $render('footer');?>
+   <?= $render('footer');?> 

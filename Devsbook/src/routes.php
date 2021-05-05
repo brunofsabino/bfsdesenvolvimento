@@ -40,4 +40,4 @@ $router->post('/ajax/upload', 'AjaxController@upload');
 //router->get('/sair');
 //router->get('/amigos');
 //router->get('/fotos');
-//router->get('/config');
+//router->get('/config'); 

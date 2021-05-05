@@ -5,7 +5,7 @@ use \src\models\User;
 use \src\models\User_Relation;
 use \src\handlers\PostHandler;
 
-class UserHandler 
+class UserHandler  
 {
  
    public static function checkLogin() 

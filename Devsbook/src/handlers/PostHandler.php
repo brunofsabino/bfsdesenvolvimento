@@ -129,7 +129,7 @@ class PostHandler
             'posts' => $posts,
             'pageCount' => $pageCount,
             'currentPage' => $page
-        ];
+        ]; 
     }
 
     public static function getHomeFeed($idUser, $page){
