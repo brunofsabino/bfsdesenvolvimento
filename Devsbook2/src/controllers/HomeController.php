@@ -5,11 +5,12 @@ use \core\Controller;
 use \src\handlers\UserHandler;
 
 class HomeController extends Controller {
+    private $loggedUser;
 
     public function __construct(){
-        if(!empty($_SESSION['token'])){
-            
-            $this->redirect('/login');
+        $this->loggedUser = UserHandler::checkLogin();
+        if($this->loggedUser === false){
+             $this->redirect('/login');
         }
     }
 
