@@ -11,5 +11,7 @@ $router->post('/login', 'LoginController@signinAction');
 $router->get('/cadastrar', 'LoginController@signup');
 $router->post('/cadastrar', 'LoginController@signupAction');
 
+$router->get('/sair', 'LoginController@logout');
+
 $router->get('/sobre/{nome}', 'HomeController@sobreP');
 $router->get('/sobre', 'HomeController@sobre');

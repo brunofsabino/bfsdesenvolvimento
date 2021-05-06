@@ -2,6 +2,7 @@
 namespace src\controllers;
 
 use \core\Controller;
+use \src\handlers\UserHandler;
 
 class LoginController extends Controller {
 
@@ -64,11 +65,20 @@ class LoginController extends Controller {
                 $this->redirect('/cadastrar');
             }
             $birthdate = $birthdate[2].'-'.$birthdate[1].'-'.$birthdate[0];
-            
+
             if(strtotime($birthdate) === false) {
                 $_SESSION['flash'] = 'Data de nascimento invalida';
                 $this->redirect('/cadastrar');
             }
+
+            $token = UserHandler::addUser($name, $email, $birthdate, $password);
+            $_SESSION['token'] = $token;
+            $this->redirect('/');
         }
+    }
+
+    public function logout() {
+        $_SESSION['token'] = '';
+        $this->redirect('/');
     }
 }

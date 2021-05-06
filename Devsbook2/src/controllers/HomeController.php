@@ -18,7 +18,9 @@ class HomeController extends Controller {
 
        
 
-        $this->render('home');
+        $this->render('home', [
+            'loggedUser' => $this->loggedUser,
+        ]);
     }
 
     public function sobre() {
