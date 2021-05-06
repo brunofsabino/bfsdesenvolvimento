@@ -15,3 +15,8 @@ $router->get('/sair', 'LoginController@logout');
 
 $router->get('/sobre/{nome}', 'HomeController@sobreP');
 $router->get('/sobre', 'HomeController@sobre');
+
+$router->get('/perfil', 'ProfileController@index');
+
+//$router->get('/perfil')
+//$router->get('/perfil')

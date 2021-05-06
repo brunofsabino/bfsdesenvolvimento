@@ -4,7 +4,7 @@ namespace src\controllers;
 use \core\Controller;
 use \src\handlers\UserHandler;
 
-class HomeController extends Controller {
+class ProfileController extends Controller {
     private $loggedUser;
 
     public function __construct(){
@@ -16,11 +16,13 @@ class HomeController extends Controller {
 
     public function index() {
 
-       
-
-        $this->render('home', [
+        $this->render('profile', [
             'loggedUser' => $this->loggedUser,
         ]);
+    }
+
+    public function sobre() {
+        $this->render('sobre');
     }
 
     public function sobreP($args) {
