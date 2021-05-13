@@ -16,7 +16,7 @@ class HomeController extends Controller {
 
     public function index() {
 
-       
+       $feed = UserHandler::getHomeFeed($this->loggedUser->id);
 
         $this->render('home', [
             'loggedUser' => $this->loggedUser,

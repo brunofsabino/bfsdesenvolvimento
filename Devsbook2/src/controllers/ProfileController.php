@@ -21,12 +21,6 @@ class ProfileController extends Controller {
         ]);
     }
 
-    public function sobre() {
-        $this->render('sobre');
-    }
-
-    public function sobreP($args) {
-        print_r($args);
-    }
+    
 
 }
