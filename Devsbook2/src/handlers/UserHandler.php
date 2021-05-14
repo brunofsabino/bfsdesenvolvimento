@@ -2,6 +2,7 @@
 namespace src\handlers;
 
 use \src\models\User;
+use \src\models\User_Relation;
 
 class UserHandler  {
 
@@ -63,5 +64,7 @@ class UserHandler  {
 
         return $token;
     }
+
+   
 
 }
