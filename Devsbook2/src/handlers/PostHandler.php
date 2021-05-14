@@ -4,6 +4,7 @@ namespace src\handlers;
 use \src\models\User;
 use \src\models\User_Relation;
 use \src\models\Post;
+use \src\models\Post_Like;
 
 class PostHandler {
 
@@ -31,8 +32,34 @@ class PostHandler {
 
             // TODO: 4.1 preencher informações de LIKE
             $likes = Post_Like::select()->where('id_user', $postItem['id'])->get();
+
+            $newPost->likeCount = count($likes);
+            $newPost->liked = self::isLiked($postItem[id], $loggedUserId);
+
+            // TODO: 4.2 preencher informaçõs de COMMENTS
+            $newPost->comments = Posts_Comment::select()->where('id_user', $postItem['id'])->get();
+            foreach($newPost->comments as $key => $comment){
+                $newPost->comments[$key]['user'] = User::select()->where('id', $comment['id_user'])->one();
+            }
+
+            $posts[] = $newPost;
+
         }
 
+        return $posts;
+    }
+
+    public static function isLiked($id, $loggedUserId) {
+        $myLike = Post_Like::select()
+            ->where('id_post', $id)
+            ->where('id_user', $loggedUserId)
+        ->get();
+
+        if(count($myLike) > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static function getHomeFeed($idUser, $page ) {
