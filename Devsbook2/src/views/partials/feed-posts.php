@@ -1,14 +1,26 @@
-<div class="box feed-item">
+<?php print_r($data);?>
+<div class="box feed-item" data-id= "<?=$data->id;?>">
     <div class="box-body">
         <div class="feed-item-head row mt-20 m-width-20">
             <div class="feed-item-head-photo">
-                <a href=""><img src="media/avatars/avatar.jpg" /></a>
+                <a href="<?=$base;?>/perfil/<?=$data->user->id;?>"><img src="<?=$base;?>/media/avatars/<?=$data->user->avatar;?>" /></a>
             </div>
             <div class="feed-item-head-info">
-                <a href=""><span class="fidi-name">Bonieky Lacerda</span></a>
-                <span class="fidi-action">fez um post</span>
+                <a href="<?=$base;?>/perfil/<?=$data->user->id;?>"><span class="fidi-name"><?= $data->user->name; ?></span></a>
+                <span class="fidi-action">
+                    <?php 
+                        switch($data->type){
+                            case 'text':
+                                echo 'fez um post';
+                            break;
+                            case 'photo':
+                                echo 'postou uma foto';
+                            break;
+                        }
+                    ?>
+                </span>
                 <br/>
-                <span class="fidi-date">07/03/2020</span>
+                <span class="fidi-date"><?= date('d/m/Y', strtotime($data->created_at)); ?></span>
             </div>
             <div class="feed-item-head-btn">
                 <img src="assets/images/more.png" />

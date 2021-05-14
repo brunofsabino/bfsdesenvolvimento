@@ -5,7 +5,13 @@
         <div class="row">
             <div class="column pr-5">
                 <?php $render('feed', ['loggedUser' => $loggedUser]);?>
-                <?php $render('feed-posts');?>
+
+                <?php foreach($feed['posts'] as $feedItem): ?>
+                    <?php $render('feed-posts', [
+                        'data' => $feedItem,
+                        'loggedUser' => $loggedUser
+                    ]);?>
+                <?php endforeach; ?>
             </div>
             <div class="column side pl-5">
                 <?php $render('side-rigth');?>
