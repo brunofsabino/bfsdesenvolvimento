@@ -5,7 +5,7 @@
         <div class="row">
             <div class="column pr-5">
                 <?php $render('feed', ['loggedUser' => $loggedUser]);?>
-
+                
                 <?php foreach($feed['posts'] as $feedItem): ?>
                     <?php $render('feed-posts', [
                         'data' => $feedItem,

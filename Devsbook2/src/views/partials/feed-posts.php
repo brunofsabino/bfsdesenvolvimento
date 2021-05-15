@@ -23,13 +23,12 @@
                 <span class="fidi-date"><?= date('d/m/Y', strtotime($data->created_at)); ?></span>
             </div>
             <div class="feed-item-head-btn">
-                <img src="assets/images/more.png" />
+                <img src="<?=$base;?>/assets/images/more.png" />
             </div>
         </div>
         <div class="feed-item-body mt-10 m-width-20">
-            Pessoal, tudo bem! Busco parceiros para empreender comigo em meu software.<br/><br/>
-            Acabei de aprová-lo na Appstore. É um sistema de atendimento via WhatsApp multi-atendentes para auxiliar empresas.<br/><br/>
-            Este sistema permite que vários funcionários/colaboradores da empresa atendam um mesmo número de WhatsApp, mesmo que estejam trabalhando remotamente, sendo que cada um acessa com um login e senha particular....
+            <?= $data->body;?>
+            
         </div>
         <div class="feed-item-buttons row mt-20 m-width-20">
             <div class="like-btn on">56</div>
@@ -39,7 +38,7 @@
             
             <div class="fic-item row m-height-10 m-width-20">
                 <div class="fic-item-photo">
-                    <a href=""><img src="media/avatars/avatar.jpg" /></a>
+                    <a href="<?=$base;?>/"><img src="media/avatars/avatar.jpg" /></a>
                 </div>
                 <div class="fic-item-info">
                     <a href="">Bonieky Lacerda</a>
@@ -49,7 +48,7 @@
 
             <div class="fic-item row m-height-10 m-width-20">
                 <div class="fic-item-photo">
-                    <a href=""><img src="media/avatars/avatar.jpg" /></a>
+                    <a href="<?=$base;?>/"><img src="media/avatars/avatar.jpg" /></a>
                 </div>
                 <div class="fic-item-info">
                     <a href="">Bonieky Lacerda</a>

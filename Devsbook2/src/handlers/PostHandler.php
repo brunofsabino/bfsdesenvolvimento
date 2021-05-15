@@ -5,6 +5,7 @@ use \src\models\User;
 use \src\models\User_Relation;
 use \src\models\Post;
 use \src\models\Post_Like;
+use \src\models\Posts_Comment;
 
 class PostHandler {
 
@@ -19,7 +20,7 @@ class PostHandler {
             $newPost->body = $postItem['body'];
             $newPost->mine = false;
 
-            if($postList['id_user'] == $loggedUserId){
+            if($postItem['id_user'] == $loggedUserId){
                 $newPost->mine = true;
             }
 
@@ -34,7 +35,7 @@ class PostHandler {
             $likes = Post_Like::select()->where('id_user', $postItem['id'])->get();
 
             $newPost->likeCount = count($likes);
-            $newPost->liked = self::isLiked($postItem[id], $loggedUserId);
+            $newPost->liked = self::isLiked($postItem['id'], $loggedUserId);
 
             // TODO: 4.2 preencher informaçõs de COMMENTS
             $newPost->comments = Posts_Comment::select()->where('id_user', $postItem['id'])->get();
@@ -73,12 +74,12 @@ class PostHandler {
             $users[] = $user['user_to'];
         }
         $users[] = $idUser;
-        //print_r($users);
+        
 
         // 2. Pegar os posts dessa galera ordenado pela data
         $postList = Post::select()
             ->where('id_user', 'in', $users)
-            ->where('created_at', 'desc')
+            ->orderBy('created_at', 'desc')
             ->page($page, $perPage)
         ->get();
 
