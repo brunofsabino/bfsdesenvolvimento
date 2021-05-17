@@ -9,6 +9,20 @@ use \src\models\Posts_Comment;
 
 class PostHandler {
 
+    public static function addPost($idUser, $type, $body){
+
+        $body = trim($body);
+
+        if(!empty($body) && !empty($idUser)) {
+            Post::insert([
+                'id_user' => $idUser,
+                'type' => $type,
+                'created_at' => date('Y-m-d H:i:s'),
+                'body' => $body
+            ])->execute();
+        }
+
+    }
 
     public static function _postListToObject($postList, $loggedUserId) {
         $posts = [];

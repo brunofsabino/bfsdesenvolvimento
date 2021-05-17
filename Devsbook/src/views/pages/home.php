@@ -2,7 +2,7 @@
 <?=$render('header', ['loggedUser' => $loggedUser]);?>
 <section class="container main">
         <?=$render('sidebar', ['activeMenu' => 'home']); ?>
-        
+         
         <section class="feed mt-10">
  
             <div class="row">

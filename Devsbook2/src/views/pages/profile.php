@@ -10,11 +10,11 @@
                         <div class="profile-cover" style="background-image: url('<?=$base;?>/media/covers/cover.jpg');"></div>
                         <div class="profile-info m-20 row">
                             <div class="profile-info-avatar">
-                                <img src="<?=$base;?>/media/avatars/avatar.jpg" />
+                                <img src="<?=$base;?>/media/avatars/<?= $loggedUser->avatar;?>" />
                             </div>
                             <div class="profile-info-name">
-                                <div class="profile-info-name-text">Bonieky Lacerda</div>
-                                <div class="profile-info-location">Campina Grande</div>
+                                <div class="profile-info-name-text"><?= $loggedUser->name ?></div>
+                                <div class="profile-info-location"><?= $loggedUser->city ?></div>
                             </div>
                             <div class="profile-info-data row">
                                 <div class="profile-info-item m-width-20">

@@ -18,5 +18,7 @@ $router->get('/sobre', 'HomeController@sobre');
 
 $router->get('/perfil', 'ProfileController@index');
 
+$router->post('/post/new', 'PostController@new');
+
 //$router->get('/perfil')
 //$router->get('/perfil')

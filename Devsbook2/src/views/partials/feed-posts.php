@@ -1,5 +1,5 @@
 <pre>
-<?php print_r($data);?> </pre>
+<?php// print_r($data);?> </pre>
 <div class="box feed-item" data-id= "<?=$data->id;?>">
     <div class="box-body">
         <div class="feed-item-head row mt-20 m-width-20">

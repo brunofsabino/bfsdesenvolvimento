@@ -2,7 +2,7 @@
 <section class="container main">
     <?=$render('sidebar', ['activeMenu' => 'profile']); ?>
     <section class="feed">
-
+ 
         <?=$render('perfil-header', [
             'user' => $user,
             'loggedUser' => $loggedUser,

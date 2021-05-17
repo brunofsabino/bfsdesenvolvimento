@@ -12,7 +12,7 @@ class ProfileController extends Controller {
         if($this->loggedUser === false){
              $this->redirect('/login');
         }
-    }
+    }  
 
     public function index() {
 

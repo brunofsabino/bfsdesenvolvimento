@@ -12,6 +12,13 @@
                         'loggedUser' => $loggedUser
                     ]);?>
                 <?php endforeach; ?>
+
+
+                <div class="feed-pagination">
+                    <?php for($y=0; $y < $feed['pageCount']; $y++): ?>
+                        <a  class="<?= ($y==$feed['currentPage']) ? 'active' : '' ;?>" href="<?=$base;?>/?page=<?=$y;?>"><?=$y+1;?></a>        
+                    <?php endfor;?>
+                </div>
             </div>
             <div class="column side pl-5">
                 <?php $render('side-rigth');?>
