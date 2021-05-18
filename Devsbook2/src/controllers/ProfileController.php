@@ -25,6 +25,20 @@ class ProfileController extends Controller {
 
         //pegando as informações do usuario
         $user = UserHandler::getUser($id, true);
+        if(!$user) {
+            $this->redirect('/');
+        }
+
+        $dateFrom = new \DateTime($user->birthdate);
+        $dateTo = new \DateTime('today');
+        $user->ageYears = $dateFrom->diff($dateTo)->y;
+
+        //pegando o feed do usuario
+        $feed = PostHandler::getUserFeed(
+            $id,
+            $page,
+            $this->loggedUser->id
+        );
 
 
         $this->render('profile', [

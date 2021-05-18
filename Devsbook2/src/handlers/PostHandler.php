@@ -111,6 +111,54 @@ class PostHandler {
             'currentPage' => $page
         ];
     }
+
+    public static function getUserFeed($idUser, $page, $loggedUserId){
+        $perPage = 3;
+
+        $postList = Post::select()
+            ->where('id_user', $idUser)
+            ->orderBy('created_at', 'desc')
+            ->page($page, $perPage)
+        ->get();
+
+        $total = Post::select() 
+            ->where('id_user', $idUser)
+        ->count();
+        $pageCount = ceil($total / $perPage);
+
+        //  Transformar o resultado em objetos dos models
+        $posts = self::_postListToObject($postList, $loggedUserId);
+
+        // retornar o resultado
+
+        return [
+            'posts' => $posts,
+            'pageCount' => $pageCount,
+            'currentPage' => $page
+        ];
+
+    }
+
+    public static function getPhotosFrom($idUser) {
+        $photosData = Post::select()
+            ->where('id_user', $idUser)
+            ->where('type', 'photo')
+        ->get();
+
+        $photos = [];
+
+        foreach($photosData as $photo) {
+            $newPost = new Post();
+            $newPost->id = $photo['id'];
+            $newPost->type = $photo['type'];
+            $newPost->created_at = $photo['created_at'];
+            $newPost->body = $photo['body'];
+
+            $photos[] = $newPost;
+        }
+
+        return $photos;
+    }
 }
 
 

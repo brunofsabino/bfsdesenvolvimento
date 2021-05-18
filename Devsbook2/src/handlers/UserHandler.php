@@ -73,8 +73,51 @@ class UserHandler  {
         if($data) {
             $user = new User();
             $user->id = $data['id'];
-        }
+            $user->email = $data['email'];
+            $user->name = $data['name'];
+            $user->birthdate = $data['birthdate'];
+            $user->city = $data['city'];
+            $user->work = $data['work'];
+            $user->avatar = $data['avatar'];
+            $user->cover = $data['cover'];
 
+            if($full) {
+                $user->followers = [];
+                $user->following = [];
+                $user->photos = [];
+
+
+                //followers
+                $followers = User_Relation::select()->where('user_to', $id)->get();
+                foreach($followers as $follower){
+                    $userData = User::select()->where('id', $follower['user_from'])->one();
+                    $newUser = new User();
+                    $newUser->id = $userData['id'];
+                    $newUser->name = $userData['name'];
+                    $newUser->avatar = $userData['avatar'];
+
+                    $user->followers[] = $newUser;
+                }
+
+                //following
+                $following = User_Relation::select()->where('user_from', $id)->get();
+                foreach($following as $follow){
+                    $userData = User::select()->where('id', $follow['user_to'])->one();
+
+                    $newUser = new User();
+                    $newUser->id = $userData['id'];
+                    $newUser->name = $userData['name'];
+                    $newUser->avatar = $userData['avatar'];
+
+                    $user->following = $newUser;
+                }
+
+                //photos
+                $user->photos = PostHandler::getPhotosFrom($id);
+            }
+            return $user;
+        }
+        return false;
    }
 
 }
