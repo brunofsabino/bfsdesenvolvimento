@@ -15,7 +15,7 @@ class ProfileController extends Controller {
             $this->redirect('/login');
         }
     }
- 
+  
     public function index($atts = []) {
         $page = intval(filter_input(INPUT_GET, 'page'));
 

@@ -66,6 +66,15 @@ class UserHandler  {
         return $token;
     }
 
-   
+   public static function getUser($id, $full = false) {
+
+        $data = User::select()->where('id', $id)->one();
+
+        if($data) {
+            $user = new User();
+            $user->id = $data['id'];
+        }
+
+   }
 
 }
