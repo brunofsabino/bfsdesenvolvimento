@@ -51,6 +51,11 @@ class UserHandler  {
         return $email ? true : false;
     }
 
+    public static function idExists($id) {
+        $email = User::select()->where('id', $id)->one();
+        return $email ? true : false;
+    }
+
     public static function addUser($name, $email, $birthdate, $password){
         $hash = password_hash($password, PASSWORD_DEFAULT);
         $token = md5(time().rand(0,9999).time());
@@ -133,4 +138,17 @@ class UserHandler  {
         }
     }
 
+    public static function follow($from, $to) {
+        User_Relation::insert([
+            'user_from' => $from,
+            'user_to' => $to
+        ])->execute();
+    }
+
+    public static function unfollow($from, $to) {
+        User_Relation::delete()
+            ->where('user_from', $from)
+            ->where('user_to', $to)
+        ->execute();
+    }
 }

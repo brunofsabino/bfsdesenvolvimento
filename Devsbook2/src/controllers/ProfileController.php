@@ -43,8 +43,10 @@ class ProfileController extends Controller {
 
         //verificar se EU sigo o usuario
         $isFollowing = false;
+        
         if($user->id != $this->loggedUser->id) {
             $isFollowing = UserHandler::isFollowing($this->loggedUser->id, $user->id);
+            
         }
 
         $this->render('profile', [
@@ -53,6 +55,21 @@ class ProfileController extends Controller {
             'feed' => $feed,
             'isFollowing' => $isFollowing
         ]);
+    }
+
+    public function follow($atts){
+        $to = intval($atts['id']);
+
+        if(UserHandler::idExists($to)){
+            if(UserHandler::isFollowing($this->loggedUser->id, $to)){
+                //deixar de seguir 
+                UserHandler::unfollow($this->loggedUser->id, $to);
+            } else {
+                UserHandler::follow($this->loggedUser->id, $to);
+            }
+        }
+
+        $this->redirect('/perfil/'.$to);
     }
 
     
