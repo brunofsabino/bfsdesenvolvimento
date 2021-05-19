@@ -3,6 +3,7 @@ namespace src\controllers;
 
 use \core\Controller;
 use \src\handlers\UserHandler;
+use \src\handlers\PostHandler;
 
 class ProfileController extends Controller {
     private $loggedUser;
@@ -40,9 +41,17 @@ class ProfileController extends Controller {
             $this->loggedUser->id
         );
 
+        //verificar se EU sigo o usuario
+        $isFollowing = false;
+        if($user->id != $this->loggedUser->id) {
+            $isFollowing = UserHandler::isFollowing($this->loggedUser->id, $user->id);
+        }
 
         $this->render('profile', [
             'loggedUser' => $this->loggedUser,
+            'user' => $user,
+            'feed' => $feed,
+            'isFollowing' => $isFollowing
         ]);
     }
 

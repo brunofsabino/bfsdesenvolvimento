@@ -66,7 +66,7 @@ class UserHandler  {
         return $token;
     }
 
-   public static function getUser($id, $full = false) {
+    public static function getUser($id, $full = false) {
 
         $data = User::select()->where('id', $id)->one();
 
@@ -109,7 +109,7 @@ class UserHandler  {
                     $newUser->name = $userData['name'];
                     $newUser->avatar = $userData['avatar'];
 
-                    $user->following = $newUser;
+                    $user->following[] = $newUser;
                 }
 
                 //photos
@@ -118,6 +118,19 @@ class UserHandler  {
             return $user;
         }
         return false;
-   }
+    }
+
+    public static function isFollowing($from, $to) {
+        $data = User_Relation::select()
+            ->where('user_from', $from)
+            ->where('user_to', $to)
+        ->one();
+
+        if($data) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
