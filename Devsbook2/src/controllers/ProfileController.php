@@ -72,6 +72,13 @@ class ProfileController extends Controller {
         $this->redirect('/perfil/'.$to);
     }
 
+    public function friends($atts = []) {
+        //detectando o usuario acessado
+        $id = $this->loggedUser->id;
+        if(!empty($atts['id'])){
+            $id = $atts['id'];
+        }
+    }
     
 
 }
