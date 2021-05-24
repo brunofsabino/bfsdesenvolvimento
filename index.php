@@ -360,15 +360,10 @@ if($name && $email && $messages) {
                         if(!empty( $_SESSION['flash'])) {
                             $flash = $_SESSION['flash'];
                             $_SESSION['flash'] = '';
+                            echo $flash;
                         }
                    ?>
-                    <?php if(!empty($flash)): ?>
-                        <?php echo $flash;
-                        
-                        ?>
-                    <?php  endif; 
-                    $flash = '';
-                    ?>
+                    
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
