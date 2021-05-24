@@ -529,6 +529,6 @@ function bordaBottomAparecerMenu() {
 
 let form = document.getElementById('form')
 
-form.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
+// form.addEventListener('submit', (e)=>{
+//     e.preventDefault();
+// })
