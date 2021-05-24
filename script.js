@@ -430,7 +430,7 @@ menuItens.forEach(item => {
 
 function scrollToIdOnClick(event) {
     event.preventDefault()
-    console.log(tamanhoTelaAltura)
+    // console.log(tamanhoTelaAltura)
     if(tamanhoTelaAltura < 799) {
          too =  getScrollTopByHref(event.target) - 150
     } else if (tamanhoTelaAltura > 799) {
@@ -438,7 +438,7 @@ function scrollToIdOnClick(event) {
     }
     
     const to = too
-    console.log(to)
+    // console.log(to)
 
     scrollToPosition(to)
 }

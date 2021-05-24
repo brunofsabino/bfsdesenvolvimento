@@ -439,17 +439,20 @@ main {
     top: 255px;
     z-index: 1;
 }
-
+.contato-form p {
+    margin-top: 30px;
+}
 .contato-form form {
     width: 55vw;
-    height: 55vh;
+    height: 700px;
     padding: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contato-form form fieldset {
-    height: 55vh;
+    height: 580px;
     padding: 20px;
     color: #A12E1F;
     border: 2px solid #A12E1F;
@@ -457,35 +460,34 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
+.inputs--area1 {
+    width: 45vw;
+}
 #email, #name, #celular  {
-    width: 23vw;
-    height: 29px;
+    width: 45vw;
+    height: 35px;
     border-radius: 5px;
     border: 2px solid #4FA179;
     margin-bottom: 20px
 }
+.message--flua {
+    width: 45vw;
+}
 #message {
-    width: 18vw;
-    height: 139px;
+    width: 45vw;
     border-radius: 5px;
     border: 2px solid #4FA179;
-    height: 28vh;
     margin-bottom: 12px;
 }
-.inputs--area1 {
-    margin-top: -15px;
-    width: 22vw;
-}
 
-.message--flua {
-    margin-top: -19px;
-    margin-left: 30px;
-}
+
+
 .contato-form form button {
-    width: 43vw;
-    height: 38px;
+    width: 45vw;
+    height: 40px;
     border-radius: 5px;
     border: 2px solid  #4FA179;
     cursor: pointer;
@@ -493,6 +495,7 @@ main {
     color: #FFF;
     font-size: 16px;
     letter-spacing: 2px;
+    margin-top: 35px;
 }
 .contato-form form button:hover {
     background-color: #4FA179;
