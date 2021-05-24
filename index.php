@@ -361,7 +361,9 @@ if(!empty($_SESSION['flash'])) {
                <form  method="POST">
                     <?php if(!empty($flash)): ?>
                         <?= $flash;?>
-                    <?php endif; ?>
+                    <?php 
+                    $flash = '';
+                    endif; ?>
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
