@@ -19,11 +19,12 @@ if($name && $email && $messages) {
 
     mail($destinoEmail, $assuntoEmail, $corpoEmail, $cabecalho);
 
-    echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
-   
+    $_SESSION['flash'] = 'E-mail enviado com sucesso! Logo retornaremos.';
 
-
-} 
+    //echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
+} else {
+    $_SESSION['flash'] = 'Preencha os dados corretamente.';
+}
 
 ?>
 
@@ -356,6 +357,16 @@ if($name && $email && $messages) {
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
                <form  method="POST">
+                    <?php 
+                        $flash = '';
+                        if(!empty($_SESSION['flash'])) {
+                            $flash = $_SESSION['flash'];
+                            $_SESSION['flash'] = '';
+                        }
+                    ?>
+                    <?php if(!empty($flash)): ?>
+                        <?= $flash;?>
+                    <?php endif; ?>
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
