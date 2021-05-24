@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);

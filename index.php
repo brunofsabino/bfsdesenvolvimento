@@ -331,11 +331,19 @@
                <form  method="POST" id="form" action="recebedor2.php">
                    <div class="flash">
                         <?php
+                            
                             $flash = '';
-                            if(!empty( $_SESSION['flash'])) {
+                            if($_SESSION['flash']) {
+                                
                                 $flash = $_SESSION['flash'];
-                                $_SESSION['flash'] = '';
+                                
                                 echo $flash;
+                                $_SESSION['flash'] = '';
+                                ?>
+                                <script >
+                                    window.scroll(0, 1650)
+                                </script>    
+                                <?php
                             }
                         ?>
                     </div>
@@ -353,7 +361,7 @@
                             <label for="message">Mensagem:</label><br>
                             <textarea name="message" id="message" cols="30" rows="7"></textarea>
                         </div>    
-                        <button type="submit">Enviar</button>
+                        <button type="submit" id="button">Enviar</button>
                    </fieldset>
                </form>
            </section>
