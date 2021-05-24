@@ -364,9 +364,11 @@ if($name && $email && $messages) {
                    ?>
                     <?php if(!empty($flash)): ?>
                         <?php echo $flash;
-                        $flash = '';
+                        
                         ?>
-                    <?php  endif; ?>
+                    <?php  endif; 
+                    $flash = '';
+                    ?>
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
