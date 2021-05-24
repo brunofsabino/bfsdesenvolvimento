@@ -24,7 +24,7 @@ if($name && $email && $messages) {
     //echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
 } 
 $flash = '';
-if(!empty($_SESSION['flash'])) {
+if($_SESSION['flash'] != '') {
     $flash = $_SESSION['flash'];
     $_SESSION['flash'] = '';
 }
