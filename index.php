@@ -23,7 +23,11 @@ if($name && $email && $messages) {
 
     //echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
 } 
-
+$flash = '';
+if(!empty($_SESSION['flash'])) {
+    $flash = $_SESSION['flash'];
+    $_SESSION['flash'] = '';
+}
 ?>
 
 <!DOCTYPE html>
@@ -355,13 +359,6 @@ if($name && $email && $messages) {
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
                <form  method="POST">
-                    <?php 
-                        $flash = '';
-                        if(!empty($_SESSION['flash'])) {
-                            $flash = $_SESSION['flash'];
-                            $_SESSION['flash'] = '';
-                        }
-                    ?>
                     <?php if(!empty($flash)): ?>
                         <?= $flash;?>
                     <?php endif; ?>
