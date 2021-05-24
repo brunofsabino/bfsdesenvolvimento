@@ -22,9 +22,7 @@ if($name && $email && $messages) {
     $_SESSION['flash'] = 'E-mail enviado com sucesso! Logo retornaremos.';
 
     //echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
-} else {
-    $_SESSION['flash'] = 'Preencha os dados corretamente.';
-}
+} 
 
 ?>
 
