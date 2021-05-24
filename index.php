@@ -1,31 +1,5 @@
-<?php
 
-$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-$telefone = filter_input(INPUT_POST, 'celular', FILTER_SANITIZE_SPECIAL_CHARS);
-$messages = filter_input(INPUT_POST, 'message',FILTER_SANITIZE_SPECIAL_CHARS);
-
-//echo $name.'<br>'.$email.'<br>'.$telefone.'<br>'.$messages;
-
-$destinoEmail = 'brunoferrazsabino@gmail.com';
-$assuntoEmail = "Mensagem do BFS Desenvolvimento";
-$corpoEmail = "Nome: ".$name." - E-mail: ".$email." - Telefone: ".$telefone ." - Mensagem: ".$messages;
-$cabecalho = "From: contato@bfsdesenvolvimento.com"."\r\n". 
-              "Reply-To: ".$email."\r\n". 
-              "X-Mailer: PHP/".phpversion();
-
-
-if($name && $email && $messages) {
-
-    mail($destinoEmail, $assuntoEmail, $corpoEmail, $cabecalho);
-
-    $_SESSION['flash'] = 'E-mail enviado com sucesso! Logo retornaremos.';
-
-    //echo '<script>window.alert("E-mail enviado com sucesso! Logo retornaremos.")</script>';
-} 
-
-?>
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -354,16 +328,17 @@ if($name && $email && $messages) {
            </section>
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
-               <form  method="POST" id="form">
-                   <?php
-                        $flash = '';
-                        if(!empty( $_SESSION['flash'])) {
-                            $flash = $_SESSION['flash'];
-                            $_SESSION['flash'] = '';
-                            echo $flash;
-                        }
-                   ?>
-                    
+               <form  method="POST" id="form" action="recebedor2.php">
+                   <div class="flash">
+                        <?php
+                            $flash = '';
+                            if(!empty( $_SESSION['flash'])) {
+                                $flash = $_SESSION['flash'];
+                                $_SESSION['flash'] = '';
+                                echo $flash;
+                            }
+                        ?>
+                    </div>
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
