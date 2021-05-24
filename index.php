@@ -360,10 +360,10 @@ if(!empty($_SESSION['flash'])) {
                <p>Solicite um orçamento:</p>
                <form  method="POST">
                     <?php if(!empty($flash)): ?>
-                        <?= $flash;?>
-                    <?php 
-                    $flash = '';
-                    endif; ?>
+                        <?php echo $flash;
+                        $flash = '';
+                        ?>
+                    <?php  endif; ?>
                    <fieldset>
                        <legend>Contato</legend>
                         <div class="inputs--area1">
