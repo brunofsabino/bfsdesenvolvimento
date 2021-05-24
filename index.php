@@ -359,7 +359,7 @@ if($_SESSION['flash'] != '') {
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
                <form  method="POST">
-                    <?php if(!empty($flash)): ?>
+                    <?php if($flash != ''): ?>
                         <?php echo $flash;
                         $flash = '';
                         ?>
