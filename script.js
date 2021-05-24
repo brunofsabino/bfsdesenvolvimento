@@ -525,6 +525,10 @@ function bordaBottomAparecerMenu() {
     if(document.body.scrollTop > 930 || document.documentElement.scrollTop > 930) {
         contato()
     }
-
-    
 }
+
+let form = document.getElementById('form')
+
+form.addEventListener('click', (e)=>{
+    e.preventDefault();
+})

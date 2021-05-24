@@ -354,7 +354,7 @@ if($name && $email && $messages) {
            </section>
            <section class="contato-form" id="orcamento">
                <p>Solicite um orçamento:</p>
-               <form  method="POST">
+               <form  method="POST" id="form">
                    <?php
                         $flash = '';
                         if(!empty( $_SESSION['flash'])) {
