@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="feed-item-body mt-10 m-width-20">
-            <?= $data->body;?>
+            <?= nl2br($data->body);?>
             
         </div>
         <div class="feed-item-buttons row mt-20 m-width-20">

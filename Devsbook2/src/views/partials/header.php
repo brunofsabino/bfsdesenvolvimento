@@ -10,18 +10,18 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href=""><img src="<?=$base;?>/assets/images/devsbook_logo.png" /></a>
+                <a href="<?=$base;?>"><img src="<?=$base;?>/assets/images/devsbook_logo.png" /></a>
             </div>
             <div class="head-side">
                 <div class="head-side-left">
                     <div class="search-area">
-                        <form method="GET">
+                        <form method="GET" action="<?=$base;?>/pesquisa">
                             <input type="search" placeholder="Pesquisar" name="s" />
                         </form>
                     </div>
                 </div>
                 <div class="head-side-right">
-                    <a href="<?=$base;?>/" class="user-area">
+                    <a href="<?=$base;?>/perfil" class="user-area">
                         <div class="user-area-text"><?=$user->name;?></div>
                         <div class="user-area-icon">
                             <img src="<?=$base;?>/media/avatars/<?=$user->avatar;?>" />

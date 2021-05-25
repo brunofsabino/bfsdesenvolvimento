@@ -27,3 +27,9 @@ $router->get('/ajax/upload',  'AjaxController@upload');
 
 //$router->get('/perfil')
 //$router->get('/perfil')
+
+//$router->get('/pesquisa');
+//$router->get('/sair');
+//$router->get('/amigos');
+//$router->get('/fotos');
+//$router->get('/config');
