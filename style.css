@@ -932,6 +932,14 @@ footer {
         height: 620px;
     }
 }
+@media (max-width:1299px){
+    .banner {
+        margin-top: -45vh;
+    }
+    .content--body {
+        height: 300vh;
+    }
+}
 @media (max-width: 1024px){
     .header img {
         width: 150px;
@@ -1132,7 +1140,7 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (max-height:900px){
     .botao--menu--mobile {
         display: flex;
     }
