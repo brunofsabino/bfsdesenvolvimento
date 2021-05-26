@@ -924,6 +924,14 @@ footer {
         margin-top: -45vh;
     }
 }
+@media (max-width: 1370px) {
+    .banner {
+        margin-top: -15vh;
+    }
+    .contato-form form {
+        height: 620px;
+    }
+}
 @media (max-width: 1024px){
     .header img {
         width: 150px;
