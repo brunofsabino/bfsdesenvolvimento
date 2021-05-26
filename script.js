@@ -506,12 +506,12 @@ const fontMenu = document.querySelectorAll('.menu ul li a')
 
 // console.log(tamanhoTela)
 // console.log(tamanhoTelaAltura)
-if(tamanhoTela < 501 && tamanhoTelaAltura > 600){
-    banner.style.marginTop = '-50%'
-}
-if(tamanhoTela < 376 && tamanhoTelaAltura > 700){
-    banner.style.marginTop = '-95%'
-}
+// if(tamanhoTela < 501 && tamanhoTelaAltura > 600){
+//     banner.style.marginTop = '-50%'
+// }
+// if(tamanhoTela < 376 && tamanhoTelaAltura > 700){
+//     banner.style.marginTop = '-95%'
+// }
 
 function bordaBottomAparecerMenu() {
     // console.log(scrollY)
