@@ -1218,6 +1218,9 @@ footer {
     #email, #name, #celular { 
 	margin-bottom: 1%;
     }
+    .contato-form form button {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 376px) {
