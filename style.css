@@ -1141,6 +1141,9 @@ footer {
 }
 
 @media (max-width: 500px) and (max-height:900px){
+    .banner {
+        margin-top: -30vh;
+    }
     .botao--menu--mobile {
         display: flex;
     }
@@ -1202,6 +1205,12 @@ footer {
     .image {
         width: 15vw;
         height: 10vh;
+    }
+    .contato-form form {
+        height: 500px;
+    }
+    .contato-form form fieldset {
+        height: 500px;
     }
     #email, #name, #celular { 
 	margin-bottom: 1%;
