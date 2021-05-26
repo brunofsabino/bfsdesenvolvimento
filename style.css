@@ -1207,10 +1207,13 @@ footer {
         height: 10vh;
     }
     .contato-form form {
-        height: 500px;
+        height: 450px;
+    }
+    .contato-form p {
+        margin-bottom: 0px;
     }
     .contato-form form fieldset {
-        height: 500px;
+        height: 440px;
     }
     #email, #name, #celular { 
 	margin-bottom: 1%;
