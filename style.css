@@ -529,24 +529,6 @@ main {
 }
 
 
-/* .cabecalho {
-    width: 40vw;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-} */
-/* .logo2 img {
-    width: 150px;
-    border: 1px solid #999;
-    border-radius: 12px;
-    padding: 5px 10px;
-} */
-/* .cabecalho--texto {
-    margin-left: 35px;
-    color: #542721;
-} */
 .linguagens {
     width: 45vw;
     height: 5vh;
@@ -575,19 +557,12 @@ aside .linguagens ul {
     justify-content: center;
     cursor: pointer;
     color: #FFF;
-    /* border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    border-left: 3px solid #5427;; */
-    /* border: 3px solid #542721; */
 }
 .linguagens ul li:first-child{
     border-top-left-radius: 15px;
-    /* border-bottom-left-radius: 17px; */
 }
 .linguagens ul li:last-child{
     border-top-right-radius: 15px;
-    /* border-bottom-right-radius: 17px; */
-    /* border-right: 3px solid #5427; */
 }
 .html {
     background-color: #F4470B;
@@ -701,7 +676,7 @@ aside .linguagens ul {
     width: inherit;
     height: inherit;
     background-image: url(AWAX/media/livros.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;	
 }
 .image--html--3 {
@@ -801,21 +776,22 @@ footer {
         transform: translateX(2px);
     }
 }
-
 .botao--menu--mobile {
-    width: 50px;
+    width: 40px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    right: 15px;
+    right: 25px;
     cursor: pointer;
     display: none;
 }
-.botao--menu {
-    width: 40px;
+.one,
+.two,
+.three {
+    width: 100%;
     height: 7px;
     border-radius: 3px;
     background-color: #542721;
@@ -829,26 +805,9 @@ footer {
     right: -100vw;
     z-index: 300;
     top: 0;
-    transition: .350s linear;
+    transition: .150s ;
     display: none;
     overflow: hidden;   
-}
-.menu--mobile--lateral .contato ul li{
-    border-bottom: none;
-}
-.menu--mobile--lateral ul li a {
-    height: 15vh;
-}
-
-.fecharMenu{
-    font-size: 16px;
-    width: 24px;
-    height: 24px;
-    background-color: red;
-    text-align: center;
-    color: white;
-    line-height: 23px;
-    border: none;
 }
 
 
@@ -987,8 +946,7 @@ footer {
         font-size: 12px;
     }
     #message {
-        height: 28vh;
-        margin-bottom: 4%;
+        margin-top: 5px;
     }
     .atendimento {
         display: none;
@@ -1164,10 +1122,7 @@ footer {
         max-width: 38vw;
         font-size: 18px;
     }
-    .contato-form p {
-        margin-top: -3%;
-        margin-bottom: 6%;
-    }
+    
     footer {
         right: 5%;
     }
@@ -1176,6 +1131,27 @@ footer {
 }
 
 @media (max-width: 500px) {
+    .botao--menu--mobile {
+        display: flex;
+    }
+    .menu--mobile--lateral .contato ul li{
+        border-bottom: none;
+    }
+    .menu--mobile--lateral ul li a {
+        height: 15vh;
+    }
+    
+    .fecharMenu{
+        font-size: 16px;
+        width: 24px;
+        height: 24px;
+        background-color: red;
+        text-align: center;
+        color: white;
+        line-height: 23px;
+        border: none;
+    }
+    
     .menu {
         display: none;
     }
@@ -1187,9 +1163,7 @@ footer {
         left: 19%;
         margin-top: 3%;
     }
-    .botao--menu--mobile {
-        display: flex;
-    }
+    
     .banner,
     .portfolio--content,
     .contato-form,
@@ -1256,10 +1230,7 @@ footer {
     .html1--content a, .css1--content a, .javascript--content a, .php--content a {
     	    font-size: 10px;
     }
-    .contato-form p {
-        margin-top: -10%;
-        margin-bottom: 12%;
-    }
+    
     label {
         font-size: 12px;
     }
@@ -1267,718 +1238,12 @@ footer {
         height: 64vh;
     }
 }
-/* @media (min-width: 1300px) and (min-height: 600px) {
-    
-    #message {
-        height: 28vh;
-        margin-bottom: 10px;
-    }
-    
-} */
-/* @media (min-width: 1024px) and (min-height: 768px) {
-    .banner--area--content p {
-        font-size: 16px;
-        max-width: 200px;
-        top: 20px;
-        margin-left: 10px;
-    }
-    #message {
-        height: 22vh;
-        margin-bottom: 10px;
-    }
-    footer {
-        right: 200px;
-        bottom: 50px;
-    }
-    .atendimento {
-        right: 130px;
-        bottom: 90px;
-    }
-} */
-
-/* @media (min-width: 1800px) {
-    #message {
-        height: 19vh;
-        margin-bottom: 10px;
-    }
-} */
-
-
-/* @media (min-width: 768px) and (min-height: 1024px){ 
-    
-    
-    .banner--area {
-        height: 50vh;
-        align-items: center;
-    }
-    .banner--area--content p {
-        font-size: 16px;
-        max-width: 200px;
-        margin-left: 75px;
-        top: -7px;
-    }
-    .banner--area-slide {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner--titulo {
-        margin-bottom: 50px;
-    }    
-    .banner h1 {
-        font-size: 36px;
-    }
-
-    .banner--area--content img {
-        width: 200px;
-        height: 150px;
-        
-    }
-    
-    
-    #email, #name, #celular {
-        height: 5vh;
-    }
-    #message {
-        height: 21.5vh;
-    }
-    .message--flua {
-        margin-left: 40px;
-    }
-    
-    
-
-    ul li a, .contato {
-        font-size: 18px;
-    }
-    label, legend {
-        font-size: 14px;
-    }
-    .linguagens ul,
-    .linguagens2 ul {
-        font-size: 12px;
-    }
-    .html1--content h5, .css1--content h5, .javascript--content h5, .php--content h5 {
-        font-size: 14px;
-    }
-
-    .divCss, .divHtml, .divPhp, .divjava, .aside--portifolio  {
-        margin-top: 260px;
-        height: 60vh;
-    }
-    footer {
-        width: 100px;
-        height: 100px;
-        right: 200px;
-        bottom: 0px;
-    }
-    .atendimento {
-        width: 90px;
-        height: 30px;
-        right: 155px;
-        bottom: 45px;
-    }
-    .atendimento span {
-        font-size: 8px;
-        color: #fff;
-        line-height: 5px;
-
-    }	
-    
-    .inputs--area1 {
-        width: 20vw;
-    }
-    .linguagens--conteudo, .linguagens--conteudo2 {
-        height: 45vh;
-    }
-    .linguagens--conteudo--1, .linguagens--conteudo--2, .linguagens--conteudo--3, .linguagens--conteudo--4  {
-        height: 45vh;
-    }
-    .linguagens--conteudo--1-2, .linguagens--conteudo--2-2, .linguagens--conteudo--3-2, .linguagens--conteudo--4-2 {
-        height: 45vh;
-    }
-}  */
-
-
- /* @media (max-width: 1040px) {
-
-    
-	
-
-}  */
-/* @media (max-width: 960px) {
-    .banner h1 {
-        font-size: 24px;
-    }
-    .banner--area--content p {
-        left: -25px;
-        max-width: 215px;
-        top: 0px;
-    }
-	
-    
-} */
-/* @media (max-width: 856px) {
-    .banner--area--content img {
-        width: 150px;
-        height: 100px;
-    }
-    .banner--area--content p {
-        font-size: 17px;
-    }
-    .inputs--area1 {
-        width: 21vw;
-    }
-	
-} */
-
-/* @media (max-width: 790px) { 
-    ul li a, .contato {
-        font-size: 16px;
-    }
-    .header img {
-        width: 150px;
-    }
-    label {
-        font-size: 14px;
-    }
-    .banner h1 {
-        font-size: 20px;
-    }
-    .banner--area--content img {
-        width: 125px;
-        height: 90px;
-    }
-    .banner--area--content p {
-        font-size: 15px;
-        max-width: 200px;
-    }
-    .html1--content h5, .css1--content h5, .javascript--content h5, .php--content h5 {
-        font-size: 12px;
-    }
-    .html1--content p, .css1--content p, .javascript--content p, .php--content p {
-        font-size: 12px;
-    }
-	
-}  */
-
-/* @media (max-width: 700px) { 
-    .banner--area--content img {
-        width: 150px;
-        height: 100px;
-    }
-    .banner--area--content p {
-        font-size: 14px;
-        max-width: 150px;
-    }
-    .inputs--area1 {
-        width: 21vw;
-    }
-    
-    .linguagens--conteudo--1-2 .image,
-    .linguagens--conteudo--2-2 .image,
-    .linguagens--conteudo--3-2 .image,
-    .linguagens--conteudo--4-2 .image {
-        height: 55px;
-    } 
-    .linguagens--conteudo--1 .image,
-    .linguagens--conteudo--2 .image,
-    .linguagens--conteudo--3 .image,
-    .linguagens--conteudo--4 .image {
-        height: 55px;
-    }
-    
-    .html1--content a, .css1--content a, .javascript--content a, .php--content a {
-        font-size: 11px;
-    }
-    label {
-        font-size: 12px;
-    }
-	
-}  */
-
-
-/* @media (max-width: 666px) {
-    .animation,
-    .content--body {
-        height: 310vh;
-    }
-    header {
-        height: 110px;
-        top: 0;
-    }
-    .header .logo {
-        width: 100%;
-        height: 50px;
-    }
-    .header img {
-        width: 90px;
-    }
-    nav {
-        height: 100px;
-    }
-    header .menu, 
-    header {
-        display: flex;
-        height: 50px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .header ul li, .contato {
-        margin: 7%;
-    }
-    .orcamento, .responsivos, .portfolio {
-        height: 48px;
-    }
-
-    .banner, 
-    .portfolio--content,
-    .contato-form,
-    .banner--area-slide {
-        width: 75vw;
-    }
-    
-    .banner--area {
-        height: 300px;
-    }
-    .banner--area-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner--area--content {
-        width: 50vw;
-        height: 210px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner--area--content img{
-        margin-top: 40px;
-        width: 180px;
-        height: 140px;
-    }
-    .banner--area--content p{
-        max-width: 500px;
-        width: 370px;
-        margin-left: 50px;
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    .inputs--area1 {
-        width: 20vw;
-    }
-    
-    .aside--portifolio {
-        width: 70vw;
-        left: 15%;
-    }
-
-    .conteudo--1--html, .conteudo--1--css, .conteudo--1--javascript, .conteudo--1--php {
-        width: 40vw;
-    }
-
-    .linguagens--conteudo--1 .image,
-    .linguagens--conteudo--2 .image,
-    .linguagens--conteudo--3 .image,
-    .linguagens--conteudo--4 .image {
-        height: 130px;
-        width: 20vw;
-    }
-    .linguagens--conteudo--1-2 ,
-    .linguagens--conteudo--2-2 ,
-    .linguagens--conteudo--3-2 ,
-    .linguagens--conteudo--4-2 {
-        height: 650px;
-        margin-top: 325px;
-        flex-direction: column;
-    } 
-    .linguagens--conteudo--1-2 .image,
-    .linguagens--conteudo--2-2 .image,
-    .linguagens--conteudo--3-2 .image,
-    .linguagens--conteudo--4-2 .image {
-        height: 130px;
-        width: 20vw;
-        margin-left: -45px;
-    } 
-    
-    .linguagens--conteudo2, .linguagens--conteudo {
-        overflow: auto;
-        width: 55vw;
-    }
-
-    .linguagens, .linguagens2, .divs_orientadoras, .divs_orientadoras2, .linguagens ul, .linguagens2 ul  {
-        width: 55vw;
-    }
-
-    .linguagens--conteudo--1 .image,
-    .linguagens--conteudo--2 .image,
-    .linguagens--conteudo--3 .image,
-    .linguagens--conteudo--4 .image {
-        
-        margin-left: -45px;
-    } 
-    .whats {
-        display: block;
-    }
-	
-} */
-
-
-/* @media (max-width: 452px) {
-    
-    .banner h1 {
-        margin-top: -25px;
-    }
-    .banner--area--content p {
-        max-width: 290px;
-        width: 250px;
-    }
-    
-    .inputs--area1 {
-        width: 53vw;
-    }
-    #email, #name, #celular {
-        width: 53vw;
-    }
-    .message--flua {
-        margin-top: 0px; 
-        margin-left: 0px;
-    }
-    #message {
-        width: 53vw;
-        height: 65px;
-    }
-
-    
-    .linguagens, .linguagens2, .divs_orientadoras, .divs_orientadoras2, .linguagens ul, .linguagens2 ul  {
-        width: 70vw;
-    }
-    .linguagens--conteudo2 {
-        width: 70vw;
-	margin-top: 29px;
-    }
-    .linguagens--conteudo {
-        margin-top: 29px;
-	width: 70vw;
-    }
-	
-    .linguagens ul li, .linguagens2 ul, li {
-        font-size: 10px;
-    }
-    .conteudo--1--html, .conteudo--1--css, .conteudo--1--javascript, .conteudo--1--php {
-        width: 60vw;
-    }
-    .html1--content, .css1--content, .javascript--content, .php--content {
-        width: 20vw;
-    }
-    .linguagens--conteudo--1, .linguagens--conteudo--2, .linguagens--conteudo--3, .linguagens--conteudo--4 {
-        margin-top: 0px;
-        margin-left: -30px;
-    }
-
-    header {
-        height: 90px;
-    }
-    
-    footer {
-        right: -7px;
-        bottom: -25px;
-        width: 80px;
-        height: 80px;
-    }
-
-    .aside-button {
-        top: 8px;
-        right: 8px;
-        padding: 0px 5px;  
-    }
-    .linguagens--conteudo--1 .image, .linguagens--conteudo--2 .image, .linguagens--conteudo--3 .image, .linguagens--conteudo--4 .image {
-   	height: 90px;
-    	width: 22vw;
-    	margin-left: 0px;
-    }	
-    .linguagens--conteudo--1-2 .image,
-    .linguagens--conteudo--2-2 .image,
-    .linguagens--conteudo--3-2 .image,
-    .linguagens--conteudo--4-2 .image {
-        height: 90px;
-    	width: 22vw;
-    	margin-left: 0px;
-    } 
-
-} */
-
-/* @media (max-width: 375px) {
-    
-    
-    .header img {
-        margin-top: 5px;
-    }
-    nav, ul {
-        height: 50px;
-        margin-top: -5px;
-    }
-    ul li a, .contato {
-        font-size: 12px;
-        height: 50px;
-    }
-    .orcamento, .responsivos, .portfolio, .contato {
-        height: 40px;
-    }
-    .banner--area-slide {
-        padding: 25px;
-    }
-    .banner--area--content {
-        padding: 0px;
-    }
-    .banner--area--content img {
-        margin-top: 20px;
-    }
-    .banner--area--content p {
-        width: 230px;
-        margin-left: 116px;
-        font-size: 12px;
-        margin-top: 0px;
-    }
-    .banner h1 {
-        margin-top: 15px;
-        font-size: 18px;
-    }
-    .botoes {
-        width: 63vw;
-    }
-    .botoes .seta {
-        width: 20px;
-    }
-    
-    .linguagens, .linguagens2, .divs_orientadoras, .divs_orientadoras2, .linguagens ul, .linguagens2 ul {
-        width: 70vw;
-    }
-    .linguagens ul li, .linguagens2 ul, li {
-        font-size: 7.5px;
-    }
-    .linguagens--conteudo {
-        width: 70vw;
-        margin-top: 18px;
-        height: 60vh;
-    }
-    .linguagens--conteudo2 {
-        width: 70vw;
-        margin-top: 92px;
-        height: 48vh;
-    }
-
-    
-    .aside-button {
-        top: 8px;
-        right: 8px;
-        padding: 0px 5px;  
-    }
-     .linguagens--conteudo--1-2 .image, .linguagens--conteudo--2-2 .image, .linguagens--conteudo--3-2 .image, .linguagens--conteudo--4-2 .image {
-        height: 80px;
-        width: 22vw;
-        margin-left: -45px;
-    }
-	
-    .linguagens--conteudo--1-2 .image,
-    .linguagens--conteudo--2-2 .image,
-    .linguagens--conteudo--3-2 .image,
-    .linguagens--conteudo--4-2 .image {
-        height: 80px;
-        width: 22vw;
-    } 
-    .linguagens2 p {
-        font-size: 12px;
-        margin-top: 16px;
-        margin-bottom: 30px;
-    }
-    .banner, .portfolio--content, .contato-form, .banner--area-slide {
-        font-size: 10px;
-    }
-    .contato-form form {
-        width: 65vw;
-        height: 65vh;
-    }   
-    .contato-form form fieldset {
-        height: 64vh;
-    }
-    #email, #name, #celular {
-        margin-bottom: 5px;
-    } 
-    label {
-        font-size: 10px;
-    }
-    .message--flua {
-        margin-top: -3px;
-    }
-    .contato-form form button {
-        margin-top: 5px;
-    }
-    .whats {
-        display: flex;
-    }
-    footer {
-        display: flex;
-        right: 190px;
-        bottom: 60px;
-    }
-    .atendimento {
-        display: none;
-    }
-
-} */
-
-/* @media (min-width: 375px) and (min-height: 799px) {
-    .animation,
-    .content--body {
-        height: 300vh;
-    }
-    
-    
-    .atendimento {
-        display: none;
-    }
-    
-} */
-
-/* @media (min-width: 1500px) and (min-height: 800px){
-    
-    
-    .banner--area {
-        height: 50vh;
-        align-items: center;
-    }
-    .banner--area-slide {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner--titulo {
-        margin-bottom: 50px;
-    }    
-    .banner h1 {
-        font-size: 36px;
-    }
-    
-    
-    #email, #name, #celular {
-        height: 6vh;
-    }
-    #message {
-        height: 24vh;
-    }
-    .message--flua {
-        margin-left: 40px;
-    }
-    
-
-    ul li a, .contato {
-        font-size: 26px;
-    }
-    label {
-        font-size: 20px;
-    }
-    .linguagens ul,
-    .linguagens2 ul {
-        font-size: 18px;
-    }
-    .html1--content h5, .css1--content h5, .javascript--content h5, .php--content h5 {
-        font-size: 16px;
-    }
-
-    .divCss, .divHtml, .divPhp, .divjava, .aside--portifolio  {
-        margin-top: 260px;
-        height: 60vh;
-    }
-    footer {
-        width: 180px;
-        height: 180px;
-        
-        bottom: 10px;
-    }
-    .atendimento {
-        width: 165px;
-        height: 53px;
-        bottom: 85px;
-    }
-    .atendimento span {
-        font-size: 15px;
-        color: #fff;
-        line-height: 23px;
-    }		    
-} */
 
 
 
-/* @media (min-width: 1500px) and (min-height: 800px) {
-    .banner--area {
-        height: 50vh;
-        align-items: center;
-    }
-    .banner--area-slide {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner--titulo {
-        margin-bottom: 50px;
-    }    
-    .banner h1 {
-        font-size: 36px;
-    }
-    
-    
-    #email, #name, #celular {
-        height: 6vh;
-    }
-    #message {
-        height: 29vh;
-    }
-    .message--flua {
-        margin-left: 40px;
-    }
-    
-
-    ul li a, .contato {
-        font-size: 26px;
-    }
-    label {
-        font-size: 20px;
-    }
-    .linguagens ul,
-    .linguagens2 ul {
-        font-size: 18px;
-    }
-    .html1--content h5, .css1--content h5, .javascript--content h5, .php--content h5 {
-        font-size: 16px;
-    }
-
-    .divCss, .divHtml, .divPhp, .divjava, .aside--portifolio  {
-        margin-top: 260px;
-        height: 60vh;
-    }
-    header {
-        height: 180px
-    }
-    .banner {
-        margin-top: -20%;
-    }
-} */
-
-
-
+/* 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
     border: 2px solid #8DC57E;
 }
 ::-webkit-scrollbar-track {
@@ -1986,13 +1251,9 @@ footer {
     background-color: #8DC57E;
     background-color: #E6F9E2;
     border: 2px solid #8DC57E;
-    /* border-radius: 10px; */
+  
 }
-/* ::-webkit-scrollbar-button {
-    background-color: #21543B;
-    background-color: #E6F9E2;
-    border: 1px solid #8DC57E;
-} */
+
 ::-webkit-scrollbar-thumb {
     background-color: #E6F9E2;
     background-color: #21543B;
@@ -2007,4 +1268,4 @@ footer {
 }
 ::-webkit-scrollbar-track:hover {
     background-color: #21543B;
-}
+} */

@@ -47,8 +47,10 @@ function fecharMenuMobile() {
         
         menuLateral.style.display = 'none'  
     }, 350);
+    document.body.style.overflow = 'initial'
 }
 
+let show = true;
 const botaoMobile = document.querySelector('.botao--menu--mobile')
 const menuLateral = document.querySelector('.menu--mobile--lateral')
 
@@ -56,7 +58,8 @@ botaoMobile.addEventListener('click', (e)=>{
     
     window.scroll(0, 0) 
     menuLateral.style.display = 'block'
-  
+    document.body.style.overflow =  'hidden' 
+    
     setTimeout(() => {
         
         menuLateral.style.right = '0'  

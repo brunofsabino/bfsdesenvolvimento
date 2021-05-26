@@ -57,9 +57,9 @@
                     Contato
                 </div> -->
                 <div class="botao--menu--mobile">
-                    <div class="botao--menu"></div>
-                    <div class="botao--menu"></div>
-                    <div class="botao--menu"></div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
                 </div>
                 
             </div>
