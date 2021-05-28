@@ -28,9 +28,20 @@
     </header>
     <main>
         <section class="banner">
-            <div class="container slidearea">
-                <div class="slideshow">
-                aaa
+            <div class="div-fundo">
+                <div class="slider--controls">
+                    <div class="slider-control" onclick="goPrev()"><img src="assets/images/chevron-left.svg" alt=""></div>
+                    <div class="slider-control" onclick="goNext()"><img src="assets/images/chevron-right.svg" alt=""></div>
+                </div>
+                <div class="container slidearea">
+                    <div class="slider--width" style="width: calc(750px * 6 )">
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-buldog.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-caixa.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-feliz.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-osso.jpg');"></div>
+                        <div class="slider--item"style="background-image: url('assets/images/gato-deitado.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/gato-cachorro-casinha.jpg');"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -38,5 +49,6 @@
     <footer>
 
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

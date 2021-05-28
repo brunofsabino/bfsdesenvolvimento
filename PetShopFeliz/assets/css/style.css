@@ -49,18 +49,48 @@ body {
 
 .banner {
     height: 70vh;
-    background-color: #0ccbff;
+    
     display: flex;
     justify-content:center;
     align-items: center;
 }
+.div-fundo {
+    height: 45vh;
+    background-color: #0ccbff;
+    width: 850px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.slider--controls {
+    width: 850px;
+    height: 45vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-control {
+  cursor: pointer;
+  margin: 5px;
+}
+.slider-control img {
+    width:40px;
+}
 .slidearea {
-    height: 50vh;
+    height: 65vh;
     width: 750px;
     overflow: hidden;
 }
-.slideshow {
-    height: 50vh;
-    width: 3000px;
+.slider--width {
+    height: 65vh;
+    transition: all ease 0.3s;
     background-color: red;
+    display: flex;
+}
+.slider--item {
+    width: 750px;
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
 }
