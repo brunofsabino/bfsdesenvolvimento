@@ -34,13 +34,13 @@
                     <div class="slider-control" onclick="goNext()"><img src="assets/images/chevron-right.svg" alt=""></div>
                 </div>
                 <div class="container slidearea">
-                    <div class="slider--width" style="width: calc(750px * 6 )">
-                        <div class="slider--item" style="background-image: url('assets/images/cachorro-buldog.jpg');"></div>
-                        <div class="slider--item" style="background-image: url('assets/images/cachorro-caixa.jpg');"></div>
-                        <div class="slider--item" style="background-image: url('assets/images/cachorro-feliz.jpg');"></div>
-                        <div class="slider--item" style="background-image: url('assets/images/cachorro-osso.jpg');"></div>
-                        <div class="slider--item"style="background-image: url('assets/images/gato-deitado.jpg');"></div>
-                        <div class="slider--item" style="background-image: url('assets/images/gato-cachorro-casinha.jpg');"></div>
+                    <div class="slider--width" >
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-buldog.jpg');"> <p>Amamos o que fazemos!</p></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-caixa.jpg');"><p>Trabalhamos com os melhores<br> produtos!</p></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-feliz.jpg');"><p>Venha conhecer o nosso banho & tosa</p></div>
+                        <div class="slider--item" style="background-image: url('assets/images/cachorro-osso.jpg');"><p>Seu bichinho será tratado será tratado com muito amor</p></div>
+                        <div class="slider--item"style="background-image: url('assets/images/gato-deitado.jpg');"><p>Seu pet irá se divertir!</p></div>
+                        <div class="slider--item" style="background-image: url('assets/images/gato-cachorro-casinha.jpg');"><p>Temos também hotel para cães e gatos</p></div>
                     </div>
                 </div>
             </div>

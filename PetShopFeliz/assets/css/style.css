@@ -80,6 +80,7 @@ body {
 .slidearea {
     height: 65vh;
     width: 750px;
+    border: 10px solid #0ccbff;
     overflow: hidden;
 }
 .slider--width {
@@ -93,4 +94,15 @@ body {
     height: 65vh;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider--item p {
+    color: #FFFFFF;
+    font-family: 'Sigmar One', cursive;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50%;
 }
