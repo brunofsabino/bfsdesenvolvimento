@@ -907,7 +907,6 @@ footer {
 @media (min-width: 1440px) and (min-height: 900px) {
     
     #message {
-        height: 19vh;
         margin-bottom: 10px;
     }
     footer {
