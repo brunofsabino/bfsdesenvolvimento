@@ -45,6 +45,15 @@
                 </div>
             </div>
         </section>
+        <section class="info">
+        
+            <div class="parallax">
+                <div class="parallax-background">
+                    <h1>Banho e Tosa</h1>
+                </div>
+            </div>
+            
+        </section>
     </main>
     <footer>
 

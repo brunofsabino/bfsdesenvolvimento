@@ -14,6 +14,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+header {
+    background-color: rgba(255, 180, 4, 0.13);
+}
 .header {
     display: flex;
     justify-content:space-between;
@@ -21,7 +24,7 @@ body {
 }
 .header .logo {
     width: 150px;
-    height: 150px;
+    height: 160px;
     margin-left: 20px;
 }
 .logo img {
@@ -105,4 +108,22 @@ body {
     font-size: 30px;
     text-align: center;
     margin-top: 50%;
+}
+.info {
+    height: 70vh;
+}
+.parallax {
+    background-image: url(../images/gato-deitado-peludo.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-background {
+    width: 100%;
+    position: absolute;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-color: rgba(255, 180, 4,0.13);
 }
