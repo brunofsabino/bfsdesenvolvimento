@@ -46,13 +46,31 @@
             </div>
         </section>
         <section class="info">
-        
             <div class="parallax">
                 <div class="parallax-background">
-                    <h1>Banho e Tosa</h1>
+                    <div class="info-conteudo container">
+                        <div class="title"><h1>Banho e Tosa</h1></div> 
+                        <div class="text1">
+                            Os melhores produtos para o banho do seu pet
+                        </div>
+                        <div class="text2">
+                            <p>Planos Mensais</p>
+                            <p>Produtos de qualidade</p>
+                            <p>Maior durabilidade</p>
+                            <p>Taxi dog</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
+        </section class="photos">
+            <div class="container photos-content">
+                <div class="photos-img-1">
+                    <img src="assets/images/cachorro-banho.jpg" alt="">
+                </div>
+            </div>
+        <section>
+
         </section>
     </main>
     <footer>
