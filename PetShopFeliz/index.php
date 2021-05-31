@@ -63,14 +63,27 @@
                 </div>
             </div>
             
-        </section class="photos">
-            <div class="container photos-content">
-                <div class="photos-img-1">
-                    <img src="assets/images/cachorro-banho.jpg" alt="">
+        </section>
+        <section class="photos">
+            <div class="photos-content">
+                <div class="container">
+                    <div class="title"><h1>Fotos do Pet Shop feliz</h1></div> 
+                    <div class="photos-images ">
+                        <div class="photos-img1">
+                            <img src="assets/images/cachorro-banho.jpg" alt="">
+                        </div>
+                        <div class="photos-img2">
+                            <img src="assets/images/gato-brincando.jpg" alt="">
+                        </div>
+                        <div class="photos-img3">
+                            <img src="assets/images/mulher-cachorro.jpg" alt="">
+                        </div>
+                        <div class="photos-img4">
+                            <img src="assets/images/dois-cachorros.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-        <section>
-
         </section>
     </main>
     <footer>
