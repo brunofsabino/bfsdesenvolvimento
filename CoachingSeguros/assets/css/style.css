@@ -5,23 +5,30 @@
     list-style: none;
     text-decoration: none;
 }
+html {
+    /* a cada 1rem será considerado 10px*/
+    font-size: 62.5%;
+}
 :root {
     --
 }
 body{
-    
+    font-size: 1.6rem;
 }
 header {
     height: 150px;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-.container {
+header .container {
+    width: 90%;
     max-width: 1250px;
     margin: 0 auto;
 }
+.header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .header .logo {
     width: 250px;
 }
@@ -29,10 +36,16 @@ header {
     width: 100%;
 }
 .menu-section {
-    
+    width: 50px;
+    height: 150px;
 }
 .menu-toggle {
     width: 40px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.menu-toggle.on {
+    margin-right: 70px;
 }
 .one,
 .two,
@@ -41,14 +54,30 @@ header {
     height: 3px;
     width: 100%;
     margin: 8px auto;
+    transition-duration: 0.3s;
 }
-nav {
+.menu-section .nav {
+    display: none;
+}
+.menu-section .nav.on {
     display: block;
 }
 nav ul {
     margin: 20px;
 }
-
+.menu-section.on .nav.on ul li {
+    width: 35vw;
+    padding: 20px;
+    cursor: pointer;
+}
+ .nav.on ul li a {
+    transition-duration: 0.5s;
+    font-size: 4.5rem;
+    color: #FFF;
+}
+nav ul li:hover {
+    background-color: rgb(159 159 245 / 4%);
+}
 /* fullscreen*/
 .menu-section.on {
     position: absolute;
@@ -56,20 +85,23 @@ nav ul {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(196, 100, 100);
+    background-color: #000;
     z-index: 20;
+    padding: 70px;
 }
 .menu-section.on .menu-toggle {
     position: absolute;
-    right: 0;
-    top: 45px;
+    right: 25px;
+    top: 0px;
 }
 .menu-section.on .menu-toggle .one {
     transform: rotate(45deg) translate(7px, 7px);
+    background-color: #FFF;
 }
 .menu-section.on .menu-toggle .two {
-    display: none;
+    opacity: 0;
 }
 .menu-section.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(7px, 7px);
+    transform: rotate(-45deg) translate(8px, -9.5px);
+    background-color: #FFF;
 }

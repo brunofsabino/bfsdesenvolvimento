@@ -9,32 +9,38 @@
 </head>
 <body>
     <header>
-        <div class="header container">
-            <div class="logo">
-                <img src="assets/images/logo-redi.jpeg" alt="logo">
-            </div>
-            <div class="menu-section on ">
-                <div class="menu-toggle">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/images/logo-redi.jpeg" alt="logo">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Planos de Saúde</a></li>
-                        <li><a href="">Seguros</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-        
-                </nav>
+                <div class="menu-section">
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Planos de Saúde</a></li>
+                            <li><a href="">Seguros</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+            
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <main>
+        <section class="banner">
+            
+        </section>
     </main>
     <footer>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
