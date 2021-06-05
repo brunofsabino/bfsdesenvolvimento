@@ -36,7 +36,26 @@
     </header>
     <main>
         <section class="banner">
-            
+            <div class="banner-area1">
+                <div class="slider-width-text">
+                    <div class="slider--item--text">TEXTO UM</div>
+                    <div class="slider--item--text">TEXTO DOIS</div>
+                    <div class="slider--item--text">TEXTO TRES</div>
+                    <div class="slider--item--text">TEXTO QUATRO</div>
+                </div>
+            </div>
+            <div class="banner-area2">
+                <div class="slider--controls">
+                    <div class="slider-control" onclick="goPrev()"><img src="assets/images/arrow-left.svg" alt=""></div>
+                    <div class="slider-control" onclick="goNext()"><img src="assets/images/arrow-right.svg" alt=""></div>
+                </div>
+                <div class="slider--width">
+                    <div class="slider--item" style="background-image: url('assets/images/building.jpg');"></div>
+                    <div class="slider--item" style="background-image: url('assets/images/equipe.jpg');"></div>
+                    <div class="slider--item" style="background-image: url('assets/images/familia-feliz3.jpg');"></div>
+                    <div class="slider--item" style="background-image: url('assets/images/empresarios.jpg');"></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

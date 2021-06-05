@@ -57,8 +57,8 @@ class AjaxController extends Controller {
         if(isset($_FILES['photo']) && !empty($_FILES['photo']['tmp_name'])) {
             $photo = $_FILES['photo'];
 
-            $maxWidth = 800;
-            $maxHeight = 800;
+            $maxWidth = 1000;
+            $maxHeight = 1000;
 
             if(in_array($photo['type'], ['image/jpeg', 'image/png', 'image/jpg'])) {
 
