@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coaching Seguros e Benefícios</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,11 +40,48 @@
         <section class="banner">
             <div class="banner-area1">
                 <div class="slider-width-text">
-                    <div class="slider--item--text">TEXTO UM</div>
-                    <div class="slider--item--text">TEXTO DOIS</div>
-                    <div class="slider--item--text">TEXTO TRES</div>
-                    <div class="slider--item--text">TEXTO QUATRO</div>
+                    <div class="slider--item--text1 active">
+                        <div class="banner-area1-sub-title">
+                            Excelencia em
+                        </div>
+                        <div class="banner-area1-title">
+                            Consultoria de planos <br>de Saúde e<br> Odontológicos.
+                        </div>
+                        <div class="banner-area1-button"> <a href="">Fale Conosco</a></div>
+                    </div>
+                    <div class="slider--item--text2">
+                        <div class="banner-area1-sub-title">
+                            Contamos com
+                        </div>
+                        <div class="banner-area1-title">
+                            Um Staff<br> especializado<br>á sua disposição
+                        </div>
+                        <div class="banner-area1-button"> <a href="">Saiba Mais</a></div>
+                    </div>
+                    <div class="slider--item--text3">
+                        <div class="banner-area1-sub-title">
+                            Oferecemos
+                        </div>
+                        <div class="banner-area1-title">
+                            Planos de Saúde e <br>Seguros para <br>você e sua família
+                        </div>
+                        <div class="banner-area1-button"> <a href="">Veja nossos Preços</a></div>
+                    </div>
+                    <div class="slider--item--text4">
+                        <div class="banner-area1-sub-title">
+                            Corporativo
+                        </div>
+                        <div class="banner-area1-title">
+                            Planos de Saúde<br> Empresarial
+                            
+                        </div>
+                        <div class="banner-area1-button"> <a href="">Saiba Como</a></div>
+                    </div>
+                    <div class="arrow">
+                        <img src="assets/images/arrow-down.svg" alt="">
+                    </div>
                 </div>
+                
             </div>
             <div class="banner-area2">
                 <div class="slider--controls">

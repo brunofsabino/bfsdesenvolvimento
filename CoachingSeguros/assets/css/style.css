@@ -15,6 +15,7 @@ html {
 }
 body{
     font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
 }
 header {
     height: 150px;
@@ -113,14 +114,65 @@ nav ul li:hover {
 .banner {
     width: 100vw;
     height: 100vh;
-    background-color: red;
     position: absolute;
     top: 0;
     display: flex;
 }
 .banner-area1 {
     width: 42vw;
-    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.slider-width-text {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+}
+.slider--item--text1,
+.slider--item--text2,
+.slider--item--text3,
+.slider--item--text4 {
+    display: none;
+    height: 55vh;
+    z-index: 1;
+}
+.slider--item--text1.active,
+.slider--item--text2.active,
+.slider--item--text3.active,
+.slider--item--text4.active {
+    display: block;
+}
+.banner-area1-sub-title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.banner-area1-title {
+    width: 45vw;
+    height: 37vh;
+    font-size: 6.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.banner-area1-button a {
+    margin-top: 40px;
+    background-color: var(--color-blue-logo);
+    width: 166px;
+    color: #FFF;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.slider-width-text .arrow {
+    position: absolute;
+    bottom: 40px;
+}
+.slider-width-text .arrow img {
+    width: 36px;
+    animation: arrow infinite 1.5s;
+   
 }
 .banner-area2 {
     width: 58vw;
@@ -168,4 +220,16 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(28px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
