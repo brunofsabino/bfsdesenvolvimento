@@ -276,12 +276,10 @@ nav ul li:hover {
     top: 200vh;
     padding: 0px 90px;
     background-color: var(--color-blue) ;
-    display: grid;
-    grid-template-areas:
-    "area2-text area2-img" ;
+    display: flex;
+    
 }
 .area2-text {
-    grid-area:area2-text;
     flex:1; 
     max-width: 40vw;
     padding: 160px 0px;
@@ -315,20 +313,101 @@ nav ul li:hover {
 }
 .area2-button a:hover{
     background-color:#FFF;
-    color: var(--color-blue)
+    color: var(--color-blue);
 }
 .area2-img {
-    grid-area:area2-img;
-    background-color: red; 
-    flex:1;
-    max-width: 40vw; 
-    max-height: 110vh;
+    /* background-color: red;  */
+    flex:1; 
+    max-height: 110vh; 
     background-image: url(../images/empresarios2.jpg);
+    /* background-attachment: fixed; */
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 0px 340px;
+    /* display: flex;
+    align-items: center; */
+    /* padding: 0px 340px; */
     margin-top: 70px;
 }
+.area2-parallax {
+    width: 100%;
+    position: absolute;
+    min-height: 450px;
+    background-attachment: fixed;
+}
+
+.area3 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 330vh;
+    display: grid; 
+    grid-template-areas: 
+    "title icon1 icon2" 
+    "title icon3 icon4" ;
+    padding: 0px 90px;
+}
+.area3--title {
+    grid-area: title;
+    background-color: green;
+    max-width: 26vw;
+}
+.area3-subtitle {
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+}
+.area3-title h1{
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+}
+.area3-text p {
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.area3-button a{
+    margin-top: 40px;
+    background-color: var(--color-blue);
+    width: 225px;
+    color: #FFF;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.area3-button a:hover{
+    background-color:#FFF;
+    color: var(--color-blue);
+    font-size: 1.4rem;
+}
+
+.area3-icon1 {
+    grid-area: icon1;
+    background-color: yellow;
+    min-width: 25vw;
+}
+.area3-icon2 {
+    grid-area: icon2;
+    background-color: rebeccapurple;
+    min-width: 25vw;
+}
+.area3-icon3 {
+    grid-area: icon3;
+    background-color: violet;
+    min-width: 25vw;
+}
+.area3-icon4 {
+    grid-area: icon4;
+    background-color: aqua;
+    min-width: 25vw;
+}
+
+
 @keyframes arrow {
     0% {
         transform: translateY(0px);

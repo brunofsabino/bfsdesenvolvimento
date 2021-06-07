@@ -123,8 +123,22 @@
                 <div class="area2-button"><a href="">Saiba Mais</a></div>
             </div>
             <div class="area2-img">
-                
+                <div class="area2-parallax"></div>
             </div>
+        </section>
+        <section class="area3">
+            <div class="area3--title">
+                <div class="area3-subtitle">
+                    Nossos Produtos
+                </div>
+                <div class="area3-title"><h1>Escolha o plano de saúde ou seguro ideal para você.</h1></div>
+                <div class="area3-text"><p>A Coaching Seguros trabalha com as mais respeitadas operadoras e seguradoras do mercado brasileiro. Conheça nossas opções abaixo e peça sua cotação</p></div>
+                <div class="area3-button"><a href="">Todos os Produtos</a></div>
+            </div>
+            <div class="area3-icon1"></div>
+            <div class="area3-icon2"></div>
+            <div class="area3-icon3"></div>
+            <div class="area3-icon4"></div>
         </section>
     </main>
     <footer>
