@@ -96,6 +96,36 @@
                 </div>
             </div>
         </section>
+        <section class="area1">
+            <div class="area1-sub-title"> Uma nova experiência para sua empresa</div>
+            <div class="area1-title"><h1>Um novo conceito em consultoria</h1></div>
+            <div class="area1-content">
+                <div class="area1-content-1">
+                    <div class="area1-content-title"><h3>Nossa Missão</h3></div>
+                    <div class="area1-content-text">Entregar soluções para a proteção dos nossos clientes através de uma consultoria de excelência em seguros e benefícios.</div>
+                </div>
+                <div class="area1-content-2">
+                    <div class="area1-content-title"><h3>Nossa Visão</h3>
+                    </div>
+                    <div class="area1-content-text">Ser a melhor consultoria em seguros e benefícios do Brasil com reconhecimento internacional.</div>
+                </div>
+                <div class="area1-content-3">
+                    <div class="area1-content-title"><h3>Nossos Valores</h3></div>
+                    <div class="area1-content-text">Proteção, Integridade, Excelência, Entrega e Resultado.</div>
+                </div>
+            </div>
+        </section>
+        <section class="area2">
+            <div class="area2-text">
+                <div class="area2-subtitle">Quem somos</div>
+                <div class="area2-title"><h1>A Coaching inovou o conceito em consultoria em planos de saúde no Brasil</h1></div>
+                <p>Desde o atendimento inicial ao ato da contratação, procuramos oferecer a melhor experiência aos nossos clientes. Somente na Dutra Seguros você conta com um pós venda especializado e completo, atento a prestar todo o suporte necessário, sendo portanto, referência no ramo de consultoria.</p>
+                <div class="area2-button"><a href="">Saiba Mais</a></div>
+            </div>
+            <div class="area2-img">
+                
+            </div>
+        </section>
     </main>
     <footer>
     </footer>

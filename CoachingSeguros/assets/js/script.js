@@ -10,6 +10,8 @@ menuToggle.addEventListener("click", ()=>{
     menuToggle.classList.toggle("on", show)
     menuNav.classList.toggle("on", show)
     show = !show
+
+    // document.body.style.overflow = "hidden"
 })
 
 

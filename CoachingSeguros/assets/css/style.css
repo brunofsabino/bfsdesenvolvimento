@@ -10,12 +10,13 @@ html {
     font-size: 62.5%;
 }
 :root {
-    --color-blue-logo: #051850;
-    --color-yellow-logo: #ffb404;
+    --color-blue: #051850;
+    --color-yellow: #ffb404;
 }
 body{
     font-size: 1.6rem;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
 }
 header {
     height: 150px;
@@ -155,7 +156,7 @@ nav ul li:hover {
 }
 .banner-area1-button a {
     margin-top: 40px;
-    background-color: var(--color-blue-logo);
+    background-color: var(--color-blue);
     width: 166px;
     color: #FFF;
     padding: 20px 40px;
@@ -209,7 +210,7 @@ nav ul li:hover {
 .slider--width {
     height: 100vh;
     transition: all ease 0.3s;
-    background-color: var(--color-blue-logo);
+    background-color: var(--color-blue);
     display: flex;
 }
 .slider--item {
@@ -221,7 +222,113 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
 }
-
+.area1 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    padding: 100px 90px;
+}
+.area1-sub-title {
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+}
+.area1-title {
+    max-width: 45vw;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 65px;
+}
+.area1-content {
+    
+    display: grid;
+    grid-template-areas:
+    "area1 area2 area3" ;
+}
+.area1-content-1 {
+    grid-area:area1;
+    
+}
+.area1-content-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.area1-content-text {
+    font-size: 2.1rem;
+    font-weight: 300;
+    max-width: 25vw;
+}
+.area1-content-2 {
+    grid-area:area2;
+    
+}
+.area1-content-3 {
+    grid-area:area3;
+    
+}
+.area2 {
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+    top: 200vh;
+    padding: 0px 90px;
+    background-color: var(--color-blue) ;
+    display: grid;
+    grid-template-areas:
+    "area2-text area2-img" ;
+}
+.area2-text {
+    grid-area:area2-text;
+    flex:1; 
+    max-width: 40vw;
+    padding: 160px 0px;
+    color: #FFF;
+}
+.area2-subtitle {
+    margin-bottom: 40px;
+}
+.area2-title {
+    font-size: 3.5rem;
+    line-height: 7rem;
+    margin-bottom: 50px;
+}
+.area2 p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 70px;
+}
+.area2-button a{
+    margin-top: 40px;
+    background-color: var(--color-blue);
+    width: 166px;
+    color: #FFF;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 1px solid #FFF;
+}
+.area2-button a:hover{
+    background-color:#FFF;
+    color: var(--color-blue)
+}
+.area2-img {
+    grid-area:area2-img;
+    background-color: red; 
+    flex:1;
+    max-width: 40vw; 
+    max-height: 110vh;
+    background-image: url(../images/empresarios2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0px 340px;
+    margin-top: 70px;
+}
 @keyframes arrow {
     0% {
         transform: translateY(0px);
