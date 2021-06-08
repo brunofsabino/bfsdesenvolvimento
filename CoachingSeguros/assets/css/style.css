@@ -20,6 +20,8 @@ body{
 }
 header {
     height: 150px;
+    position: absolute;
+    width: 100%;
 }
 header .container {
     width: 90%;
@@ -115,8 +117,8 @@ nav ul li:hover {
 .banner {
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     display: flex;
 }
 .banner-area1 {
@@ -225,8 +227,8 @@ nav ul li:hover {
 .area1 {
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 100vh;
+    /* position: absolute;
+    top: 100vh; */
     padding: 100px 90px;
 }
 .area1-sub-title {
@@ -246,7 +248,7 @@ nav ul li:hover {
     
     display: grid;
     grid-template-areas:
-    "area1 area2 area3" ;
+    "area1 area2 area-seguros" ;
 }
 .area1-content-1 {
     grid-area:area1;
@@ -266,14 +268,14 @@ nav ul li:hover {
     
 }
 .area1-content-3 {
-    grid-area:area3;
+    grid-area:area-seguros;
     
 }
 .area2 {
     width: 100vw;
     height: 130vh;
-    position: absolute;
-    top: 200vh;
+    /* position: absolute;
+    top: 200vh; */
     padding: 0px 90px;
     background-color: var(--color-blue) ;
     display: flex;
@@ -336,42 +338,52 @@ nav ul li:hover {
     background-attachment: fixed;
 }
 
-.area3 {
-    height: 100vh;
+.area-seguros {
+    height: 180vh;
     width: 100vw;
-    position: absolute;
-    top: 330vh;
+    /* position: absolute;
+    top: 330vh; */
     display: grid; 
     grid-template-areas: 
-    "title icon1 icon2" 
-    "title icon3 icon4" ;
-    padding: 0px 90px;
-}
-.area3--title {
-    grid-area: title;
-    max-width: 26vw;
-    display: flex;
-    flex-direction: column;
+    " title  icon1 icon3 " 
+    " title  icon2 icon4 " 
+    "icon5 icon6 icon7";
+    padding: 75px 90px;
     justify-content: space-evenly;
 }
-.area3-subtitle {
+.area-seguros--title {
+    grid-area: title;
+    max-width: 26vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .area-seguros-img {
+    grid-area: segurosimg;
+    background-image: url(../images/homem-escolhendo.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 30px;
+} */
+.area-seguros-subtitle {
     text-transform: uppercase;
     margin-top: 50px;
     margin-bottom: 45px;
     letter-spacing: 3px;
 }
-.area3-title h1{
+.area-seguros-title h1{
     font-size: 5.5rem;
     margin-bottom: 30px;
 }
-.area3-text p {
+.area-seguros-text p {
     letter-spacing: 1px;
     margin-bottom: 30px;
 }
-.area3-button {
+.area-seguros-button {
     margin-bottom: 30px;
 }
-.area3-button a{
+.area-seguros-button a{
     margin-top: 40px;
     background-color: var(--color-blue);
     width: 225px;
@@ -386,28 +398,18 @@ nav ul li:hover {
     cursor: pointer;
     transition: 0.2s;
 }
-.area3-button a:hover{
+.area-seguros-button a:hover{
     background-color:#FFF;
     color: var(--color-blue);
     font-size: 1.4rem;
 }
-
-.area3-icon1 {
-    grid-area: icon1;
-}
-.area3-icon2 {
-    grid-area: icon2;
-}
-.area3-icon3 {
-    grid-area: icon3;
-}
-.area3-icon4 {
-    grid-area: icon4;
-}
-.area3-icon1,
-.area3-icon2,
-.area3-icon3,
-.area3-icon4 {
+.area-seguros-icon1,
+.area-seguros-icon2,
+.area-seguros-icon3,
+.area-seguros-icon4,
+.area-seguros-icon5,
+.area-seguros-icon6,
+.area-seguros-icon7 {
     max-width: 25vw;
     display: flex;
     justify-content: space-evenly;
@@ -415,21 +417,45 @@ nav ul li:hover {
     flex-direction: column;
     margin-top: 30px;
 }
-.area3-icon1 a,
-.area3-icon2 a,
-.area3-icon3 a,
-.area3-icon4 a {
+.area-seguros-icon1 {
+    grid-area: icon1;
+    margin-top: 60px;
+}
+.area-seguros-icon2 {
+    grid-area: icon2;
+}
+.area-seguros-icon3 {
+    grid-area: icon3;
+    margin-top: 60px;
+}
+.area-seguros-icon4 {
+    grid-area: icon4;
+}
+.area-seguros-icon5 {
+    grid-area: icon5;
+}
+.area-seguros-icon6 {
+    grid-area: icon6;
+}
+.area-seguros-icon7 {
+    grid-area: icon7;
+}
+
+.area-seguros-icon1 a,
+.area-seguros-icon2 a,
+.area-seguros-icon3 a,
+.area-seguros-icon4 a {
     color: #000;
     transition: 0.2s;
 }
-.area3-icon1 a:hover,
-.area3-icon2 a:hover,
-.area3-icon3 a:hover,
-.area3-icon4 a:hover {
-    color: var(--color-yellow);
+.area-seguros-icon1 a:hover,
+.area-seguros-icon2 a:hover,
+.area-seguros-icon3 a:hover,
+.area-seguros-icon4 a:hover {
+    color: var(--color-blue);
     font-size: 1.7rem;
 }
-.area3-icon-img {
+.area-seguros-icon-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -439,10 +465,10 @@ nav ul li:hover {
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07);
 }
-.area3-icon-img img {
+.area-seguros-icon-img img {
     width:65%;
 }
-.area3 .img-icon1 {
+.area-seguros .img-icon1 {
     width:80%;
 }
 

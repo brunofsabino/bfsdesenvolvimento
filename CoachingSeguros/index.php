@@ -96,6 +96,73 @@
                 </div>
             </div>
         </section>
+        <section class="area-seguros">
+            <div class="area-seguros--title">
+                <div class="area-seguros-subtitle">
+                    Nossos Produtos
+                </div>
+                <div class="area-seguros-title"><h1>Customize seu plano de saúde ou seguro de acordo com a sua necessidade.</h1></div>
+                <div class="area-seguros-text"><p>A Coaching Seguros trabalha com as mais respeitadas operadoras e seguradoras do mercado brasileiro. Conheça nossas opções abaixo e peça sua cotação</p></div>
+                <div class="area-seguros-button"><a href="">Todos os Produtos</a></div>
+            </div>
+            
+            <div class="area-seguros-icon1">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/building2.png" alt="Prédio empresárial" class="img-icon1">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Plano de Saúde Empresarial</h2></div>
+                <p>Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon2">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/family2.png" alt="Familia">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Plano de Saúde Familiar</h2></div>
+                <p>Muitas operadoras e seguradoras oferecem planos de saúde familiar com excelentes condições de cobertura e preço. Proteja o bem mais precioso da sua família, a saúde.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon3">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/casal-idosos5.png" alt="Casal de idosos">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Plano de Saúde para Idosos</h2></div>
+                <p>Contratar uma assistência médica para quem está na melhor idade pode ser menos burocrático do que você imagina. Veja os melhores planos de saúde para idosos.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon4">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/homem2.png" alt="Homem sozinho">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Plano de Saúde Individual</h2></div>
+                <p>Plano de saúde individual é ideal para pessoas que buscam um plano econômico e que atenda as suas necessidades primárias como consultas e exames simples na rede credenciada.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon5">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/car.png" alt="Carro">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Seguro Auto</h2></div>
+                <p>Aqui você encontra o seguro auto ideal para o seu veiculo, e pode personalizar de acordo com o que você precisa. Trabalhamos com as melhores seguradoras do mercado e atendimento de qualidade para te dar o melhor suporte possível.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon6">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/home.png" alt="Casa">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Seguro Residencial</h2></div>
+                <p>Com um Seguro Residencial sua casa fica protegida por um custo muito mais baixo do que você imagina. Ao contratar o produto, você protege a sua casa e ainda conta com profissionais especializados em casos de pequenos imprevistos do dia a dia. Sem riscos e dores de cabeça, tudo por um custo que cabe no seu bolso.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area-seguros-icon7">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/fianca.png" alt="mão com dinheiro">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Seguro Fiança</h2></div>
+                <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
+                <a href="">Saiba mais</a>
+            </div>
+        </section>
         <section class="area1">
             <div class="area1-sub-title"> Uma nova experiência para sua empresa</div>
             <div class="area1-title"><h1>Um novo conceito em consultoria</h1></div>
@@ -126,48 +193,7 @@
                 <div class="area2-parallax"></div>
             </div>
         </section>
-        <section class="area3">
-            <div class="area3--title">
-                <div class="area3-subtitle">
-                    Nossos Produtos
-                </div>
-                <div class="area3-title"><h1>Escolha o plano de saúde ou seguro ideal para você.</h1></div>
-                <div class="area3-text"><p>A Coaching Seguros trabalha com as mais respeitadas operadoras e seguradoras do mercado brasileiro. Conheça nossas opções abaixo e peça sua cotação</p></div>
-                <div class="area3-button"><a href="">Todos os Produtos</a></div>
-            </div>
-            <div class="area3-icon1">
-                <div class="area3-icon-img">
-                    <img src="assets/images/building2.png" alt="Prédio empresárial" class="img-icon1">
-                </div>
-                <div class="area3-icon-title"><h2>Plano de Saúde Empresarial</h2></div>
-                <p>Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.</p>
-                <a href="">Saiba mais</a>
-            </div>
-            <div class="area3-icon2">
-                <div class="area3-icon-img">
-                    <img src="assets/images/family2.png" alt="Familia">
-                </div>
-                <div class="area3-icon-title"><h2>Plano de Saúde Familiar</h2></div>
-                <p>Muitas operadoras e seguradoras oferecem planos de saúde familiar com excelentes condições de cobertura e preço. Proteja o bem mais precioso da sua família, a saúde.</p>
-                <a href="">Saiba mais</a>
-            </div>
-            <div class="area3-icon3">
-                <div class="area3-icon-img">
-                    <img src="assets/images/casal-idosos5.png" alt="Casal de idosos">
-                </div>
-                <div class="area3-icon-title"><h2>Plano de Saúde para Idosos</h2></div>
-                <p>Contratar uma assistência médica para quem está na melhor idade pode ser menos burocrático do que você imagina. Veja os melhores planos de saúde para idosos.</p>
-                <a href="">Saiba mais</a>
-            </div>
-            <div class="area3-icon4">
-                <div class="area3-icon-img">
-                    <img src="assets/images/homem2.png" alt="Homem sozinho">
-                </div>
-                <div class="area3-icon-title"><h2>Plano de Saúde Individual</h2></div>
-                <p>Plano de saúde individual é ideal para pessoas que buscam um plano econômico e que atenda as suas necessidades primárias como consultas e exames simples na rede credenciada.</p>
-                <a href="">Saiba mais</a>
-            </div>
-        </section>
+        
     </main>
     <footer>
     </footer>
