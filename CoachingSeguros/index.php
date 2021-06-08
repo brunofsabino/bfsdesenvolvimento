@@ -135,10 +135,38 @@
                 <div class="area3-text"><p>A Coaching Seguros trabalha com as mais respeitadas operadoras e seguradoras do mercado brasileiro. Conheça nossas opções abaixo e peça sua cotação</p></div>
                 <div class="area3-button"><a href="">Todos os Produtos</a></div>
             </div>
-            <div class="area3-icon1"></div>
-            <div class="area3-icon2"></div>
-            <div class="area3-icon3"></div>
-            <div class="area3-icon4"></div>
+            <div class="area3-icon1">
+                <div class="area3-icon-img">
+                    <img src="assets/images/building2.png" alt="Prédio empresárial" class="img-icon1">
+                </div>
+                <div class="area3-icon-title"><h2>Plano de Saúde Empresarial</h2></div>
+                <p>Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area3-icon2">
+                <div class="area3-icon-img">
+                    <img src="assets/images/family2.png" alt="Familia">
+                </div>
+                <div class="area3-icon-title"><h2>Plano de Saúde Familiar</h2></div>
+                <p>Muitas operadoras e seguradoras oferecem planos de saúde familiar com excelentes condições de cobertura e preço. Proteja o bem mais precioso da sua família, a saúde.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area3-icon3">
+                <div class="area3-icon-img">
+                    <img src="assets/images/casal-idosos5.png" alt="Casal de idosos">
+                </div>
+                <div class="area3-icon-title"><h2>Plano de Saúde para Idosos</h2></div>
+                <p>Contratar uma assistência médica para quem está na melhor idade pode ser menos burocrático do que você imagina. Veja os melhores planos de saúde para idosos.</p>
+                <a href="">Saiba mais</a>
+            </div>
+            <div class="area3-icon4">
+                <div class="area3-icon-img">
+                    <img src="assets/images/homem2.png" alt="Homem sozinho">
+                </div>
+                <div class="area3-icon-title"><h2>Plano de Saúde Individual</h2></div>
+                <p>Plano de saúde individual é ideal para pessoas que buscam um plano econômico e que atenda as suas necessidades primárias como consultas e exames simples na rede credenciada.</p>
+                <a href="">Saiba mais</a>
+            </div>
         </section>
     </main>
     <footer>

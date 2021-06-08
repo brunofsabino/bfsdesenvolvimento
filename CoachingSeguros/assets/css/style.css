@@ -349,8 +349,10 @@ nav ul li:hover {
 }
 .area3--title {
     grid-area: title;
-    background-color: green;
     max-width: 26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .area3-subtitle {
     text-transform: uppercase;
@@ -364,7 +366,10 @@ nav ul li:hover {
 }
 .area3-text p {
     letter-spacing: 1px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+.area3-button {
+    margin-bottom: 30px;
 }
 .area3-button a{
     margin-top: 40px;
@@ -373,6 +378,7 @@ nav ul li:hover {
     color: #FFF;
     padding: 20px 40px;
     border-radius: 30px;
+    border: 1px solid var(--color-blue);
     text-align: center;
     font-size: 1.3rem;
     letter-spacing: 1px;
@@ -388,24 +394,58 @@ nav ul li:hover {
 
 .area3-icon1 {
     grid-area: icon1;
-    background-color: yellow;
-    min-width: 25vw;
 }
 .area3-icon2 {
     grid-area: icon2;
-    background-color: rebeccapurple;
-    min-width: 25vw;
 }
 .area3-icon3 {
     grid-area: icon3;
-    background-color: violet;
-    min-width: 25vw;
 }
 .area3-icon4 {
     grid-area: icon4;
-    background-color: aqua;
-    min-width: 25vw;
 }
+.area3-icon1,
+.area3-icon2,
+.area3-icon3,
+.area3-icon4 {
+    max-width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.area3-icon1 a,
+.area3-icon2 a,
+.area3-icon3 a,
+.area3-icon4 a {
+    color: #000;
+    transition: 0.2s;
+}
+.area3-icon1 a:hover,
+.area3-icon2 a:hover,
+.area3-icon3 a:hover,
+.area3-icon4 a:hover {
+    color: var(--color-yellow);
+    font-size: 1.7rem;
+}
+.area3-icon-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07); 
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07);
+}
+.area3-icon-img img {
+    width:65%;
+}
+.area3 .img-icon1 {
+    width:80%;
+}
+
 
 
 @keyframes arrow {
