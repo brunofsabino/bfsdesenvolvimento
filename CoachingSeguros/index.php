@@ -163,6 +163,27 @@
                 <a href="">Saiba mais</a>
             </div>
         </section>
+        <section class="seguradoras">
+            <div class="seguradoras-subtitle">
+                <p>OPERADORAS E SEGURADORAS</p>
+                <div class="seguradoras-subtitle-border"></div>
+            </div>
+            <div class="seguradoras-title"><h1>Trabalhamos com as melhores empresas do Brasil</h1></div>
+            <div class="seguradoras-area">
+                <div class="seguradoras-area1"></div>
+                <div class="seguradoras-area2"></div>
+                <div class="seguradoras-area3"></div>
+                <div class="seguradoras-area4"></div>
+                <div class="seguradoras-area5"></div>
+                <div class="seguradoras-area6"></div>
+                <div class="seguradoras-area7"></div>
+                <div class="seguradoras-area8"></div>
+                <div class="seguradoras-area9"></div>
+                <div class="seguradoras-area10"></div>
+                <div class="seguradoras-area11"></div>
+                <div class="seguradoras-area12"></div>
+            </div>
+        </section>
         <section class="area1">
             <div class="area1-sub-title"> Uma nova experiência para sua empresa</div>
             <div class="area1-title"><h1>Um novo conceito em consultoria</h1></div>

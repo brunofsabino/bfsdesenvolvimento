@@ -369,7 +369,7 @@ nav ul li:hover {
 .area-seguros-subtitle {
     text-transform: uppercase;
     margin-top: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     letter-spacing: 3px;
 }
 .area-seguros-title h1{
@@ -378,7 +378,7 @@ nav ul li:hover {
 }
 .area-seguros-text p {
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .area-seguros-button {
     margin-bottom: 30px;
@@ -444,16 +444,31 @@ nav ul li:hover {
 .area-seguros-icon1 a,
 .area-seguros-icon2 a,
 .area-seguros-icon3 a,
-.area-seguros-icon4 a {
+.area-seguros-icon4 a,
+.area-seguros-icon5 a,
+.area-seguros-icon6 a,
+.area-seguros-icon7 a {
     color: #000;
     transition: 0.2s;
 }
 .area-seguros-icon1 a:hover,
 .area-seguros-icon2 a:hover,
 .area-seguros-icon3 a:hover,
-.area-seguros-icon4 a:hover {
+.area-seguros-icon4 a:hover,
+.area-seguros-icon5 a:hover,
+.area-seguros-icon6 a:hover,
+.area-seguros-icon7 a:hover {
     color: var(--color-blue);
     font-size: 1.7rem;
+}
+.area-seguros-icon1 p,
+.area-seguros-icon2 p,
+.area-seguros-icon3 p,
+.area-seguros-icon4 p,
+.area-seguros-icon5 p,
+.area-seguros-icon6 p,
+.area-seguros-icon7 p {
+    margin-bottom: 15px;
 }
 .area-seguros-icon-img {
     width: 120px;
@@ -473,6 +488,133 @@ nav ul li:hover {
 }
 
 
+.seguradoras {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffb4048c;
+    padding: 60px 115px;
+}
+.seguradoras-subtitle,
+.seguradoras-title {
+    color: var(--color-blue);
+}
+.seguradoras-subtitle{
+    height:50px;
+}
+.seguradoras-subtitle p{
+    margin-bottom: 10px;
+}
+.seguradoras-subtitle-border {
+    width: 160px;
+    border-bottom: 2px solid #FFF;
+}
+.seguradoras-title {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+.seguradoras .seguradoras-area {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12" ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seguradoras-area1,
+.seguradoras-area2,
+.seguradoras-area3,
+.seguradoras-area4,
+.seguradoras-area5,
+.seguradoras-area6,
+.seguradoras-area7,
+.seguradoras-area8,
+.seguradoras-area9,
+.seguradoras-area10,
+.seguradoras-area11,
+.seguradoras-area12 {
+    border: 3px solid var(--color-blue);
+    min-width: 250px;
+    min-height: 150px;
+    background-size:cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.seguradoras-area1 {
+    grid-area: img1;
+    background-image: url(../images/amil.png);
+    
+}
+.seguradoras-area1:hover, 
+.seguradoras-area2:hover,
+.seguradoras-area3:hover,
+.seguradoras-area4:hover,
+.seguradoras-area5:hover,
+.seguradoras-area6:hover,
+.seguradoras-area7:hover,
+.seguradoras-area8:hover,
+.seguradoras-area9:hover,
+.seguradoras-area10:hover,
+.seguradoras-area11:hover,
+.seguradoras-area12:hover {
+    border: 8px solid var(--color-blue);
+    
+}
+.seguradoras-area2 {
+    grid-area: img2;
+    background-image: url(../images/allianz.png);
+}
+.seguradoras-area3 {
+    grid-area: img3;
+    background-image: url(../images/bradesco-seguros.png);
+}
+.seguradoras-area4 {
+    grid-area: img4;
+    background-image: url(../images/careplus2.jpg);
+}
+.seguradoras-area5 {
+    grid-area: img5;
+    background-image: url(../images/beneficiencia2.png);
+}
+.seguradoras-area6 {
+    grid-area: img6;
+    background-image: url(../images/sulamerica.png);
+}
+.seguradoras-area7 {
+    grid-area: img7;
+    background-image: url(../images/omint2.png);
+}
+.seguradoras-area8 {
+    grid-area: img8;
+    background-image: url(../images/notredame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.seguradoras-area9 {
+    grid-area: img9;
+    background-image: url(../images/prevent.png);
+}
+.seguradoras-area10 {
+    grid-area: img10;
+    background-image: url(../images/sompo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.seguradoras-area11 {
+    grid-area: img11;
+    background-image: url(../images/unimed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.seguradoras-area12 {
+    grid-area: img12;
+    background-image: url(../images/portoseguro.png);
+}
 
 @keyframes arrow {
     0% {
