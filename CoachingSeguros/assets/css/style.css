@@ -489,9 +489,9 @@ nav ul li:hover {
 
 
 .seguradoras {
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
-    background-color: #ffb4048c;
+    background-color: #ffb4044a;
     padding: 60px 115px;
 }
 .seguradoras-subtitle,
@@ -519,7 +519,8 @@ nav ul li:hover {
     grid-template-areas:
     "img1 img2 img3 img4"
     "img5 img6 img7 img8"
-    "img9 img10 img11 img12" ;
+    "img9 img10 img11 img12"
+    "img13 img14 img15 img16" ;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -534,13 +535,17 @@ nav ul li:hover {
 .seguradoras-area9,
 .seguradoras-area10,
 .seguradoras-area11,
-.seguradoras-area12 {
+.seguradoras-area12,
+.seguradoras-area13,
+.seguradoras-area14,
+.seguradoras-area15,
+.seguradoras-area16 {
     border: 3px solid var(--color-blue);
     min-width: 250px;
     min-height: 150px;
     background-size:cover;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .seguradoras-area1 {
     grid-area: img1;
@@ -558,7 +563,11 @@ nav ul li:hover {
 .seguradoras-area9:hover,
 .seguradoras-area10:hover,
 .seguradoras-area11:hover,
-.seguradoras-area12:hover {
+.seguradoras-area12:hover,
+.seguradoras-area13:hover,
+.seguradoras-area14:hover,
+.seguradoras-area15:hover,
+.seguradoras-area16:hover {
     border: 8px solid var(--color-blue);
     
 }
@@ -613,6 +622,28 @@ nav ul li:hover {
 }
 .seguradoras-area12 {
     grid-area: img12;
+    background-image: url(../images/golden.png);
+}
+.seguradoras-area13 {
+    grid-area: img13;
+    background-image: url(../images/trasmontano.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.seguradoras-area14 {
+    grid-area: img14;
+    background-image: url(../images/saocristovao.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.seguradoras-area15 {
+    grid-area: img15;
+    background-image: url(../images/ameplan.png);
+}
+.seguradoras-area16 {
+    grid-area: img16;
     background-image: url(../images/portoseguro.png);
 }
 

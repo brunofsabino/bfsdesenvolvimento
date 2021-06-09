@@ -182,6 +182,10 @@
                 <div class="seguradoras-area10"></div>
                 <div class="seguradoras-area11"></div>
                 <div class="seguradoras-area12"></div>
+                <div class="seguradoras-area13"></div>
+                <div class="seguradoras-area14"></div>
+                <div class="seguradoras-area15"></div>
+                <div class="seguradoras-area16"></div>
             </div>
         </section>
         <section class="area1">
@@ -214,7 +218,9 @@
                 <div class="area2-parallax"></div>
             </div>
         </section>
-        
+        <section class="contato">
+
+        </section>
     </main>
     <footer>
     </footer>
