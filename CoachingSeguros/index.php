@@ -190,12 +190,15 @@
         </section>
         <section class="area1">
             <!-- <div class="area1-sub-title"> Uma nova experiência para sua empresa</div> -->
-            <div class="area1-title"><h1>Simule gratuitamente os valores de todos os Plano de Saúde</h1></div>
+            <div class="area1-title"><h1><span>Simule</span> os valores de todos os <span>Planos de Saúde</span></h1></div>
             <div class="area1-content">
                 <div class="area1-content-img">
                     <div class="area1-img"></div>
                 </div>
-                <div class="area1-content-button"></div>
+                <div class="area1-content-button">
+                    <h2>Simule gratuitamente todos<br> os Planos de Saúde</h2>
+                    <div class="area1-button"><a href="">Simule</a></div>
+                </div>
             </div>
         </section>
         <section class="area2">
