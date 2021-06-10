@@ -189,22 +189,13 @@
             </div>
         </section>
         <section class="area1">
-            <div class="area1-sub-title"> Uma nova experiência para sua empresa</div>
-            <div class="area1-title"><h1>Um novo conceito em consultoria</h1></div>
+            <!-- <div class="area1-sub-title"> Uma nova experiência para sua empresa</div> -->
+            <div class="area1-title"><h1>Simule gratuitamente os valores de todos os Plano de Saúde</h1></div>
             <div class="area1-content">
-                <div class="area1-content-1">
-                    <div class="area1-content-title"><h3>Nossa Missão</h3></div>
-                    <div class="area1-content-text">Entregar soluções para a proteção dos nossos clientes através de uma consultoria de excelência em seguros e benefícios.</div>
+                <div class="area1-content-img">
+                    <div class="area1-img"></div>
                 </div>
-                <div class="area1-content-2">
-                    <div class="area1-content-title"><h3>Nossa Visão</h3>
-                    </div>
-                    <div class="area1-content-text">Ser a melhor consultoria em seguros e benefícios do Brasil com reconhecimento internacional.</div>
-                </div>
-                <div class="area1-content-3">
-                    <div class="area1-content-title"><h3>Nossos Valores</h3></div>
-                    <div class="area1-content-text">Proteção, Integridade, Excelência, Entrega e Resultado.</div>
-                </div>
+                <div class="area1-content-button"></div>
             </div>
         </section>
         <section class="area2">
@@ -253,8 +244,15 @@
             <a href="">Planos de Saúde</a>
             <a href="">Fale Conosco</a>
         </div>
-        <div class="social"></div>
-        <div class="baseboard"></div>
+        <div class="social">
+            <h3>Siga-nos</h3>
+            <a href=""><img src="assets/images/Facebook.png" alt="Facebook"></a>
+            <a href=""><img src="assets/images/Instagram.png" alt="Instagram"></a>
+            <a href=""><img src="assets/images/Linkedin.png" alt="Linkedin"></a>
+        </div>
+        <div class="baseboard">
+            <p>@ Coaching Seguros - 2021</p>
+        </div>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>

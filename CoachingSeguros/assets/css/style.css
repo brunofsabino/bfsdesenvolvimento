@@ -229,47 +229,35 @@ nav ul li:hover {
     height: 100vh;
     /* position: absolute;
     top: 100vh; */
-    padding: 100px 90px;
+    padding: 60px 90px;
 }
-.area1-sub-title {
+/* .area1-sub-title {
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     letter-spacing: 3px;
-}
+} */
 .area1-title {
-    max-width: 45vw;
-    font-size: 5rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-bottom: 65px;
+    font-size: 4rem;
 }
 .area1-content {
-    
-    display: grid;
-    grid-template-areas:
-    "area1 area2 area-seguros" ;
+    height: 75vh;
+    display: flex;
 }
-.area1-content-1 {
-    grid-area:area1;
-    
+.area1-content-img {
+    width: 25vw;
+    height: 60vh;
 }
-.area1-content-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.area1-img {
+    background-image: url(../images/dra-apontando2.png);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
 }
-.area1-content-text {
-    font-size: 2.1rem;
-    font-weight: 300;
-    max-width: 25vw;
-}
-.area1-content-2 {
-    grid-area:area2;
-    
-}
-.area1-content-3 {
-    grid-area:area-seguros;
-    
+.area1-content-button {
+    width: 30vw;
+    background-color: red;
 }
 .area2 {
     width: 100vw;
@@ -372,7 +360,7 @@ nav ul li:hover {
 } */
 .area-seguros-subtitle {
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
@@ -380,6 +368,7 @@ nav ul li:hover {
     font-size: 5.5rem;
     margin-bottom: 30px;
     text-align: end;
+    line-height: 7.5rem;
 }
 .area-seguros-text p {
     letter-spacing: 1px;
@@ -722,6 +711,7 @@ footer {
     "logo contacts links social"
     "baseboard baseboard baseboard baseboard" ;
     justify-content: space-around;
+    letter-spacing: 0.5px;
 }
 footer .logo{
     grid-area: logo;
@@ -736,7 +726,7 @@ footer .contacts{
     grid-area: contacts;
     min-height: 28vh;
     min-width: 10vw;
-    padding: 20px;
+    padding: 0px 20px;
     max-width: 20vw;
     color: #FFF;
 }
@@ -745,22 +735,49 @@ footer .contacts h3 {
 }
 footer .contacts p {
     margin-bottom: 20px;
+    font-weight: 300;
 }
 footer .links{
     grid-area: links;
-    background-color: blueviolet;
     min-height: 28vh;
     min-width: 10vw;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+
+}
+footer .links h3 {
+    height: 50px;
+}
+footer .links a {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-weight: 300;
 }
 footer .social{
     grid-area: social;
-    background-color: chartreuse;
     min-height: 28vh;
     min-width: 10vw;
+    color: #FFF;
+}
+footer .social h3 {
+    height: 50px;
+}
+footer .social a img {
+    width:50px;
+    margin-right: 10px;
 }
 footer .baseboard{
     grid-area: baseboard;
-    background-color: var(--color-yellow);
+    color: #FFF;
+    font-weight: 300;
+}
+footer .baseboard {
+    border-top: 1px solid #FFF;
+}
+footer .baseboard p{
+    margin-top: 20px;
+    margin-left: 15px;
 }
 @keyframes arrow {
     0% {
