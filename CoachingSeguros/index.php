@@ -240,6 +240,21 @@
         </section>
     </main>
     <footer>
+        <div class="logo"></div>
+        <div class="contacts">
+            <h3>Contatos</h3>
+            <p>Av. Xxx xxxxx xxxxx xxxxx xxxxxxx, 999, Tatuapé, São Paulo - SP</p>
+            <p>contato@coachingseguros.com.br</p>
+            <p>11 XXXX-XXXX</p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <a href="">Faça uma simulação</a>
+            <a href="">Planos de Saúde</a>
+            <a href="">Fale Conosco</a>
+        </div>
+        <div class="social"></div>
+        <div class="baseboard"></div>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>

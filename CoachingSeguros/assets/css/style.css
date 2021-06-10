@@ -712,6 +712,56 @@ nav ul li:hover {
     font-weight: 600;
     cursor: pointer;
 }
+footer {
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--color-blue);
+    padding: 80px 115px;
+    display: grid;
+    grid-template-areas:
+    "logo contacts links social"
+    "baseboard baseboard baseboard baseboard" ;
+    justify-content: space-around;
+}
+footer .logo{
+    grid-area: logo;
+    min-height: 28vh;
+    width: 20vw;
+    background-image: url(../images/logo-semfundo.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+footer .contacts{
+    grid-area: contacts;
+    min-height: 28vh;
+    min-width: 10vw;
+    padding: 20px;
+    max-width: 20vw;
+    color: #FFF;
+}
+footer .contacts h3 {
+    height: 50px;
+}
+footer .contacts p {
+    margin-bottom: 20px;
+}
+footer .links{
+    grid-area: links;
+    background-color: blueviolet;
+    min-height: 28vh;
+    min-width: 10vw;
+}
+footer .social{
+    grid-area: social;
+    background-color: chartreuse;
+    min-height: 28vh;
+    min-width: 10vw;
+}
+footer .baseboard{
+    grid-area: baseboard;
+    background-color: var(--color-yellow);
+}
 @keyframes arrow {
     0% {
         transform: translateY(0px);
