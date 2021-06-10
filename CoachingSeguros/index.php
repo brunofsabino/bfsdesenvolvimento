@@ -219,7 +219,24 @@
             </div>
         </section>
         <section class="contato">
-
+            <div class="contato-subtitle">
+                <p>Contato</p>
+                <div class="contato-subtitle-border"></div>
+            </div>
+            <div class="contato-title"><h1>Solicite sua cotação sem compromisso!</h1></div>
+            <form action="POST">
+                <span>Preencha os dados abaixo, que nós te retornaremos!</span>
+                <label for="">
+                    <input type="text" name= "name" placeholder="Digite seu nome completo"><br><br>
+                </label>
+                <label for="">
+                    <input type="email" name= "email" placeholder="Digite seu e-mail"><br><br>
+                </label>
+                <label for="">
+                    <input type="text" name= "celular" placeholder="Digite seu celular (XX)XXXXX-XXXX"><br><br>
+                </label>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
     <footer>

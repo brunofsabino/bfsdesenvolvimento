@@ -345,19 +345,23 @@ nav ul li:hover {
     top: 330vh; */
     display: grid; 
     grid-template-areas: 
-    " title  icon1 icon3 " 
-    " title  icon2 icon4 " 
+    "icon1 icon3 title " 
+    "icon2 icon4 title" 
     "icon5 icon6 icon7";
     padding: 75px 90px;
     justify-content: space-evenly;
 }
 .area-seguros--title {
     grid-area: title;
-    max-width: 26vw;
+    max-width: 35vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 50px;
+    background-color: var(--color-yellow);
+    padding: 40px;
+    align-items: flex-end;
 }
 /* .area-seguros-img {
     grid-area: segurosimg;
@@ -375,10 +379,12 @@ nav ul li:hover {
 .area-seguros-title h1{
     font-size: 5.5rem;
     margin-bottom: 30px;
+    text-align: end;
 }
 .area-seguros-text p {
     letter-spacing: 1px;
     margin-bottom: 60px;
+    text-align: end;
 }
 .area-seguros-button {
     margin-bottom: 30px;
@@ -399,8 +405,7 @@ nav ul li:hover {
     transition: 0.2s;
 }
 .area-seguros-button a:hover{
-    background-color:#FFF;
-    color: var(--color-blue);
+    background-color:#000;
     font-size: 1.4rem;
 }
 .area-seguros-icon1,
@@ -410,12 +415,13 @@ nav ul li:hover {
 .area-seguros-icon5,
 .area-seguros-icon6,
 .area-seguros-icon7 {
-    max-width: 25vw;
+    max-width: 22vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
+    margin: 20px;
 }
 .area-seguros-icon1 {
     grid-area: icon1;
@@ -491,7 +497,7 @@ nav ul li:hover {
 .seguradoras {
     height: 130vh;
     width: 100vw;
-    background-color: #ffb4044a;
+    background-color: #ffb4041f;
     padding: 60px 115px;
 }
 .seguradoras-subtitle,
@@ -647,6 +653,65 @@ nav ul li:hover {
     background-image: url(../images/portoseguro.png);
 }
 
+.contato {
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 115px;
+}
+.contato-subtitle p {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+.contato-subtitle-border {
+    border: 1px solid var(--color-yellow);
+    width: 50px;
+}
+.contato-title {
+    height: 17vh;
+}
+.contato .contato-title h1 {
+    font-size: 5rem;
+}
+.contato form {
+    width: 50%;
+    height: 57vh;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.contato form span {
+    margin-bottom: 35px;
+}
+.contato form input[type=text],
+.contato form input[type=email] {
+    border: none;
+    
+    width: 80%;
+    height: 40px;
+    border-bottom: 2px solid var(--color-blue);
+    font-size: 1.8rem;
+    color: var(--color-blue);
+    padding-left: 20px;
+}
+.contato form input[type=submit] {
+    margin-top: 40px;
+    background-color: var(--color-blue);
+    width: 166px;
+    color: #FFF;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
 @keyframes arrow {
     0% {
         transform: translateY(0px);
