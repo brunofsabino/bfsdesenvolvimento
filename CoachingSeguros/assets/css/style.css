@@ -229,7 +229,7 @@ nav ul li:hover {
     height: 100vh;
     /* position: absolute;
     top: 100vh; */
-    padding: 60px 90px;
+    padding: 60px 90px 130px;
 }
 /* .area1-sub-title {
     text-transform: uppercase;
@@ -252,7 +252,7 @@ nav ul li:hover {
 .area1-content-img {
     width: 21vw;
     height: 60vh;
-    margin-left: -300px;
+    margin-left: -160px;
     z-index: 1;
 }
 .area1-img {
@@ -264,18 +264,18 @@ nav ul li:hover {
 }
 .area1-content-button {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     position: absolute;
     top: 24%;
-    right: 26%;
+    /* right: 20%; */
     background-color: #ffb40438;
-    width: 56vw;
+    width: 100vw;
     height: 45.5vh;
     
 }
 .area1-content-button h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     text-align: center;
     margin-top: 16px;
@@ -704,7 +704,7 @@ nav ul li:hover {
 }
 .contato form {
     width: 50%;
-    height: 57vh;
+    /* height: 57vh; */
     font-family: 'Oswald', sans-serif;
     border: 2px solid;
     padding: 40px;
