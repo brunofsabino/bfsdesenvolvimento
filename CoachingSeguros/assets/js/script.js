@@ -7,7 +7,7 @@ const menuNav = document.querySelector(".header .menu-section nav")
 
 menuToggle.addEventListener("click", ()=>{
 
-    document.body.style.overflow = show ? 'hidden' : 'initial'
+    document.body.style.overflowY = show ? 'hidden' : 'initial'
 
     menuSection.classList.toggle("on", show)
     menuToggle.classList.toggle("on", show)
