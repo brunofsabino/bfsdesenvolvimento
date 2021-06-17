@@ -237,6 +237,9 @@ nav ul li:hover {
     margin-bottom: 25px;
     letter-spacing: 3px;
 } */
+.area1-title {
+    text-align: center;
+}
 .area1-title h1 {
     font-size: 6.5rem;
 }
@@ -252,8 +255,10 @@ nav ul li:hover {
 .area1-content-img {
     width: 21vw;
     height: 60vh;
-    margin-left: -160px;
+    /* margin-left: -160px; */
     z-index: 1;
+    position: absolute;
+    left: 16%;
 }
 .area1-img {
     background-image: url(../images/dra-apontando2.png);
@@ -267,11 +272,11 @@ nav ul li:hover {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 24%;
+    top: 31%;
     /* right: 20%; */
     background-color: #ffb40438;
     width: 100vw;
-    height: 45.5vh;
+    height: 41.4vh;
     
 }
 .area1-content-button h2 {
@@ -279,10 +284,8 @@ nav ul li:hover {
     margin-bottom: 30px;
     text-align: center;
     margin-top: 16px;
-    margin-right: 27px;
 }
 .area1-button {
-    margin-right: 130px;
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	animation: heartbeat 1.5s ease-in-out infinite both;
 }
