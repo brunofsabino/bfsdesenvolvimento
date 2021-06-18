@@ -32,6 +32,7 @@ header .container {
     height: 150px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header .logo {
@@ -760,7 +761,7 @@ footer .logo{
     grid-area: logo;
     min-height: 28vh;
     width: 20vw;
-    background-image: url(../images/logo-semfundo.png);
+    background-image: url(../images/novoLogoBranco.png);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
