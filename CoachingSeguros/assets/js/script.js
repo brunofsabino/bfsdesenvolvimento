@@ -115,8 +115,13 @@ setInterval(goNext, 5000)
 
 const buttonSimulador = document.querySelector(".area1-button")
 const area1 = document.querySelector(".area1")
+const area1Simulacao = document.querySelector(".area1-simulacao")
 
 buttonSimulador.addEventListener('click', (e)=>{
     e.preventDefault()
-    area1.style.height = "160vh"
+    area1.style.height = "200vh"
+    
+    setTimeout( ()=>{
+        area1Simulacao.style.display = 'block'
+    }, 500)
 })

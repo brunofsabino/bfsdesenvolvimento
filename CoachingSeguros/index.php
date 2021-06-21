@@ -238,9 +238,43 @@
                     <div class="seguradoras-area14"></div>
                     <div class="seguradoras-area15"></div>
                     <div class="seguradoras-area16"></div>
+                    <div class="seguradoras-area17"></div>
+                    <div class="seguradoras-area18"></div>
+                    <div class="seguradoras-area19"></div>
+                    <div class="seguradoras-area20"></div>
+                    <div class="seguradoras-area21"></div>
+                    <div class="seguradoras-area22"></div>
+                    <div class="seguradoras-area23"></div>
+                    <div class="seguradoras-area24"></div>
+                    <div class="seguradoras-area25"></div>
+                    <div class="seguradoras-area26"></div>
+                    <div class="seguradoras-area27"></div>
+                    <div class="seguradoras-area28"></div>
+                    <div class="seguradoras-area29"></div>
+                    <div class="seguradoras-area30"></div>
+                    <div class="seguradoras-area31"></div>
+                    <div class="seguradoras-area32"></div>
+                    <div class="seguradoras-area33"></div>
                 </div>
                 <div class="area1-simulacao-form">
-                    ...
+                    <div class="area1-area-form">
+                        <div class="area1-form-texts">
+                            <h1>Faça uma simulação de Plano de Saúde</h1>
+                            <h2>Encontre o melhor plano de saúde para você, sua família ou sua empresa.</h2>
+                            <h3 style="\2B06"> &#11014; Escolha um plano acima ⬆ </h3>
+                        </div>
+                        <form action="">
+                            <label for="">
+                                Selecione o Plano<br>
+                                <select name="" id="">
+                                    <option value="">Selecione</option>
+                                    <option value="">Individual</option>
+                                    <option value="">Familiar</option>
+                                    <option value="">Empresarial</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
