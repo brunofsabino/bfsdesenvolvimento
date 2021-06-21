@@ -14,7 +14,7 @@
         <div class="container">
             <div class="header">
                 <div class="logo">
-                    <img src="assets/images/novoLogo.png" alt="logo">
+                    <img src="assets/images/novoLogoBranco.png" alt="logo">
                 </div>
                 <div class="menu-section">
                     <div class="menu-toggle">

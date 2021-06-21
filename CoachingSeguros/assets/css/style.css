@@ -20,8 +20,9 @@ body{
 }
 header {
     height: 150px;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
+    background-color: var(--color-blue);
 }
 header .container {
     width: 90%;
@@ -36,7 +37,7 @@ header .container {
 }
 
 .header .logo {
-    width: 250px;
+    width: 210px;
     z-index: 1;
 }
 .header .logo img {
@@ -58,7 +59,7 @@ header .container {
 .one,
 .two,
 .three {
-    background-color: #000;
+    background-color: #FFF;
     height: 3px;
     width: 100%;
     margin: 8px auto;
@@ -117,7 +118,7 @@ nav ul li:hover {
 
 .banner {
     width: 100vw;
-    height: 100vh;
+    height: 84vh;
     /* position: absolute;
     top: 0; */
     display: flex;
@@ -128,9 +129,9 @@ nav ul li:hover {
     justify-content: flex-end;
 }
 .slider-width-text {
-    width: 25vw;
+    width: 40vw;
     display: flex;
-    align-items: center;
+    margin-top: 40px;
 }
 .slider--item--text1,
 .slider--item--text2,
@@ -139,6 +140,7 @@ nav ul li:hover {
     display: none;
     height: 55vh;
     z-index: 1;
+    margin-left: 40px;
 }
 .slider--item--text1.active,
 .slider--item--text2.active,
@@ -151,11 +153,12 @@ nav ul li:hover {
     margin-bottom: 50px;
 }
 .banner-area1-title {
-    width: 45vw;
+    width: 40vw;
     height: 37vh;
     font-size: 6.5rem;
     font-weight: 600;
     margin-bottom: 50px;
+    line-height: 9rem;
 }
 .banner-area1-button a {
     margin-top: 40px;
@@ -172,6 +175,7 @@ nav ul li:hover {
 .slider-width-text .arrow {
     position: absolute;
     bottom: 40px;
+    left: 80px;
 }
 .slider-width-text .arrow img {
     width: 36px;
