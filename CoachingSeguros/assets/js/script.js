@@ -108,5 +108,15 @@ function updateMargin() {
 }
 
 setInterval(goNext, 5000)
-/* SLIDER TEXT */
 
+
+
+/*  Aparecer area de simulação plano de saude */
+
+const buttonSimulador = document.querySelector(".area1-button")
+const area1 = document.querySelector(".area1")
+
+buttonSimulador.addEventListener('click', (e)=>{
+    e.preventDefault()
+    area1.style.height = "160vh"
+})

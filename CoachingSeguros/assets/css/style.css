@@ -21,7 +21,7 @@ body{
 header {
     height: 150px;
     /* position: absolute; */
-    width: 100%;
+    width: 100vw;
     background-color: var(--color-blue);
 }
 header .container {
@@ -190,7 +190,7 @@ nav ul li:hover {
 .slider--controls {
     width: 51.5%;
     max-width:58vw;
-    height: 100vh;
+    height: 84vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -215,14 +215,14 @@ nav ul li:hover {
     width:40px;
 }
 .slider--width {
-    height: 100vh;
+    height: 84vh;
     transition: all ease 0.3s;
     background-color: var(--color-blue);
     display: flex;
 }
 .slider--item {
     width: 58vw;
-    height: 100vh;
+    height: 84vh;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -235,6 +235,7 @@ nav ul li:hover {
     /* position: absolute;
     top: 100vh; */
     padding: 60px 90px 130px;
+    transition: 0.8s;
 }
 /* .area1-sub-title {
     text-transform: uppercase;
@@ -307,6 +308,154 @@ nav ul li:hover {
     border: 1px solid #FFF;
     
 }
+.area1-simulacao {
+    border: 2px solid var(--color-blue);
+}
+.area1-simulacao h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--color-blue);
+    margin: 30px;
+}
+.area1-simulacao-operadoras {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3 img4 img5 img6"
+    "img7 img8 img9 img10 img11 img12"
+    "img13 img14 img15 img16 . ." ;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 15px;
+}
+
+.area1-simulacao-operadoras .seguradoras-area1,
+.area1-simulacao-operadoras .seguradoras-area3,
+.area1-simulacao-operadoras .seguradoras-area2,
+.area1-simulacao-operadoras .seguradoras-area4,
+.area1-simulacao-operadoras .seguradoras-area5,
+.area1-simulacao-operadoras .seguradoras-area6,
+.area1-simulacao-operadoras .seguradoras-area7,
+.area1-simulacao-operadoras .seguradoras-area8,
+.area1-simulacao-operadoras .seguradoras-area9,
+.area1-simulacao-operadoras .seguradoras-area10,
+.area1-simulacao-operadoras .seguradoras-area11,
+.area1-simulacao-operadoras .seguradoras-area12,
+.area1-simulacao-operadoras .seguradoras-area13,
+.area1-simulacao-operadoras .seguradoras-area14,
+.area1-simulacao-operadoras .seguradoras-area15,
+.area1-simulacao-operadoras .seguradoras-area16 {
+    border: 3px solid var(--color-blue);
+    min-width: 135px;
+    min-height: 85px;
+    background-size:cover;
+    background-position: center;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.area1-simulacao-operadoras .seguradoras-area1:hover, 
+.area1-simulacao-operadoras .seguradoras-area2:hover,
+.area1-simulacao-operadoras .seguradoras-area3:hover,
+.area1-simulacao-operadoras .seguradoras-area4:hover,
+.area1-simulacao-operadoras .seguradoras-area5:hover,
+.area1-simulacao-operadoras .seguradoras-area6:hover,
+.area1-simulacao-operadoras .seguradoras-area7:hover,
+.area1-simulacao-operadoras .seguradoras-area8:hover,
+.area1-simulacao-operadoras .seguradoras-area9:hover,
+.area1-simulacao-operadoras .seguradoras-area10:hover,
+.area1-simulacao-operadoras .seguradoras-area11:hover,
+.area1-simulacao-operadoras .seguradoras-area12:hover,
+.area1-simulacao-operadoras .seguradoras-area13:hover,
+.area1-simulacao-operadoras .seguradoras-area14:hover,
+.area1-simulacao-operadoras .seguradoras-area15:hover,
+.area1-simulacao-operadoras .seguradoras-area16:hover {
+    border: 8px solid var(--color-blue);
+    
+}
+.area1-simulacao-operadoras .seguradoras-area1 {
+    grid-area: img1;
+    background-image: url(../images/amil.png);
+    
+}
+.area1-simulacao-operadoras .seguradoras-area2 {
+    grid-area: img2;
+    background-image: url(../images/allianz.png);
+}
+.area1-simulacao-operadoras .seguradoras-area3 {
+    grid-area: img3;
+    background-image: url(../images/bradesco-seguros.png);
+}
+.area1-simulacao-operadoras .seguradoras-area4 {
+    grid-area: img4;
+    background-image: url(../images/careplus2.jpg);
+}
+.area1-simulacao-operadoras .seguradoras-area5 {
+    grid-area: img5;
+    background-image: url(../images/beneficiencia2.png);
+}
+.area1-simulacao-operadoras .seguradoras-area6 {
+    grid-area: img6;
+    background-image: url(../images/sulamerica.png);
+}
+.area1-simulacao-operadoras .seguradoras-area7 {
+    grid-area: img7;
+    background-image: url(../images/omint2.png);
+}
+.area1-simulacao-operadoras .seguradoras-area8 {
+    grid-area: img8;
+    background-image: url(../images/notredame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.area1-simulacao-operadoras .seguradoras-area9 {
+    grid-area: img9;
+    background-image: url(../images/aacl.png);
+}
+.area1-simulacao-operadoras .seguradoras-area10 {
+    grid-area: img10;
+    background-image: url(../images/sompo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.area1-simulacao-operadoras .seguradoras-area11 {
+    grid-area: img11;
+    background-image: url(../images/unimed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.area1-simulacao-operadoras .seguradoras-area12 {
+    grid-area: img12;
+    background-image: url(../images/golden.png);
+}
+.area1-simulacao-operadoras .seguradoras-area13 {
+    grid-area: img13;
+    background-image: url(../images/trasmontano.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.area1-simulacao-operadoras .seguradoras-area14 {
+    grid-area: img14;
+    background-image: url(../images/saocristovao.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.area1-simulacao-operadoras .seguradoras-area15 {
+    grid-area: img15;
+    background-image: url(../images/ameplan.png);
+}
+.area1-simulacao-operadoras .seguradoras-area16 {
+    grid-area: img16;
+    background-image: url(../images/portoseguro.png);
+}
+
+
 .area2 {
     width: 100vw;
     height: 130vh;
@@ -560,10 +709,13 @@ nav ul li:hover {
     height: 80%;
     display: grid;
     grid-template-areas:
-    "img1 img2 img3 img4"
-    "img5 img6 img7 img8"
-    "img9 img10 img11 img12"
-    "img13 img14 img15 img16" ;
+    "img1 img2 img3 img4 img5"
+    "img6 img7 img8 img9 img10"
+    "img11 img12 img13 img14 img15"
+    "img16  img17 img18 img19 img20"
+    "img21 img22 img23 img24 img25"
+    "img26 img27 img28 img29 img30"
+    " .img31 img32 img33 . " ;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -582,7 +734,24 @@ nav ul li:hover {
 .seguradoras-area13,
 .seguradoras-area14,
 .seguradoras-area15,
-.seguradoras-area16 {
+.seguradoras-area16,
+.seguradoras-area17,
+.seguradoras-area18,
+.seguradoras-area19,
+.seguradoras-area20,
+.seguradoras-area21,
+.seguradoras-area22,
+.seguradoras-area23,
+.seguradoras-area24,
+.seguradoras-area25,
+.seguradoras-area26,
+.seguradoras-area27,
+.seguradoras-area28,
+.seguradoras-area29,
+.seguradoras-area30,
+.seguradoras-area31,
+.seguradoras-area32,
+.seguradoras-area33 {
     border: 3px solid var(--color-blue);
     min-width: 200px;
     min-height: 130px;
@@ -590,11 +759,7 @@ nav ul li:hover {
     background-position: center;
     transition: 0.1s;
 }
-.seguradoras-area1 {
-    grid-area: img1;
-    background-image: url(../images/amil.png);
-    
-}
+
 .seguradoras-area1:hover, 
 .seguradoras-area2:hover,
 .seguradoras-area3:hover,
@@ -612,6 +777,11 @@ nav ul li:hover {
 .seguradoras-area15:hover,
 .seguradoras-area16:hover {
     border: 8px solid var(--color-blue);
+    
+}
+.seguradoras-area1 {
+    grid-area: img1;
+    background-image: url(../images/amil.png);
     
 }
 .seguradoras-area2 {
@@ -647,7 +817,8 @@ nav ul li:hover {
 }
 .seguradoras-area9 {
     grid-area: img9;
-    background-image: url(../images/prevent.png);
+    background-image: url(../images/aacl.png);
+    background-color: #FFF;
 }
 .seguradoras-area10 {
     grid-area: img10;
@@ -689,6 +860,75 @@ nav ul li:hover {
     grid-area: img16;
     background-image: url(../images/portoseguro.png);
 }
+.seguradoras-area17 {
+    grid-area: img17;
+    background-image: url(../images/affix.jpg);
+}
+.seguradoras-area18 {
+    grid-area: img18;
+    background-image: url(../images/biosaude2.jpg);
+}
+.seguradoras-area19 {
+    grid-area: img19;
+    background-image: url(../images/bioVida.png);
+}
+.seguradoras-area20 {
+    grid-area: img20;
+    background-image: url(../images/blue-med.png);
+}
+.seguradoras-area21 {
+    grid-area: img21;
+    background-image: url(../images/cruzazul.jpg);
+}
+.seguradoras-area22 {
+    grid-area: img22;
+    background-image: url(../images/gs.jpg);
+}
+.seguradoras-area23 {
+    grid-area: img23;
+    background-image: url(../images/health.png);
+}
+.seguradoras-area24 {
+    grid-area: img24;
+    background-image: url(../images/interclinicas.png);
+}
+.seguradoras-area25 {
+    grid-area: img25;
+    background-image: url(../images/medcare.png);
+}
+.seguradoras-area26 {
+    grid-area: img26;
+    background-image: url(../images/medTour.jpg);
+}
+.seguradoras-area27 {
+    grid-area: img27;
+    background-image: url(../images/plena.jpg);
+}
+.seguradoras-area28 {
+    grid-area: img28;
+    background-image: url(../images/qualicorp.jpg);
+}
+.seguradoras-area29 {
+    grid-area: img29;
+    background-image: url(../images/santacasamaua.png);
+}
+.seguradoras-area30 {
+    grid-area: img30;
+    background-image: url(../images/santahelena.png);
+}
+.seguradoras-area31 {
+    grid-area: img31;
+    background-image: url(../images/santaris.png);
+}
+.seguradoras-area32 {
+    grid-area: img32;
+    background-image: url(../images/SãoMiguel.jpg);
+}
+.seguradoras-area33 {
+    grid-area: img33;
+    background-image: url(../images/unihosp.png);
+}
+
 
 .contato {
     width: 100vw;

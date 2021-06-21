@@ -186,6 +186,24 @@
                 <div class="seguradoras-area14"></div>
                 <div class="seguradoras-area15"></div>
                 <div class="seguradoras-area16"></div>
+                <div class="seguradoras-area17"></div>
+                <div class="seguradoras-area18"></div>
+                <div class="seguradoras-area19"></div>
+                <div class="seguradoras-area20"></div>
+                <div class="seguradoras-area21"></div>
+                <div class="seguradoras-area22"></div>
+                <div class="seguradoras-area23"></div>
+                <div class="seguradoras-area24"></div>
+                <div class="seguradoras-area25"></div>
+                <div class="seguradoras-area26"></div>
+                <div class="seguradoras-area27"></div>
+                <div class="seguradoras-area28"></div>
+                <div class="seguradoras-area29"></div>
+                <div class="seguradoras-area30"></div>
+                <div class="seguradoras-area31"></div>
+                <div class="seguradoras-area32"></div>
+                <div class="seguradoras-area33"></div>
+                
             </div>
         </section>
         <section class="area1">
@@ -199,6 +217,30 @@
                 </div>
                 <div class="area1-content-img">
                     <div class="area1-img"></div>
+                </div>
+            </div>
+            <div class="area1-simulacao">
+                <h1>Escolha um plano de Sáude e faça uma Simulação:</h1>
+                <div class="area1-simulacao-operadoras">
+                    <div class="seguradoras-area1"></div>
+                    <div class="seguradoras-area2"></div>
+                    <div class="seguradoras-area3"></div>
+                    <div class="seguradoras-area4"></div>
+                    <div class="seguradoras-area5"></div>
+                    <div class="seguradoras-area6"></div>
+                    <div class="seguradoras-area7"></div>
+                    <div class="seguradoras-area8"></div>
+                    <div class="seguradoras-area9"></div>
+                    <div class="seguradoras-area10"></div>
+                    <div class="seguradoras-area11"></div>
+                    <div class="seguradoras-area12"></div>
+                    <div class="seguradoras-area13"></div>
+                    <div class="seguradoras-area14"></div>
+                    <div class="seguradoras-area15"></div>
+                    <div class="seguradoras-area16"></div>
+                </div>
+                <div class="area1-simulacao-form">
+                    ...
                 </div>
             </div>
         </section>
