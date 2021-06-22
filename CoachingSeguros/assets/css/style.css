@@ -587,6 +587,30 @@ nav ul li:hover {
     font-size: 2.5rem;
     margin: 12px;
 }
+
+form .area1-area-form fieldset {
+    width: 80%;
+    padding: 20px 40px;
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+form .area1-area-form legend {
+    margin-left: 20px;
+}
+form .area1-area-form label {
+    width: 50%;
+}
+form .area1-area-form select {
+    width: 70%;
+    height: 30px;
+}
+form .area1-area-form .form-selects,
+form .area1-area-form .form-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
 .area2 {
     width: 100vw;
     height: 130vh;

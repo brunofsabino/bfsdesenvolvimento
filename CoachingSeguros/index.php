@@ -257,24 +257,47 @@
                     <div class="seguradoras-area33"></div>
                 </div>
                 <div class="area1-simulacao-form">
-                    <div class="area1-area-form">
-                        <div class="area1-form-texts">
-                            <h1>Faça uma simulação de Plano de Saúde</h1>
-                            <h2>Encontre o melhor plano de saúde para você, sua família ou sua empresa.</h2>
-                            <h3 style="\2B06"> &#11014; Escolha um plano acima ⬆ </h3>
+                    <form action="">
+                        <div class="area1-area-form">
+                            <div class="area1-form-texts">
+                                <h1>Faça uma simulação de Plano de Saúde</h1>
+                                <h2>Encontre o melhor plano de saúde para você, sua família ou sua empresa.</h2>
+                                <h3 style="\2B06"> &#11014; Escolha um plano acima ⬆ </h3>
+                            </div>
+                            <fieldset>
+                                <legend>Informações Necessárias</legend>
+                                <div class="form-selects">
+                                    <label for="">
+                                        Selecione o Plano<br>
+                                        <select name="" id="">
+                                            <option value="">Selecione</option>
+                                            <option value="">Individual</option>
+                                            <option value="">Familiar</option>
+                                            <option value="">Empresarial</option>
+                                        </select>
+                                    </label>
+                                    <label for="">
+                                        Possui CNPJ<br>
+                                        <select name="" id="">
+                                            <option value="">Selecione</option>
+                                            <option value="">Sim</option>
+                                            <option value="">Não</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form-campos">
+                                    <label for="">
+                                        Nome Completo<br>
+                                        <input type="text" name="name" placeholder="Digite seu nome">
+                                    </label>
+                                    <label for="">
+                                        E-mail<br>
+                                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                                    </label>
+                                </div>
+                            </fieldset>    
                         </div>
-                        <form action="">
-                            <label for="">
-                                Selecione o Plano<br>
-                                <select name="" id="">
-                                    <option value="">Selecione</option>
-                                    <option value="">Individual</option>
-                                    <option value="">Familiar</option>
-                                    <option value="">Empresarial</option>
-                                </select>
-                            </label>
-                        </form>
-                    </div>
+                    </form>    
                 </div>
             </div>
         </section>

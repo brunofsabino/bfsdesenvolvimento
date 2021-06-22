@@ -119,7 +119,7 @@ const area1Simulacao = document.querySelector(".area1-simulacao")
 
 buttonSimulador.addEventListener('click', (e)=>{
     e.preventDefault()
-    area1.style.height = "200vh"
+    area1.style.height = "250vh"
     
     setTimeout( ()=>{
         area1Simulacao.style.display = 'block'
