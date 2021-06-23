@@ -119,9 +119,14 @@ const area1Simulacao = document.querySelector(".area1-simulacao")
 
 buttonSimulador.addEventListener('click', (e)=>{
     e.preventDefault()
-    area1.style.height = "250vh"
+    area1.style.height = "280vh"
     
     setTimeout( ()=>{
         area1Simulacao.style.display = 'block'
     }, 500)
 })
+
+
+const amil = document.querySelector(".seguradoras-area1").getAttribute
+
+console.log(amil)

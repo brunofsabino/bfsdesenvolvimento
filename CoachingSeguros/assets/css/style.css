@@ -592,24 +592,82 @@ form .area1-area-form fieldset {
     width: 80%;
     padding: 20px 40px;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
+    border-radius: 25px;
+    font-size: 1.5rem;
 }
 form .area1-area-form legend {
     margin-left: 20px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
 form .area1-area-form label {
-    width: 50%;
+    width: 75%;
 }
-form .area1-area-form select {
-    width: 70%;
-    height: 30px;
+form .area1-area-form select,
+form .form-campos input[type="text"],
+form .form-campos input[type="email"],
+form  textarea,
+form .area1-area-form .form-celular label input,
+form .area1-area-form .form-fixo label input{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    margin-top: 7px;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 form .area1-area-form .form-selects,
-form .area1-area-form .form-campos {
+form .area1-area-form .form-campos,
+form .area1-area-form .form-tels {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    margin-bottom: 20px;
+}
+form .area1-area-form .form-celular,
+form .area1-area-form .form-fixo {
+    display: flex;
+    width: 75%;
+}
+form .area1-area-form .form-celular  .ddd,
+form .area1-area-form .form-fixo  .ddd {
+    width: 16%;  
+    margin-right: 15px;
+}
+form .area1-area-form .form-celular  .celular,
+form .area1-area-form .form-fixo  .celular {
+    width: 80%;  
+}
+/* form .area1-area-form .form-celular label input,
+form .area1-area-form .form-fixo label input  {
+    width: 100%;
+    height: 30px;
+    font-size: 1.5rem;
+    margin-top: 7px;
+    padding-left: 10px;
+} */
+form  textarea {
+    height: 10vh;
+    border-radius: 15px;
+    padding: 7px;
+    margin-bottom: 15px;
+}
+
+form .area1-area-form input[type="submit"] {
+    margin-bottom: 40px;
+    background-color: var(--color-blue);
+    width: 340px;
+    color: #FFF;
+    padding: 20px 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 1px solid #FFF;
+    cursor: pointer;
 }
 .area2 {
     width: 100vw;

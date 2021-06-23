@@ -222,7 +222,7 @@
             <div class="area1-simulacao">
                 <h1>Escolha um plano de Sáude e faça uma Simulação:</h1>
                 <div class="area1-simulacao-operadoras">
-                    <div class="seguradoras-area1"></div>
+                    <div class="seguradoras-area1" id="amil"></div>
                     <div class="seguradoras-area2"></div>
                     <div class="seguradoras-area3"></div>
                     <div class="seguradoras-area4"></div>
@@ -277,7 +277,7 @@
                                         </select>
                                     </label>
                                     <label for="">
-                                        Possui CNPJ<br>
+                                        Possui CNPJ?<br>
                                         <select name="" id="">
                                             <option value="">Selecione</option>
                                             <option value="">Sim</option>
@@ -295,7 +295,34 @@
                                         <input type="email" name="email" placeholder="Digite seu e-mail">
                                     </label>
                                 </div>
-                            </fieldset>    
+                                <div class="form-tels">
+                                   <div class="form-celular">
+                                        <label for="" class="ddd">
+                                                DDD<br>
+                                                <input type="text" name="ddd" placeholder="DDD">
+                                        </label>
+                                        <label for="" class="celular">
+                                                Celular<br>
+                                                <input type="text" name="celular" placeholder="Digite seu celular">
+                                        </label>
+                                   </div>
+                                   <div class="form-fixo">
+                                        <label for="" class="ddd">
+                                                DDD<br>
+                                                <input type="text" name="ddd" placeholder="DDD">
+                                        </label>
+                                        <label for="" class="celular">
+                                                Telefone<br>
+                                                <input type="text" name="celular" placeholder="Digite seu celular">
+                                        </label>
+                                   </div>
+                                </div>
+                            </fieldset>  
+                            <fieldset>
+                                <legend>Informações Adicionais</legend>
+                                <textarea name="" id="" cols="30" rows="10" placeholder=" Digite sua mensagem"></textarea>
+                            </fieldset>  
+                            <input type="submit" value="Receber Simulação">
                         </div>
                     </form>    
                 </div>
