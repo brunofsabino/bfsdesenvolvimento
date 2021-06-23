@@ -127,6 +127,14 @@ buttonSimulador.addEventListener('click', (e)=>{
 })
 
 
-const amil = document.querySelector(".seguradoras-area1").getAttribute
-
+const amil = document.querySelectorAll(".operadoras-area1")
 console.log(amil)
+amil.forEach(e => {
+    e.addEventListener("click",(c)=>{
+        console.log(e.getAttribute('data-id'))
+    })
+});
+// amil.addEventListener("click", (e) => {
+//     // const nome = amil.getAttribute('data-id')
+//     // console.log(nome)
+// })

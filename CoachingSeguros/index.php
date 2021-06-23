@@ -178,7 +178,7 @@
                 <div class="seguradoras-area6"></div>
                 <div class="seguradoras-area7"></div>
                 <div class="seguradoras-area8"></div>
-                <div class="seguradoras-area9"></div>
+                <!-- <div class="seguradoras-area9"></div> -->
                 <div class="seguradoras-area10"></div>
                 <div class="seguradoras-area11"></div>
                 <div class="seguradoras-area12"></div>
@@ -186,23 +186,23 @@
                 <div class="seguradoras-area14"></div>
                 <div class="seguradoras-area15"></div>
                 <div class="seguradoras-area16"></div>
-                <div class="seguradoras-area17"></div>
+                <!-- <div class="seguradoras-area17"></div> -->
                 <div class="seguradoras-area18"></div>
                 <div class="seguradoras-area19"></div>
                 <div class="seguradoras-area20"></div>
                 <div class="seguradoras-area21"></div>
-                <div class="seguradoras-area22"></div>
+                <!-- <div class="seguradoras-area22"></div> -->
                 <div class="seguradoras-area23"></div>
                 <div class="seguradoras-area24"></div>
                 <div class="seguradoras-area25"></div>
                 <div class="seguradoras-area26"></div>
-                <div class="seguradoras-area27"></div>
+                <!-- <div class="seguradoras-area27"></div> -->
                 <div class="seguradoras-area28"></div>
-                <div class="seguradoras-area29"></div>
+                <!-- <div class="seguradoras-area29"></div>
                 <div class="seguradoras-area30"></div>
-                <div class="seguradoras-area31"></div>
+                <div class="seguradoras-area31"></div> -->
                 <div class="seguradoras-area32"></div>
-                <div class="seguradoras-area33"></div>
+                <!-- <div class="seguradoras-area33"></div> -->
                 
             </div>
         </section>
@@ -219,42 +219,45 @@
                     <div class="area1-img"></div>
                 </div>
             </div>
-            <div class="area1-simulacao">
+            <div class="area1-simulacao ">
                 <h1>Escolha um plano de Sáude e faça uma Simulação:</h1>
                 <div class="area1-simulacao-operadoras">
-                    <div class="seguradoras-area1" id="amil"></div>
-                    <div class="seguradoras-area2"></div>
-                    <div class="seguradoras-area3"></div>
-                    <div class="seguradoras-area4"></div>
-                    <div class="seguradoras-area5"></div>
-                    <div class="seguradoras-area6"></div>
-                    <div class="seguradoras-area7"></div>
-                    <div class="seguradoras-area8"></div>
-                    <div class="seguradoras-area9"></div>
-                    <div class="seguradoras-area10"></div>
-                    <div class="seguradoras-area11"></div>
-                    <div class="seguradoras-area12"></div>
-                    <div class="seguradoras-area13"></div>
-                    <div class="seguradoras-area14"></div>
-                    <div class="seguradoras-area15"></div>
-                    <div class="seguradoras-area16"></div>
-                    <div class="seguradoras-area17"></div>
-                    <div class="seguradoras-area18"></div>
-                    <div class="seguradoras-area19"></div>
-                    <div class="seguradoras-area20"></div>
-                    <div class="seguradoras-area21"></div>
-                    <div class="seguradoras-area22"></div>
-                    <div class="seguradoras-area23"></div>
-                    <div class="seguradoras-area24"></div>
-                    <div class="seguradoras-area25"></div>
-                    <div class="seguradoras-area26"></div>
-                    <div class="seguradoras-area27"></div>
-                    <div class="seguradoras-area28"></div>
-                    <div class="seguradoras-area29"></div>
+                    <div class="seguradoras-area0 operadoras-area1" data-id="0">
+                        <p>Todas as<br> Operadoras</p>
+                    </div>
+                    <div class="seguradoras-area1 operadoras-area1" data-id="1"></div>
+                    <div class="seguradoras-area2 operadoras-area1" data-id="2"></div>
+                    <div class="seguradoras-area3 operadoras-area1" data-id="3"></div>
+                    <div class="seguradoras-area4 operadoras-area1" data-id="4"></div>
+                    <div class="seguradoras-area5 operadoras-area1" data-id="5"></div>
+                    <div class="seguradoras-area6 operadoras-area1" data-id="6"></div>
+                    <div class="seguradoras-area7 operadoras-area1" data-id="7"></div>
+                    <div class="seguradoras-area8 operadoras-area1" data-id="8"></div>
+                    <!-- <div class="seguradoras-area9"></div> -->
+                    <div class="seguradoras-area10 operadoras-area1" data-id="9"></div>
+                    <div class="seguradoras-area11 operadoras-area1" data-id="10"></div>
+                    <div class="seguradoras-area12 operadoras-area1" data-id="11"></div>
+                    <div class="seguradoras-area13 operadoras-area1" data-id="12"></div>
+                    <div class="seguradoras-area14 operadoras-area1" data-id="13"></div>
+                    <div class="seguradoras-area15 operadoras-area1" data-id="14"></div>
+                    <div class="seguradoras-area16 operadoras-area1" data-id="15"></div>
+                    <!-- <div class="seguradoras-area17"></div> -->
+                    <div class="seguradoras-area18 operadoras-area1" data-id="16"></div>
+                    <div class="seguradoras-area19 operadoras-area1" data-id="17"></div>
+                    <div class="seguradoras-area20 operadoras-area1" data-id="18"></div>
+                    <div class="seguradoras-area21 operadoras-area1" data-id="19"></div>
+                    <!-- <div class="seguradoras-area22"></div> -->
+                    <div class="seguradoras-area23 operadoras-area1" data-id="20"></div>
+                    <div class="seguradoras-area24 operadoras-area1" data-id="21"></div>
+                    <div class="seguradoras-area25 operadoras-area1" data-id="22"></div>
+                    <div class="seguradoras-area26 operadoras-area1" data-id="23"></div>
+                    <!-- <div class="seguradoras-area27"></div> -->
+                    <div class="seguradoras-area28 operadoras-area1" data-id="24"></div>
+                    <!-- <div class="seguradoras-area29"></div>
                     <div class="seguradoras-area30"></div>
-                    <div class="seguradoras-area31"></div>
-                    <div class="seguradoras-area32"></div>
-                    <div class="seguradoras-area33"></div>
+                    <div class="seguradoras-area31"></div> -->
+                    <div class="seguradoras-area32 operadoras-area1" data-id="25"></div>
+                    <!-- <div class="seguradoras-area33"></div> -->
                 </div>
                 <div class="area1-simulacao-form">
                     <form action="">
