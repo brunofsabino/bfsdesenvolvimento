@@ -265,8 +265,9 @@
                             <div class="area1-form-texts">
                                 <h1>Faça uma simulação de Plano de Saúde</h1>
                                 <h2>Encontre o melhor plano de saúde para você, sua família ou sua empresa.</h2>
-                                <h3 style="\2B06"> &#11014; Escolha um plano acima ⬆ </h3>
+                                <h3> Escolha uma Operadora acima  </h3>
                             </div>
+                            <input type="hidden" value="" class="operadora-escolhida">
                             <fieldset>
                                 <legend>Informações Necessárias</legend>
                                 <div class="form-selects">
