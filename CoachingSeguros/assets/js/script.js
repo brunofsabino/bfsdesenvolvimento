@@ -117,9 +117,10 @@ const buttonSimulador = document.querySelector(".area1-button")
 const area1 = document.querySelector(".area1")
 const area1Simulacao = document.querySelector(".area1-simulacao")
 
-const textoAparecer = document.querySelector(".area1-form-texts h3")
+const textoAparecer = document.querySelector(".area1-forms-escolha-operadora h3")
 const operadoraEscolhidaUsuario = document.querySelector(".operadora-escolhida")
 const operadoras = ['Todas as Operadoras', 'Amil', 'Allianz', 'Bradesco', 'Care Plus', 'Saúde Beneficência', 'SulAmérica', 'Omint', 'NotreDame Intermédica', 'Sompo', 'Unimed', 'Golden Cross', 'Trasmontano', 'São Cristóvão', 'Ameplan', 'Porto Seguro', 'Bio Saúde', 'Biovida', 'Blue Med', 'Cruz Azul', 'Medical Health', 'Interclínicas', 'Total MedCare', 'Med Tour', 'Qualicorp', 'São Miguel Saúde']
+
 
 buttonSimulador.addEventListener('click', (e)=>{
     e.preventDefault()
@@ -128,17 +129,22 @@ buttonSimulador.addEventListener('click', (e)=>{
     setTimeout( ()=>{
         area1Simulacao.style.display = 'block'
     }, 500)
+
+    
 })
 
 
 const amil = document.querySelectorAll(".operadoras-area1")
-console.log(amil)
+
 amil.forEach(click => {
     click.addEventListener("click",()=>{
         
         const operadoraEscolhida = click.getAttribute('data-id')
         textoAparecer.innerHTML = operadoras[operadoraEscolhida]
         operadoraEscolhidaUsuario.setAttribute('value', operadoras[operadoraEscolhida])
+
+        const moverTela = document.querySelector("form textarea").getBoundingClientRect()
+        window.scrollY(moverTela)
     })
 });
 // amil.addEventListener("click", (e) => {
