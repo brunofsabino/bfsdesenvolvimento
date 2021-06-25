@@ -8,6 +8,7 @@
 html {
     /* a cada 1rem será considerado 10px*/
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 :root {
     --color-blue: #051850;
@@ -671,7 +672,7 @@ nav ul li:hover {
 .area1-forms-escolha-operadora h3{
     text-align: center;
     font-size: 2.5rem;
-    background-color: var(--color-blue);
+    background-color: #0DACE5;
     width: 50%;
     border-radius: 22px;
     padding: 10px 0px;

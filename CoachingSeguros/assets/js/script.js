@@ -149,7 +149,12 @@ amil.forEach(click => {
         // window.scroll(0, moverTela)
     })
 });
-// amil.addEventListener("click", (e) => {
-//     // const nome = amil.getAttribute('data-id')
-//     // console.log(nome)
-// })
+
+
+// scroll ao clicar em Simulador online
+
+const simuladorHeader = document.querySelector('.header .header-telefone-simulador')
+const moverTela = "540vh"
+simuladorHeader.addEventListener("click", ()=>{
+    window.scroll(0, moverTela)
+})
