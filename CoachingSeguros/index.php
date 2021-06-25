@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,6 +18,24 @@
             <div class="header">
                 <div class="logo">
                     <img src="assets/images/novoLogoBranco.png" alt="logo">
+                </div>
+                <div class="header-telefone">
+                    <div class="header-telefone-simulador">
+                        <p>Simulador Online</p>
+                    </div>
+                    <div class="header-telefone-ligue">
+                        <div class="header-telefone-area1">
+                            <div class="header-telefone-title">
+                                <h1>LIGUE AGORA</h1>
+                            </div>
+                            <div class="header-telefone-numero">
+                                <p>11 1111-1111</p>
+                            </div>
+                        </div>
+                        <div class="header-telefone-area2">
+                            <img src="assets/images/telephone2.png" alt="Telefone">
+                        </div>
+                    </div>
                 </div>
                 <div class="menu-section">
                     <div class="menu-toggle">

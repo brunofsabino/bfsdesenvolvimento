@@ -143,8 +143,10 @@ amil.forEach(click => {
         textoAparecer.innerHTML = operadoras[operadoraEscolhida]
         operadoraEscolhidaUsuario.setAttribute('value', operadoras[operadoraEscolhida])
 
-        const moverTela = document.querySelector("form textarea").getBoundingClientRect()
-        window.scrollY(moverTela)
+        
+        // const moverTela = document.querySelector("form textarea").getBoundingClientRect().y
+        // console.log(moverTela)
+        // window.scroll(0, moverTela)
     })
 });
 // amil.addEventListener("click", (e) => {
