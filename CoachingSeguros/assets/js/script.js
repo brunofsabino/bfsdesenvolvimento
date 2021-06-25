@@ -121,17 +121,22 @@ const textoAparecer = document.querySelector(".area1-forms-escolha-operadora h3"
 const operadoraEscolhidaUsuario = document.querySelector(".operadora-escolhida")
 const operadoras = ['Todas as Operadoras', 'Amil', 'Allianz', 'Bradesco', 'Care Plus', 'Saúde Beneficência', 'SulAmérica', 'Omint', 'NotreDame Intermédica', 'Sompo', 'Unimed', 'Golden Cross', 'Trasmontano', 'São Cristóvão', 'Ameplan', 'Porto Seguro', 'Bio Saúde', 'Biovida', 'Blue Med', 'Cruz Azul', 'Medical Health', 'Interclínicas', 'Total MedCare', 'Med Tour', 'Qualicorp', 'São Miguel Saúde']
 
-
-buttonSimulador.addEventListener('click', (e)=>{
+function abrir (e) {
     e.preventDefault()
     area1.style.height = "280vh"
     
     setTimeout( ()=>{
         area1Simulacao.style.display = 'block'
     }, 500)
-
+}
+function abrir2 (e) {
+    area1.style.height = "280vh"
     
-})
+    setTimeout( ()=>{
+        area1Simulacao.style.display = 'block'
+    }, 500)
+}
+buttonSimulador.addEventListener('click', abrir)
 
 
 const amil = document.querySelectorAll(".operadoras-area1")
@@ -154,7 +159,33 @@ amil.forEach(click => {
 // scroll ao clicar em Simulador online
 
 const simuladorHeader = document.querySelector('.header .header-telefone-simulador')
-const moverTela = "540vh"
+
 simuladorHeader.addEventListener("click", ()=>{
-    window.scroll(0, moverTela)
+    const body = window.screen.width
+    abrir2()
+    setTimeout(() => {
+        const moverTela = document.querySelector(".area1-simulacao h1").getBoundingClientRect().y
+        console.log(moverTela)
+        if(body > 1399) {
+            window.scroll(0, 4500)
+        }
+        if(body < 1399) {
+            window.scroll(0, 3500)
+        } 
+        
+    }, 300);
+    
 })
+
+// function posicao(e) {
+//     var el = this;
+//     var coordenadas = el.getBoundingClientRect();
+//     var res = 
+//     console.log('posição x', coordenadas.left, 'posição y', coordenadas.y)
+// }
+
+// document.querySelector('.area1-simulacao h1').addEventListener('click', posicao);
+// document.getElementById('fundo').addEventListener('click', posicao);
+
+const body = window.screen.width
+console.log(body)

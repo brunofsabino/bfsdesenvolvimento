@@ -26,8 +26,8 @@ header {
     background-color: var(--color-blue);
 }
 header .container {
-    width: 90%;
-    max-width: 1250px;
+    /* max-width: 1250px; */
+    max-width: 90%;
     margin: 0 auto;
 }
 .header {
@@ -72,16 +72,25 @@ header .container {
     background-color: var(--color-yellow);
     color: #FFF;
 }
-.header .header-telefone-ligue {
-    display: flex;
+.header  .header-telefone-ligue  {
     width: 55%;
     height: 100%;
     background-color: #FFF;
-    /* background-color: var(--color-yellow); */
     border-radius: 8px;
     box-shadow: 0px 0px 15px 5px rgb(255 255 255 / 25%);
+    cursor: pointer;
 }
-.header .header-telefone-area1 {
+.header  .header-telefone-ligue a {
+    display: flex;
+    height: 100%;
+    border-radius: 8px;
+    color: var(--color-blue);
+}
+.header .header-telefone-ligue a:hover {
+    background-color: var(--color-yellow);
+    color: #FFF;
+}
+.header a .header-telefone-area1 {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -89,25 +98,25 @@ header .container {
     justify-content: center;
     
 }
-.header .header-telefone-title {
+/* .header .header-telefone-title {
     
-}
-.header .header-telefone-title h1{
+} */
+.header a .header-telefone-title  h1{
     font-size: 1.35rem;
     /* letter-spacing: 0.5px; */
     font-weight: 800;
 }
-.header .header-telefone-numero p {
+.header a .header-telefone-numero p {
     font-weight: 800;
     font-size: 1.8rem;
 }
-.header .header-telefone-area2 {
+.header a .header-telefone-area2 {
     display: flex;
     align-items: center;
     width: 30%;
     height: 100%;
 }
-.header .header-telefone-area2 img {
+.header a .header-telefone-area2 img {
     width: 65%;
 }
 
@@ -189,7 +198,7 @@ nav ul li:hover {
 
 .banner {
     width: 100vw;
-    height: 84vh;
+    height: calc(100vh - 150px);
     /* position: absolute;
     top: 0; */
     display: flex;
@@ -261,7 +270,7 @@ nav ul li:hover {
 .slider--controls {
     width: 51.5%;
     max-width:58vw;
-    height: 84vh;
+    height: calc(100vh - 150px);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -286,14 +295,14 @@ nav ul li:hover {
     width:40px;
 }
 .slider--width {
-    height: 84vh;
+    height: calc(100vh - 150px);
     transition: all ease 0.3s;
     background-color: var(--color-blue);
     display: flex;
 }
 .slider--item {
     width: 58vw;
-    height: 84vh;
+    height: calc(100vh - 150px);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -302,7 +311,7 @@ nav ul li:hover {
 }
 .area1 {
     width: 100vw;
-    height: 80vh;
+    height: calc(100vh - 150px);
     /* position: absolute;
     top: 100vh; */
     padding: 60px 90px 130px;
@@ -1465,3 +1474,44 @@ footer .baseboard p{
     }
   }
   
+@media (min-width: 1600px) {
+    html {
+        font-size: 70%;
+      }
+}
+  @media (max-width: 1399px) {
+      html {
+        font-size: 55%;
+      }
+      header, .header {
+          height: 125px;
+      }
+      .banner, .slider--controls, .slider--width, .slider--item  {
+        height: calc(100vh - 125px);
+        
+    }
+      .slider-width-text .arrow {
+          left: 30%;
+      }
+      .area1-content-button {
+        height: 29.4vh;
+      }
+      .area1-content-img {
+        height: 48vh;
+      }
+      .area1-simulacao-operadoras {
+        grid-gap: 10px;
+      }
+      .area1-form-texts {
+        margin-top: 20px;
+      }
+      form .area1-area-form fieldset {
+        padding: 5px 40px;
+      }
+      form .area1-area-form input[type="submit"] {
+        margin-bottom: 20px;
+      }
+      .contato form {
+        padding: 20px 40px;
+      }
+  }

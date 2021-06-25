@@ -24,17 +24,19 @@
                         <p>Simulador Online</p>
                     </div>
                     <div class="header-telefone-ligue">
-                        <div class="header-telefone-area1">
-                            <div class="header-telefone-title">
-                                <h1>LIGUE AGORA</h1>
+                        <a href="tel:011-1111-1111">
+                            <div class="header-telefone-area1">
+                                <div class="header-telefone-title">
+                                    <h1>LIGUE AGORA</h1>
+                                </div>
+                                <div class="header-telefone-numero">
+                                    <p>11 1111-1111</p>
+                                </div>
                             </div>
-                            <div class="header-telefone-numero">
-                                <p>11 1111-1111</p>
+                            <div class="header-telefone-area2">
+                                <img src="assets/images/telephone2.png" alt="Telefone">
                             </div>
-                        </div>
-                        <div class="header-telefone-area2">
-                            <img src="assets/images/telephone2.png" alt="Telefone">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="menu-section">
@@ -391,7 +393,7 @@
         <div class="logo"></div>
         <div class="contacts">
             <h3>Contatos</h3>
-            <p>Av. Xxx xxxxx xxxxx xxxxx xxxxxxx, 999, Tatuapé, São Paulo - SP</p>
+            <p> Rua Serra de Japi, 739, sala 04, Tatuapé, São Paulo - SP</p>
             <p>contato@coachingseguros.com.br</p>
             <p>11 XXXX-XXXX</p>
         </div>
