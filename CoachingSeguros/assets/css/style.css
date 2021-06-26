@@ -1477,41 +1477,50 @@ footer .baseboard p{
 @media (min-width: 1600px) {
     html {
         font-size: 70%;
-      }
+    }
 }
-  @media (max-width: 1399px) {
-      html {
-        font-size: 55%;
-      }
-      header, .header {
-          height: 125px;
-      }
-      .banner, .slider--controls, .slider--width, .slider--item  {
-        height: calc(100vh - 125px);
+@media (max-width: 1399px) {
+    html {
+    font-size: 55%;
+    }
+    header, .header {
+        height: 125px;
+    }
+    .banner, .slider--controls, .slider--width, .slider--item  {
+    height: calc(100vh - 125px);
         
     }
-      .slider-width-text .arrow {
-          left: 30%;
-      }
-      .area1-content-button {
-        height: 29.4vh;
-      }
-      .area1-content-img {
-        height: 48vh;
-      }
-      .area1-simulacao-operadoras {
-        grid-gap: 10px;
-      }
-      .area1-form-texts {
-        margin-top: 20px;
-      }
-      form .area1-area-form fieldset {
-        padding: 5px 40px;
-      }
-      form .area1-area-form input[type="submit"] {
-        margin-bottom: 20px;
-      }
-      .contato form {
-        padding: 20px 40px;
-      }
-  }
+    .slider-width-text .arrow {
+        left: 30%;
+    }
+    .area1-content-button {
+    height: 29.4vh;
+    }
+    .area1-content-img {
+    height: 48vh;
+    }
+    .area1-simulacao-operadoras {
+    grid-gap: 10px;
+    }
+    .area1-form-texts {
+    margin-top: 20px;
+    }
+    form .area1-area-form fieldset {
+    padding: 5px 40px;
+    }
+    form .area1-area-form input[type="submit"] {
+    margin-bottom: 20px;
+    }
+    .contato form {
+    padding: 20px 40px;
+    }
+}
+@media (max-width: 1169px) {
+    html {
+        font-size: 50%;
+    }
+    .area1-simulacao-operadoras .seguradoras-area0, .area1-simulacao-operadoras .seguradoras-area1, .area1-simulacao-operadoras .seguradoras-area3, .area1-simulacao-operadoras .seguradoras-area2, .area1-simulacao-operadoras .seguradoras-area4, .area1-simulacao-operadoras .seguradoras-area5, .area1-simulacao-operadoras .seguradoras-area6, .area1-simulacao-operadoras .seguradoras-area7, .area1-simulacao-operadoras .seguradoras-area8, .area1-simulacao-operadoras .seguradoras-area10, .area1-simulacao-operadoras .seguradoras-area11, .area1-simulacao-operadoras .seguradoras-area12, .area1-simulacao-operadoras .seguradoras-area13, .area1-simulacao-operadoras .seguradoras-area14, .area1-simulacao-operadoras .seguradoras-area15, .area1-simulacao-operadoras .seguradoras-area16, .area1-simulacao-operadoras .seguradoras-area18, .area1-simulacao-operadoras .seguradoras-area19, .area1-simulacao-operadoras .seguradoras-area20, .area1-simulacao-operadoras .seguradoras-area21, .area1-simulacao-operadoras .seguradoras-area23, .area1-simulacao-operadoras .seguradoras-area24, .area1-simulacao-operadoras .seguradoras-area25, .area1-simulacao-operadoras .seguradoras-area26, .area1-simulacao-operadoras .seguradoras-area28, .area1-simulacao-operadoras .seguradoras-area32 {
+        min-width: 115px;
+        min-height: 75px;
+    }
+}
