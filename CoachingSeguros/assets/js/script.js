@@ -120,21 +120,34 @@ const area1Simulacao = document.querySelector(".area1-simulacao")
 const textoAparecer = document.querySelector(".area1-forms-escolha-operadora h3")
 const operadoraEscolhidaUsuario = document.querySelector(".operadora-escolhida")
 const operadoras = ['Todas as Operadoras', 'Amil', 'Allianz', 'Bradesco', 'Care Plus', 'Saúde Beneficência', 'SulAmérica', 'Omint', 'NotreDame Intermédica', 'Sompo', 'Unimed', 'Golden Cross', 'Trasmontano', 'São Cristóvão', 'Ameplan', 'Porto Seguro', 'Bio Saúde', 'Biovida', 'Blue Med', 'Cruz Azul', 'Medical Health', 'Interclínicas', 'Total MedCare', 'Med Tour', 'Qualicorp', 'São Miguel Saúde']
+const body = window.screen.width
 
 function abrir (e) {
+    const body = window.screen.width
+
+    console.log(body)
+
     e.preventDefault()
     area1.style.height = "280vh"
     
     setTimeout( ()=>{
-        area1Simulacao.style.display = 'block'
+        area1Simulacao.style.display = 'flex'
     }, 500)
+
+    if(body < 937) {
+        area1.style.height = "300vh"
+    } 
 }
 function abrir2 (e) {
+    const body = window.screen.width
     area1.style.height = "280vh"
     
     setTimeout( ()=>{
-        area1Simulacao.style.display = 'block'
+        area1Simulacao.style.display = 'flex'
     }, 500)
+    if(body < 937) {
+        area1.style.height = "300vh"
+    }
 }
 buttonSimulador.addEventListener('click', abrir)
 
@@ -161,7 +174,7 @@ amil.forEach(click => {
 const simuladorHeader = document.querySelector('.header .header-telefone-simulador')
 
 simuladorHeader.addEventListener("click", ()=>{
-    const body = window.screen.width
+    // const body = window.screen.width
     abrir2()
     setTimeout(() => {
         const moverTela = document.querySelector(".area1-simulacao h1").getBoundingClientRect().y
@@ -171,6 +184,9 @@ simuladorHeader.addEventListener("click", ()=>{
         }
         if(body < 1399) {
             window.scroll(0, 3500)
+        } 
+        if(body < 1000) {
+            window.scroll(0, 4500)
         } 
         
     }, 300);
@@ -187,5 +203,4 @@ simuladorHeader.addEventListener("click", ()=>{
 // document.querySelector('.area1-simulacao h1').addEventListener('click', posicao);
 // document.getElementById('fundo').addEventListener('click', posicao);
 
-const body = window.screen.width
-console.log(body)
+// const body = window.screen.width

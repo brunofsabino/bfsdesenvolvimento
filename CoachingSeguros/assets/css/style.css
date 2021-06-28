@@ -391,6 +391,8 @@ nav ul li:hover {
 .area1-simulacao {
     border: 2px solid var(--color-blue);
     display:none;
+    flex-direction: column;
+    align-items: center;
 }
 .area1-simulacao h1 {
     font-size: 4rem;
@@ -1490,6 +1492,9 @@ footer .baseboard p{
     height: calc(100vh - 125px);
         
     }
+    .banner-area1-title {
+        width: 48vw;
+    }
     .slider-width-text .arrow {
         left: 30%;
     }
@@ -1522,5 +1527,80 @@ footer .baseboard p{
     .area1-simulacao-operadoras .seguradoras-area0, .area1-simulacao-operadoras .seguradoras-area1, .area1-simulacao-operadoras .seguradoras-area3, .area1-simulacao-operadoras .seguradoras-area2, .area1-simulacao-operadoras .seguradoras-area4, .area1-simulacao-operadoras .seguradoras-area5, .area1-simulacao-operadoras .seguradoras-area6, .area1-simulacao-operadoras .seguradoras-area7, .area1-simulacao-operadoras .seguradoras-area8, .area1-simulacao-operadoras .seguradoras-area10, .area1-simulacao-operadoras .seguradoras-area11, .area1-simulacao-operadoras .seguradoras-area12, .area1-simulacao-operadoras .seguradoras-area13, .area1-simulacao-operadoras .seguradoras-area14, .area1-simulacao-operadoras .seguradoras-area15, .area1-simulacao-operadoras .seguradoras-area16, .area1-simulacao-operadoras .seguradoras-area18, .area1-simulacao-operadoras .seguradoras-area19, .area1-simulacao-operadoras .seguradoras-area20, .area1-simulacao-operadoras .seguradoras-area21, .area1-simulacao-operadoras .seguradoras-area23, .area1-simulacao-operadoras .seguradoras-area24, .area1-simulacao-operadoras .seguradoras-area25, .area1-simulacao-operadoras .seguradoras-area26, .area1-simulacao-operadoras .seguradoras-area28, .area1-simulacao-operadoras .seguradoras-area32 {
         min-width: 115px;
         min-height: 75px;
+    }
+}
+@media (max-width: 1070px) {
+    html {
+        font-size: 46%;
+    }
+    .area1-simulacao-operadoras .seguradoras-area0, .area1-simulacao-operadoras .seguradoras-area1, .area1-simulacao-operadoras .seguradoras-area3, .area1-simulacao-operadoras .seguradoras-area2, .area1-simulacao-operadoras .seguradoras-area4, .area1-simulacao-operadoras .seguradoras-area5, .area1-simulacao-operadoras .seguradoras-area6, .area1-simulacao-operadoras .seguradoras-area7, .area1-simulacao-operadoras .seguradoras-area8, .area1-simulacao-operadoras .seguradoras-area10, .area1-simulacao-operadoras .seguradoras-area11, .area1-simulacao-operadoras .seguradoras-area12, .area1-simulacao-operadoras .seguradoras-area13, .area1-simulacao-operadoras .seguradoras-area14, .area1-simulacao-operadoras .seguradoras-area15, .area1-simulacao-operadoras .seguradoras-area16, .area1-simulacao-operadoras .seguradoras-area18, .area1-simulacao-operadoras .seguradoras-area19, .area1-simulacao-operadoras .seguradoras-area20, .area1-simulacao-operadoras .seguradoras-area21, .area1-simulacao-operadoras .seguradoras-area23, .area1-simulacao-operadoras .seguradoras-area24, .area1-simulacao-operadoras .seguradoras-area25, .area1-simulacao-operadoras .seguradoras-area26, .area1-simulacao-operadoras .seguradoras-area28, .area1-simulacao-operadoras .seguradoras-area32 {
+        min-width: 100px;
+        min-height: 65px;
+    }
+}
+@media (max-width: 938px) {
+    html {
+        font-size: 46%;
+    }
+    
+    .area-seguros {
+        height: 235vh;
+        grid-template-areas:
+        "title title title"
+        "icon1 icon3 icon5 "
+        "icon2 icon4 icon6"
+        " . icon7 icon7";
+    }
+    .area-seguros--title {
+        max-width: 100%;
+        height: 65vh;
+    }
+    .seguradoras .seguradoras-area {
+        grid-gap: 0px 0px;
+    }
+    .seguradoras-area1, .seguradoras-area2, .seguradoras-area3, .seguradoras-area4, .seguradoras-area5, .seguradoras-area6, .seguradoras-area7, .seguradoras-area8, .seguradoras-area10, .seguradoras-area11, .seguradoras-area12, .seguradoras-area13, .seguradoras-area14, .seguradoras-area15, .seguradoras-area16, .seguradoras-area18, .seguradoras-area19, .seguradoras-area20, .seguradoras-area21, .seguradoras-area23, .seguradoras-area24, .seguradoras-area25, .seguradoras-area26, .seguradoras-area28, .seguradoras-area32 {
+        width: 12vw;
+        height: 16vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .area1-content-img {
+        height: 47vh;
+    }
+    .area1-simulacao {
+
+    }
+    .area1-simulacao-operadoras {
+        width: 70%;
+        grid-template-areas:
+        "img0 img1 img2 img3  "
+        "img4 img5 img6 img7  " 
+        "img8 img10 img11 img12 " 
+        "img13 img14 img15 img16"
+        "img18 img19 img20 img21  "
+        "img23 img24 img25 img26 "
+        ". img28 img32 .";
+    }
+    .area1-simulacao-operadoras .seguradoras-area0, .area1-simulacao-operadoras .seguradoras-area1, .area1-simulacao-operadoras .seguradoras-area3, .area1-simulacao-operadoras .seguradoras-area2, .area1-simulacao-operadoras .seguradoras-area4, .area1-simulacao-operadoras .seguradoras-area5, .area1-simulacao-operadoras .seguradoras-area6, .area1-simulacao-operadoras .seguradoras-area7, .area1-simulacao-operadoras .seguradoras-area8, .area1-simulacao-operadoras .seguradoras-area10, .area1-simulacao-operadoras .seguradoras-area11, .area1-simulacao-operadoras .seguradoras-area12, .area1-simulacao-operadoras .seguradoras-area13, .area1-simulacao-operadoras .seguradoras-area14, .area1-simulacao-operadoras .seguradoras-area15, .area1-simulacao-operadoras .seguradoras-area16, .area1-simulacao-operadoras .seguradoras-area18, .area1-simulacao-operadoras .seguradoras-area19, .area1-simulacao-operadoras .seguradoras-area20, .area1-simulacao-operadoras .seguradoras-area21, .area1-simulacao-operadoras .seguradoras-area23, .area1-simulacao-operadoras .seguradoras-area24, .area1-simulacao-operadoras .seguradoras-area25, .area1-simulacao-operadoras .seguradoras-area26, .area1-simulacao-operadoras .seguradoras-area28, .area1-simulacao-operadoras .seguradoras-area32 {
+        width: 100px;
+        height: 70px;
+    }
+    form .area1-area-form .form-celular .ddd, form .area1-area-form .form-fixo .ddd {
+        width: 20%;
+        margin-right: 7px;
+    }
+    form .area1-area-form select, form .form-campos input[type="text"], form .form-campos input[type="email"], form textarea, form .area1-area-form .form-celular label input, form .area1-area-form .form-fixo label input {
+        padding-left: 5px;
+    }
+    .area2 {
+        flex-direction: column;
+        height: 85vh;
+    }
+    .area2-text {
+        max-width: 100%;
+        padding: 75px 0px;
+    }
+    .area2-img {
+        display: none;
     }
 }
