@@ -107,16 +107,18 @@
                 
             </div>
             <div class="banner-area2">
-                <div class="slider--controls">
-                    <div class="slider-control" onclick="goPrev()"><img src="assets/images/arrow-left.svg" alt=""></div>
-                    <div class="slider-control" onclick="goNext()"><img src="assets/images/arrow-right.svg" alt=""></div>
-                </div>
-                <div class="slider--width">
-                    <div class="slider--item" style="background-image: url('assets/images/building.jpg');"></div>
-                    <div class="slider--item" style="background-image: url('assets/images/equipe.jpg');"></div>
-                    <div class="slider--item" style="background-image: url('assets/images/familia-feliz3.jpg');"></div>
-                    <div class="slider--item" style="background-image: url('assets/images/empresarios.jpg');"></div>
-                </div>
+                <div class="banner-area2-fundo">
+                    <div class="slider--controls">
+                        <div class="slider-control" onclick="goPrev()"><img src="assets/images/arrow-left.svg" alt=""></div>
+                        <div class="slider-control" onclick="goNext()"><img src="assets/images/arrow-right.svg" alt=""></div>
+                    </div>
+                    <div class="slider--width">
+                        <div class="slider--item" style="background-image: url('assets/images/building.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/equipe.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/familia-feliz3.jpg');"></div>
+                        <div class="slider--item" style="background-image: url('assets/images/empresarios.jpg');"></div>
+                    </div>
+                </div>    
             </div>
         </section>
         <section class="area-seguros">

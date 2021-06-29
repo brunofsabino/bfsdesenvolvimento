@@ -4,6 +4,7 @@ let show = true;
 const menuSection = document.querySelector(".menu-section")
 const menuToggle = document.querySelector(".menu-toggle")
 const menuNav = document.querySelector(".header .menu-section nav")
+const body = window.screen.width
 
 menuToggle.addEventListener("click", ()=>{
 
@@ -32,7 +33,13 @@ const sliderText3 = document.querySelector(".slider--item--text3")
 const sliderText4 = document.querySelector(".slider--item--text4")
 
 
-document.querySelector('.slider--width').style.width = `calc( 58vw * ${totalSlides} )`
+
+if(body <= 768) {
+    document.querySelector('.slider--width').style.width = `calc( 100vw * ${totalSlides} )`
+} else if (body >= 768) {
+    document.querySelector('.slider--width').style.width = `calc( 58vw * ${totalSlides} )`
+}
+
 // document.querySelector('.slider--width').style.width = `calc(750px * ${totalSlides})`
 
 function goPrev(){
@@ -100,11 +107,23 @@ function goNext(){
 
     
 }
-const largura = document.querySelector('.slider--width').clientWidth / totalSlides
-console.log(largura)
+const largura2 = document.querySelector('.slider--width').clientWidth / totalSlides
+
+// console.log(largura)
 function updateMargin() {
-    let newMargin = (currentSlide * largura)
-    document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
+    const body = window.screen.width
+
+    let newMargin = (currentSlide * largura2)
+    
+    if(body <= 768) {
+        const larguraTela = window.screen.width
+        newMargin = (currentSlide * body)
+        document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
+    } else if (body >= 768){
+        newMargin = (currentSlide * largura2)
+        document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
+    }
+    
 }
 
 setInterval(goNext, 5000)
@@ -120,7 +139,7 @@ const area1Simulacao = document.querySelector(".area1-simulacao")
 const textoAparecer = document.querySelector(".area1-forms-escolha-operadora h3")
 const operadoraEscolhidaUsuario = document.querySelector(".operadora-escolhida")
 const operadoras = ['Todas as Operadoras', 'Amil', 'Allianz', 'Bradesco', 'Care Plus', 'Saúde Beneficência', 'SulAmérica', 'Omint', 'NotreDame Intermédica', 'Sompo', 'Unimed', 'Golden Cross', 'Trasmontano', 'São Cristóvão', 'Ameplan', 'Porto Seguro', 'Bio Saúde', 'Biovida', 'Blue Med', 'Cruz Azul', 'Medical Health', 'Interclínicas', 'Total MedCare', 'Med Tour', 'Qualicorp', 'São Miguel Saúde']
-const body = window.screen.width
+
 
 function abrir (e) {
     const body = window.screen.width
@@ -136,7 +155,9 @@ function abrir (e) {
 
     if(body < 937) {
         area1.style.height = "300vh"
-    } 
+    } else if(body < 768) {
+        area1.style.height = "310vh"
+    }
 }
 function abrir2 (e) {
     const body = window.screen.width
@@ -147,6 +168,8 @@ function abrir2 (e) {
     }, 500)
     if(body < 937) {
         area1.style.height = "300vh"
+    } else if(body < 768) {
+        area1.style.height = "310vh"
     }
 }
 buttonSimulador.addEventListener('click', abrir)

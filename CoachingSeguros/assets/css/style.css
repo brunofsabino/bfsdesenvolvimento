@@ -1604,3 +1604,112 @@ footer .baseboard p{
         display: none;
     }
 }
+
+@media (max-width: 767px) {
+    .header .logo {
+        width: 150px;
+    }
+    .header .header-telefone {
+        width: 40%;
+        height: 9%;
+    }
+    .banner-area1 {
+        position: absolute;
+    }
+    .banner-area2, .slider--controls, .slider--width, .slider--item, .banner-area1, .slider-width-text{
+        width: 100vw;
+    }
+    .slider--controls {
+        max-width: 100vw;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .banner-area1, .slider-width-text {
+        height: calc(100vh - 125px);
+    }
+    .banner-area1 {
+        background-color: rgba(0,0,0, 0.49);
+    }
+    .slider-control {
+        background-color: rgba(255,255,255, 0.2);
+    }
+    .slider-width-text {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: #FFF;
+    }
+    .slider--item--text1, .slider--item--text2, .slider--item--text3, .slider--item--text4 {
+        height: calc(100vh - 125px);
+    }
+    .banner-area1-title, .banner-area1-sub-title, .banner-area1-button {
+        text-align: center;
+    }
+    .banner-area1-title {
+        width: 70vw;
+    }
+    .slider-width-text .arrow {
+        left: 50%;
+    }
+    .area-seguros {
+        height: 250vh;
+    }
+    .area1-form-texts {
+        width: 95%;
+    }
+    form .area1-area-form .form-celular .ddd, form .area1-area-form .form-fixo .ddd {
+        width: 30%;
+    }
+    .contato-title {
+        height: 20vh;
+    }
+    .contato form {
+        width: 75%;
+    }
+    footer .logo {
+        width: 15vw;
+    }
+    footer .contacts {
+        min-width: 25vw;
+    }
+    footer .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social a img {
+        width: 30px;
+        margin-right: 0px;
+        margin: 6px;
+    }
+
+    @media (max-width: 600px) {
+        .area-seguros {
+            grid-template-areas:
+            "title title "
+            "icon1 icon3  "
+            "icon2 icon4 "
+            "icon5 icon6 "
+            "icon7 icon7";
+            padding: 75px 60px;
+        }
+        .header .header-telefone {
+            display: none;
+        }.area-seguros {
+            height: 270vh;
+        }
+        .area-seguros--title {
+            margin-left: 0px;
+            padding: 20px;
+        }
+        .area-seguros-icon3, .area-seguros-icon1 {
+            margin-top: 20px;
+        }
+        .area-seguros-icon1, .area-seguros-icon2, .area-seguros-icon3, .area-seguros-icon4, .area-seguros-icon5, .area-seguros-icon6, .area-seguros-icon7 {
+            max-width: max-content;
+        }
+        
+    }
+}
