@@ -155,8 +155,12 @@ function abrir (e) {
 
     if(body < 937) {
         area1.style.height = "300vh"
-    } else if(body < 768) {
+    } 
+    if(body < 768) {
         area1.style.height = "310vh"
+    }
+    if(body < 601) {
+        area1.style.height = "435vh"
     }
 }
 function abrir2 (e) {
@@ -168,8 +172,12 @@ function abrir2 (e) {
     }, 500)
     if(body < 937) {
         area1.style.height = "300vh"
-    } else if(body < 768) {
+    } 
+    if(body < 768) {
         area1.style.height = "310vh"
+    }
+    if(body < 601) {
+        area1.style.height = "435vh"
     }
 }
 buttonSimulador.addEventListener('click', abrir)

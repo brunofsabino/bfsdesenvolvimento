@@ -39,7 +39,7 @@ header .container {
 
 .header .logo {
     width: 210px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .header .header-telefone {
     height: 75px;
@@ -617,7 +617,7 @@ nav ul li:hover {
 .area1-simulacao-operadoras .seguradoras-area25 {
     grid-area: img25;
     background-image: url(../images/medcare.png);
-    background-color: #FFF;
+    
 }
 .area1-simulacao-operadoras .seguradoras-area26 {
     grid-area: img26;
@@ -844,9 +844,9 @@ form .area1-area-form input[type="submit"] {
     top: 330vh; */
     display: grid; 
     grid-template-areas: 
-    "icon1 icon3 title " 
-    "icon2 icon4 title" 
-    "icon5 icon6 icon7";
+    "icon1 icon3 title  title" 
+    "icon2 icon4 title title" 
+    "icon5 icon6 icon7 icon8";
     padding: 75px 90px;
     justify-content: space-evenly;
 }
@@ -914,7 +914,8 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon4,
 .area-seguros-icon5,
 .area-seguros-icon6,
-.area-seguros-icon7 {
+.area-seguros-icon7,
+.area-seguros-icon8 {
     max-width: 22vw;
     display: flex;
     justify-content: space-evenly;
@@ -946,6 +947,9 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon7 {
     grid-area: icon7;
 }
+.area-seguros-icon8 {
+    grid-area: icon8;
+}
 
 .area-seguros-icon1 a,
 .area-seguros-icon2 a,
@@ -953,7 +957,8 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon4 a,
 .area-seguros-icon5 a,
 .area-seguros-icon6 a,
-.area-seguros-icon7 a {
+.area-seguros-icon7 a,
+.area-seguros-icon8 a  {
     color: #000;
     transition: 0.2s;
 }
@@ -963,7 +968,8 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon4 a:hover,
 .area-seguros-icon5 a:hover,
 .area-seguros-icon6 a:hover,
-.area-seguros-icon7 a:hover {
+.area-seguros-icon7 a:hover,
+.area-seguros-icon8 a:hover {
     color: var(--color-blue);
     font-size: 1.7rem;
 }
@@ -973,7 +979,8 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon4 p,
 .area-seguros-icon5 p,
 .area-seguros-icon6 p,
-.area-seguros-icon7 p {
+.area-seguros-icon7 p,
+.area-seguros-icon8 p {
     margin-bottom: 15px;
 }
 .area-seguros-icon-img {
@@ -1060,7 +1067,7 @@ form .area1-area-form input[type="submit"] {
 .seguradoras-area32 {
     border: 3px solid var(--color-blue);
     min-width: 14vw;
-    min-height: 17vh;
+    min-height: 20vh;
     background-size:cover;
     background-position: center;
     transition: 0.1s;
@@ -1121,13 +1128,11 @@ form .area1-area-form input[type="submit"] {
 }
 .seguradoras-area7 {
     grid-area: img7;
-    background-image: url(../images/omint2.png);
+    background-image: url(../images/omint4.png);
 }
 .seguradoras-area8 {
     grid-area: img8;
-    background-image: url(../images/notredame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/notredame1.png);
     background-color: #FFF;
 }
 /* .seguradoras-area9 {
@@ -1137,16 +1142,12 @@ form .area1-area-form input[type="submit"] {
 } */
 .seguradoras-area10 {
     grid-area: img10;
-    background-image: url(../images/sompo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/sompo1.png);
     background-color: #FFF;
 }
 .seguradoras-area11 {
     grid-area: img11;
-    background-image: url(../images/unimed.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/unimed1.png);
     background-color: #FFF;
 }
 .seguradoras-area12 {
@@ -1155,21 +1156,17 @@ form .area1-area-form input[type="submit"] {
 }
 .seguradoras-area13 {
     grid-area: img13;
-    background-image: url(../images/trasmontano.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/trasmontano1.png);
     background-color: #FFF;
 }
 .seguradoras-area14 {
     grid-area: img14;
-    background-image: url(../images/saocristovao.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../images/saocristovao.png);
     background-color: #FFF;
 }
 .seguradoras-area15 {
     grid-area: img15;
-    background-image: url(../images/ameplan.png);
+    background-image: url(../images/ameplan1.png);
 }
 .seguradoras-area16 {
     grid-area: img16;
@@ -1185,15 +1182,15 @@ form .area1-area-form input[type="submit"] {
 }
 .seguradoras-area19 {
     grid-area: img19;
-    background-image: url(../images/bioVida.png);
+    background-image: url(../images/bioVida1.png);
 }
 .seguradoras-area20 {
     grid-area: img20;
-    background-image: url(../images/blue-med.png);
+    background-image: url(../images/blue-med1.png);
 }
 .seguradoras-area21 {
     grid-area: img21;
-    background-image: url(../images/cruzazul.jpg);
+    background-image: url(../images/cruzazul.png);
 }
 /* .seguradoras-area22 {
     grid-area: img22;
@@ -1201,20 +1198,20 @@ form .area1-area-form input[type="submit"] {
 } */
 .seguradoras-area23 {
     grid-area: img23;
-    background-image: url(../images/health.png);
+    background-image: url(../images/health1.png);
 }
 .seguradoras-area24 {
     grid-area: img24;
-    background-image: url(../images/interclinicas.png);
+    background-image: url(../images/interclinicas1.png);
 }
 .seguradoras-area25 {
     grid-area: img25;
-    background-image: url(../images/medcare.png);
-    background-color: #FFF;
+    background-image: url(../images/medcare1.png);
+    
 }
 .seguradoras-area26 {
     grid-area: img26;
-    background-image: url(../images/medTour.jpg);
+    background-image: url(../images/medTour.png);
 }
 /* .seguradoras-area27 {
     grid-area: img27;
@@ -1222,7 +1219,7 @@ form .area1-area-form input[type="submit"] {
 } */
 .seguradoras-area28 {
     grid-area: img28;
-    background-image: url(../images/qualicorp.jpg);
+    background-image: url(../images/qualicorp.png);
 }
 /* .seguradoras-area29 {
     grid-area: img29;
@@ -1239,7 +1236,7 @@ form .area1-area-form input[type="submit"] {
 } */
 .seguradoras-area32 {
     grid-area: img32;
-    background-image: url(../images/SãoMiguel.jpg);
+    background-image: url(../images/SãoMiguel.png);
 }
 /* .seguradoras-area33 {
     grid-area: img33;
@@ -1549,7 +1546,7 @@ footer .baseboard p{
         "title title title"
         "icon1 icon3 icon5 "
         "icon2 icon4 icon6"
-        " . icon7 icon7";
+        "  icon7 icon8 .";
     }
     .area-seguros--title {
         max-width: 100%;
@@ -1562,7 +1559,6 @@ footer .baseboard p{
         width: 12vw;
         height: 16vh;
         background-size: contain;
-        background-repeat: no-repeat;
     }
     .area1-content-img {
         height: 47vh;
@@ -1608,6 +1604,7 @@ footer .baseboard p{
 @media (max-width: 767px) {
     .header .logo {
         width: 150px;
+        margin-left: 5%;
     }
     .header .header-telefone {
         width: 40%;
@@ -1692,13 +1689,13 @@ footer .baseboard p{
             "icon1 icon3  "
             "icon2 icon4 "
             "icon5 icon6 "
-            "icon7 icon7";
+            "icon7 icon8";
             padding: 75px 60px;
         }
         .header .header-telefone {
             display: none;
         }.area-seguros {
-            height: 270vh;
+            height: 285vh;
         }
         .area-seguros--title {
             margin-left: 0px;
@@ -1707,9 +1704,189 @@ footer .baseboard p{
         .area-seguros-icon3, .area-seguros-icon1 {
             margin-top: 20px;
         }
-        .area-seguros-icon1, .area-seguros-icon2, .area-seguros-icon3, .area-seguros-icon4, .area-seguros-icon5, .area-seguros-icon6, .area-seguros-icon7 {
+        .area-seguros-icon1, .area-seguros-icon2, .area-seguros-icon3, .area-seguros-icon4, .area-seguros-icon5, .area-seguros-icon6,.area-seguros-icon7, .area-seguros-icon8 {
             max-width: max-content;
         }
-        
+        .seguradoras {
+            padding: 60px 40px;
+        }
+        .seguradoras .seguradoras-area {
+            width: 100%;
+            height: 80%;
+            display: grid;
+            grid-template-areas:
+                "img1 img2 img3 "
+                "img4 img5 img6"
+                "img7 img8 img10 "
+                "img11 img12 img13" 
+                "img14 img15 img16"
+                "img18 img20 img21" 
+                "img23 img24 img25"
+                "img26 img28 img32";
+            justify-content: space-evenly;
+            align-items: center;
+    
+        }
+        .seguradoras-area19 {
+            display: none;
+        }
+        .seguradoras-area1, .seguradoras-area2, .seguradoras-area3, .seguradoras-area4, .seguradoras-area5, .seguradoras-area6, .seguradoras-area7, .seguradoras-area8, .seguradoras-area10, .seguradoras-area11, .seguradoras-area12, .seguradoras-area13, .seguradoras-area14, .seguradoras-area15, .seguradoras-area16, .seguradoras-area18, .seguradoras-area19, .seguradoras-area20, .seguradoras-area21, .seguradoras-area23, .seguradoras-area24, .seguradoras-area25, .seguradoras-area26, .seguradoras-area28, .seguradoras-area32 {
+            width: 19vw;
+            height: 16vh;
+            min-width: 14vw;
+            min-height: 16vh;
+        }
+        .area1 {
+            padding: 60px 35px;
+        }
+        .area1-content {
+            height: 44vh;
+        }
+        .area1-content-button {
+            height: 25.4vh;
+        }
+        .area1-content-img {
+            height: 39vh;
+            left: 4%;
+        }
+        .area1-simulacao-operadoras {
+            width: 95%;
+            grid-template-areas:
+                "img0 img1"
+                "img2 img3" 
+                "img4 img5 "
+                "img6 img7 " 
+                "img8 img10 "
+                "img11 img12 "
+                "img13 img14  "
+                "img15 img16 "
+                "img18 img20  "
+                "img21 img23   "
+                "img24 img25 "
+                "img26 img28 ";
+        }
+        #id25 {
+            display: none;
+        }
+        .area1-simulacao-operadoras .seguradoras-area0, .area1-simulacao-operadoras .seguradoras-area1, .area1-simulacao-operadoras .seguradoras-area3, .area1-simulacao-operadoras .seguradoras-area2, .area1-simulacao-operadoras .seguradoras-area4, .area1-simulacao-operadoras .seguradoras-area5, .area1-simulacao-operadoras .seguradoras-area6, .area1-simulacao-operadoras .seguradoras-area7, .area1-simulacao-operadoras .seguradoras-area8, .area1-simulacao-operadoras .seguradoras-area10, .area1-simulacao-operadoras .seguradoras-area11, .area1-simulacao-operadoras .seguradoras-area12, .area1-simulacao-operadoras .seguradoras-area13, .area1-simulacao-operadoras .seguradoras-area14, .area1-simulacao-operadoras .seguradoras-area15, .area1-simulacao-operadoras .seguradoras-area16, .area1-simulacao-operadoras .seguradoras-area18, .area1-simulacao-operadoras .seguradoras-area19, .area1-simulacao-operadoras .seguradoras-area20, .area1-simulacao-operadoras .seguradoras-area21, .area1-simulacao-operadoras .seguradoras-area23, .area1-simulacao-operadoras .seguradoras-area24, .area1-simulacao-operadoras .seguradoras-area25, .area1-simulacao-operadoras .seguradoras-area26, .area1-simulacao-operadoras .seguradoras-area28, .area1-simulacao-operadoras .seguradoras-area32 {
+            width: 30vw;
+            height: 16vh;
+        }
+        .area1-form-texts h1,
+        .area1-form-texts h2 {
+            padding: 10px;
+        }
+        form .area1-area-form fieldset {
+            padding: 5px 25px;
+            width: 90%;
+        }
+        form .area1-area-form label {
+            width: 85%;
+        }
+        form .area1-area-form .form-celular, form .area1-area-form .form-fixo {
+            display: flex;
+            width: 85%;
+        }
+        .area2 {
+            padding: 0px 35px;
+        }
+        .area2-text {
+            padding: 50px 0px;
+        }
+        .contato {
+            padding: 35px 7%;
+        }
+        footer {
+            padding: 35px 45px;
+            align-items: center;
+        }
+        footer .contacts {
+            padding: 0px;
+        }
+    }
+    @media (max-width:500px) {
+        html {
+            font-size: 42%;
+        }
+        .area-seguros {
+            padding: 75px 30px;
+        }
+        .area-seguros--title {
+            height: 75vh;
+        }
+        .area1-title h1 {
+            font-size: 6rem;
+        }
+        .area1-content {
+            height: 43vh;
+        }
+        .area1-content-img {
+            height: 39vh;
+        }
+        .area1-simulacao h1 {
+            font-size: 3rem;
+        }
+        .area1-form-texts h2 {
+            font-size: 1.9rem;
+        }
+        .area1-forms-escolha-operadora h3 {
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 450px) {
+        .menu-section.on .nav.on ul li {
+            width: 55vw;
+        }
+        .menu-section.on .menu-toggle {
+            right: -30px;
+            top: -20px;
+        }
+        .header .logo {
+            
+        }
+        .banner-area1-sub-title {
+            font-size: 2rem;
+        }
+        .banner-area1-title {
+            font-size: 5rem;
+        }
+        .area-seguros h2 {
+            font-size: 2rem;
+        }
+        .banner-area1-button a {
+            font-size: 1.8rem;
+        }
+        .seguradoras-area1, .seguradoras-area2, .seguradoras-area3, .seguradoras-area4, .seguradoras-area5, .seguradoras-area6, .seguradoras-area7, .seguradoras-area8, .seguradoras-area10, .seguradoras-area11, .seguradoras-area12, .seguradoras-area13, .seguradoras-area14, .seguradoras-area15, .seguradoras-area16, .seguradoras-area18, .seguradoras-area19, .seguradoras-area20, .seguradoras-area21, .seguradoras-area23, .seguradoras-area24, .seguradoras-area25, .seguradoras-area26, .seguradoras-area28, .seguradoras-area32 {
+            width: 21vw;
+            height: 13vh;
+            min-width: 14vw;
+            min-height: 13vh;
+        }
+        footer {
+            display: grid;
+            grid-template-areas:
+                "logo contacts links "
+                "social social social"
+                "baseboard baseboard baseboard ";
+            padding: 35px 20px;
+        }
+        footer .logo {
+            width: 17vw;
+        }
+        footer .social {
+            flex-direction: row;
+            min-height: 5vh;
+        }
+        footer .social h3 {
+            height: auto;
+        }
+        footer .social a img {
+            margin: 10px;
+        }
+    }
+    @media (max-width: 425px) {
+        html {
+            font-size: 40%;
+        }
     }
 }

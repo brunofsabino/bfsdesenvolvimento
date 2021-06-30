@@ -187,6 +187,14 @@
                 <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
                 <a href="">Saiba mais</a>
             </div>
+            <div class="area-seguros-icon8">
+                <div class="area-seguros-icon-img">
+                    <img src="assets/images/fianca.png" alt="mão com dinheiro">
+                </div>
+                <div class="area-seguros-icon-title"><h2>Seguro Fiança</h2></div>
+                <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
+                <a href="">Saiba mais</a>
+            </div>
         </section>
         <section class="seguradoras">
             <div class="seguradoras-subtitle">
@@ -281,7 +289,7 @@
                     <!-- <div class="seguradoras-area29"></div>
                     <div class="seguradoras-area30"></div>
                     <div class="seguradoras-area31"></div> -->
-                    <div class="seguradoras-area32 operadoras-area1" data-id="25"></div>
+                    <div class="seguradoras-area32 operadoras-area1" data-id="25" id="id25"></div>
                     <!-- <div class="seguradoras-area33"></div> -->
                 </div>
                 <div class="area1-simulacao-form">
