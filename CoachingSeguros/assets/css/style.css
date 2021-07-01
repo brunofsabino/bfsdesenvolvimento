@@ -1601,7 +1601,7 @@ footer .baseboard p{
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header .logo {
         width: 150px;
         margin-left: 5%;
