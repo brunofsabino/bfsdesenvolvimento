@@ -19,17 +19,6 @@ body{
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
 }
-.flash {
-    background-color: var(--color-yellow);
-    position: fixed;
-    color: #FFF;
-    padding: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-    z-index: 10;
-    width: 100%;
-    cursor: pointer;
-}
 header {
     height: 150px;
     /* position: absolute; */
@@ -54,33 +43,42 @@ header .container {
 }
 .header .header-telefone {
     height: 75px;
-    width: 470px;
+    width: 400px;
     position: absolute;
     right: 20%;
     display: flex;
     align-items: center;
     color: var(--color-blue);
     font-family: 'Open Sans', sans-serif;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px 5px rgb(255 255 255 / 25%);
-    background-color: #FFF;
-    cursor: pointer;
     
     /* color: #FFF; */
 }
-.header  .header-whats  {
-    width: 50%;
-    height: 100%;
-    border-radius: 8px;
+.header .header-telefone-simulador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 45%;
+    height: 50%;
+    background-color: #FFF;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 0px 15px 5px rgb(255 255 255 / 25%);
+    font-weight: 700;
+    cursor: pointer;
+    /* background-color: var(--color-yellow); */
 }
-.header  .header-whats a {
-    border-radius: 8px;
+.header .header-telefone-simulador:hover {
+    background-color: var(--color-yellow);
+    color: #FFF;
 }
-
 .header  .header-telefone-ligue  {
-    width: 50%;
+    width: 55%;
     height: 100%;
-   
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 5px rgb(255 255 255 / 25%);
+    cursor: pointer;
 }
 .header  .header-telefone-ligue a {
     display: flex;
@@ -88,28 +86,17 @@ header .container {
     border-radius: 8px;
     color: var(--color-blue);
 }
-.header .header-telefone-ligue a:hover,
-.header .header-whats a:hover {
+.header .header-telefone-ligue a:hover {
     background-color: var(--color-yellow);
     color: #FFF;
 }
-.header a .header-telefone-area1,
-.header .header-whats .header-telefone-area1 {
+.header a .header-telefone-area1 {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.header .header-whats a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: var(--color-blue);
-}
-.header .header-whats .header-telefone-area1 {
-    width: 71%;
+    
 }
 /* .header .header-telefone-title {
     
@@ -132,9 +119,7 @@ header .container {
 .header a .header-telefone-area2 img {
     width: 65%;
 }
-.header .header-whats a .header-telefone-area2 img {
-    width: 75%;
-}
+
 .header .logo img {
     width: 100%;
 }
@@ -515,9 +500,6 @@ nav ul li:hover {
     /* background-image: url(../images/amil.png); */
     background-color: var(--color-blue);
     color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .area1-simulacao-operadoras .seguradoras-area1 {
     grid-area: img1;
@@ -856,7 +838,7 @@ form .area1-area-form input[type="submit"] {
 }
 
 .area-seguros {
-    height: auto;
+    height: 180vh;
     width: 100vw;
     /* position: absolute;
     top: 330vh; */
@@ -867,12 +849,11 @@ form .area1-area-form input[type="submit"] {
     "icon5 icon6 icon7 icon8";
     padding: 75px 90px;
     justify-content: space-evenly;
-    transition: 0.5s all;
 }
 .area-seguros--title {
     grid-area: title;
     max-width: 35vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -906,7 +887,6 @@ form .area1-area-form input[type="submit"] {
     text-align: end;
 }
 .area-seguros-button {
-    display: none;
     margin-bottom: 30px;
 }
 .area-seguros-button a{
@@ -943,7 +923,6 @@ form .area1-area-form input[type="submit"] {
     flex-direction: column;
     margin-top: 30px;
     margin: 20px;
-    transition: 0.5s all;
 }
 .area-seguros-icon1 {
     grid-area: icon1;
@@ -1020,19 +999,7 @@ form .area1-area-form input[type="submit"] {
 .area-seguros .img-icon1 {
     width:80%;
 }
-.area-seguros-icon1-aparecer,
-.area-seguros-icon2-aparecer,
-.area-seguros-icon3-aparecer,
-.area-seguros-icon4-aparecer,
-.area-seguros-icon5-aparecer,
-.area-seguros-icon6-aparecer,
-.area-seguros-icon7-aparecer,
-.area-seguros-icon8-aparecer {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .seguradoras {
     height: auto;
@@ -1336,24 +1303,6 @@ form .area1-area-form input[type="submit"] {
     font-weight: 600;
     cursor: pointer;
 }
-.whats-anime {
-    display: none;
-    background-image: url(../images/whats-anime.png);
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    width: 65px;
-    height: 49px;
-    right: 10%;
-    bottom: 10%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
-    -webkit-animation: vibrate-1 0.3s linear infinite both;
-	        animation: vibrate-1 0.3s linear infinite both;
-    cursor: pointer;
-}
-
-
 footer {
     width: 100vw;
     height: 70vh;
@@ -1443,72 +1392,6 @@ footer .baseboard p{
         transform: translateY(0px);
     }
 }
-//* ----------------------------------------------
- * Generated by Animista on 2021-7-7 18:3:23
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation vibrate-1
- * ----------------------------------------
- */
-@-webkit-keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
-  @keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
-  
-  
 /* ----------------------------------------------
  * Generated by Animista on 2021-6-10 16:43:27
  * Licensed under FreeBSD License.
@@ -1658,7 +1541,7 @@ footer .baseboard p{
     }
     
     .area-seguros {
-        height: auto;
+        height: 235vh;
         grid-template-areas:
         "title title title"
         "icon1 icon3 icon5 "
@@ -1767,7 +1650,7 @@ footer .baseboard p{
         left: 50%;
     }
     .area-seguros {
-        height: auto;
+        height: 250vh;
     }
     .area1-form-texts {
         width: 95%;
@@ -1971,7 +1854,6 @@ footer .baseboard p{
         }
         .area-seguros h2 {
             font-size: 2rem;
-            text-align: center;
         }
         .banner-area1-button a {
             font-size: 1.8rem;

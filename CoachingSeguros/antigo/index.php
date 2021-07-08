@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,16 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flash">
-        <?php
-            $flash = "";
-            if($_SESSION['flash']) {
-                $flash = $_SESSION['flash'];
-                echo $flash;
-                $_SESSION['flash'] = "";
-            } 
-        ?>
-    </div>
     <header>
         <div class="container">
             <div class="header">
@@ -31,21 +20,9 @@
                     <img src="assets/images/novoLogoBranco.png" alt="logo">
                 </div>
                 <div class="header-telefone">
-                   <div class="header-whats">
-                        <a class="whats" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20saber%20mais%20informações%20sobre%20um%20produto" target="_blank">
-                            <div class="header-telefone-area1">
-                                <div class="header-telefone-title">
-                                    <h1>WHATSAPP</h1>
-                                </div>
-                                <div class="header-telefone-numero">
-                                    <p>11 91314-2018</p>
-                                </div>
-                            </div>
-                            <div class="header-telefone-area2">
-                                <img src="assets/images/whatsapp.png" alt="whatsapp">
-                            </div>
-                        </a>
-                   </div>
+                    <div class="header-telefone-simulador">
+                        <p>Simulador Online</p>
+                    </div>
                     <div class="header-telefone-ligue">
                         <a href="tel:011-1111-1111">
                             <div class="header-telefone-area1">
@@ -53,7 +30,7 @@
                                     <h1>LIGUE AGORA</h1>
                                 </div>
                                 <div class="header-telefone-numero">
-                                    <p>11 2539-6687</p>
+                                    <p>11 1111-1111</p>
                                 </div>
                             </div>
                             <div class="header-telefone-area2">
@@ -161,15 +138,6 @@
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Empresarial</h2></div>
                 <p>Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon1-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon2">
                 <div class="area-seguros-icon-img">
@@ -178,15 +146,6 @@
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Familiar</h2></div>
                 <p>Muitas operadoras e seguradoras oferecem planos de saúde familiar com excelentes condições de cobertura e preço. Proteja o bem mais precioso da sua família, a saúde.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon2-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon3">
                 <div class="area-seguros-icon-img">
@@ -195,15 +154,6 @@
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde para Idosos</h2></div>
                 <p>Contratar uma assistência médica para quem está na melhor idade pode ser menos burocrático do que você imagina. Veja os melhores planos de saúde para idosos.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon3-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon4">
                 <div class="area-seguros-icon-img">
@@ -212,15 +162,6 @@
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Individual</h2></div>
                 <p>Plano de saúde individual é ideal para pessoas que buscam um plano econômico e que atenda as suas necessidades primárias como consultas e exames simples na rede credenciada.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon4-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon5">
                 <div class="area-seguros-icon-img">
@@ -229,15 +170,6 @@
                 <div class="area-seguros-icon-title"><h2>Seguro Auto</h2></div>
                 <p>Aqui você encontra o seguro auto ideal para o seu veiculo, e pode personalizar de acordo com o que você precisa. Trabalhamos com as melhores seguradoras do mercado e atendimento de qualidade para te dar o melhor suporte possível.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon5-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon6">
                 <div class="area-seguros-icon-img">
@@ -246,15 +178,6 @@
                 <div class="area-seguros-icon-title"><h2>Seguro Residencial</h2></div>
                 <p>Com um Seguro Residencial sua casa fica protegida por um custo muito mais baixo do que você imagina. Ao contratar o produto, você protege a sua casa e ainda conta com profissionais especializados em casos de pequenos imprevistos do dia a dia. Sem riscos e dores de cabeça, tudo por um custo que cabe no seu bolso.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon6-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon7">
                 <div class="area-seguros-icon-img">
@@ -263,32 +186,14 @@
                 <div class="area-seguros-icon-title"><h2>Seguro Fiança</h2></div>
                 <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon7-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
             <div class="area-seguros-icon8">
                 <div class="area-seguros-icon-img">
-                    <img src="assets/images/segurovida.png" alt="mão com dinheiro">
+                    <img src="assets/images/fianca.png" alt="mão com dinheiro">
                 </div>
-                <div class="area-seguros-icon-title"><h2>Seguro de Vida</h2></div>
-                <p>O seguro de vida é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
+                <div class="area-seguros-icon-title"><h2>Seguro Fiança</h2></div>
+                <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
                 <a href="">Saiba mais</a>
-                <div class="area-seguros-icon8-aparecer">
-                    <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                    </p>
-                    <a href="">Voltar</a>
-                </div>
             </div>
         </section>
         <section class="seguradoras">
@@ -388,7 +293,7 @@
                     <!-- <div class="seguradoras-area33"></div> -->
                 </div>
                 <div class="area1-simulacao-form">
-                    <form action="recebedor.php" method="POST">
+                    <form action="">
                         <div class="area1-area-form">
                             <div class="area1-form-texts">
                                 <h1>Faça uma simulação de Plano de Saúde</h1>
@@ -397,25 +302,25 @@
                                     <h3> Escolha uma Operadora acima  </h3>
                                 </div>
                             </div>
-                            <input type="hidden" value="" class="operadora-escolhida" name="operadora-escolhida">
+                            <input type="hidden" value="" class="operadora-escolhida">
                             <fieldset>
                                 <legend>Informações Necessárias</legend>
                                 <div class="form-selects">
                                     <label for="">
                                         Selecione o Plano<br>
-                                        <select name="selecionar-plano" id="">
-                                            <option value="0">Selecione</option>
-                                            <option value="1">Individual</option>
-                                            <option value="2">Familiar</option>
-                                            <option value="3">Empresarial</option>
+                                        <select name="" id="">
+                                            <option value="">Selecione</option>
+                                            <option value="">Individual</option>
+                                            <option value="">Familiar</option>
+                                            <option value="">Empresarial</option>
                                         </select>
                                     </label>
                                     <label for="">
                                         Possui CNPJ?<br>
-                                        <select name="possui-cnpj" id="">
-                                            <option value="0">Selecione</option>
-                                            <option value="1">Sim</option>
-                                            <option value="2">Não</option>
+                                        <select name="" id="">
+                                            <option value="">Selecione</option>
+                                            <option value="">Sim</option>
+                                            <option value="">Não</option>
                                         </select>
                                     </label>
                                 </div>
@@ -433,7 +338,7 @@
                                    <div class="form-celular">
                                         <label for="" class="ddd">
                                                 DDD<br>
-                                                <input type="text" name="dddcelular" placeholder="DDD">
+                                                <input type="text" name="ddd" placeholder="DDD">
                                         </label>
                                         <label for="" class="celular">
                                                 Celular<br>
@@ -443,18 +348,18 @@
                                    <div class="form-fixo">
                                         <label for="" class="ddd">
                                                 DDD<br>
-                                                <input type="text" name="dddfixo" placeholder="DDD">
+                                                <input type="text" name="ddd" placeholder="DDD">
                                         </label>
                                         <label for="" class="celular">
                                                 Telefone<br>
-                                                <input type="text" name="telefone-fixo" placeholder="Digite seu número">
+                                                <input type="text" name="celular" placeholder="Digite seu celular">
                                         </label>
                                    </div>
                                 </div>
                             </fieldset>  
                             <fieldset>
                                 <legend>Informações Adicionais</legend>
-                                <textarea name="info-adicionais" id="" cols="30" rows="10" placeholder=" Digite sua mensagem"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" placeholder=" Digite sua mensagem"></textarea>
                             </fieldset>  
                             <input type="submit" value="Receber Simulação">
                         </div>
@@ -466,7 +371,7 @@
             <div class="area2-text">
                 <div class="area2-subtitle">Quem somos</div>
                 <div class="area2-title"><h1>A Coaching inovou o conceito em consultoria em planos de saúde no Brasil</h1></div>
-                <p>Desde o atendimento inicial ao ato da contratação, procuramos oferecer a melhor experiência aos nossos clientes. Somente na Coaching Seguros você conta com um pós venda especializado e completo, atento a prestar todo o suporte necessário, sendo portanto, referência no ramo de consultoria.</p>
+                <p>Desde o atendimento inicial ao ato da contratação, procuramos oferecer a melhor experiência aos nossos clientes. Somente na Dutra Seguros você conta com um pós venda especializado e completo, atento a prestar todo o suporte necessário, sendo portanto, referência no ramo de consultoria.</p>
                 <div class="area2-button"><a href="">Saiba Mais</a></div>
             </div>
             <div class="area2-img">
@@ -479,7 +384,7 @@
                 <div class="contato-subtitle-border"></div>
             </div>
             <div class="contato-title"><h1>Solicite sua cotação sem compromisso!</h1></div>
-            <form action="recebedor2.php" method="POST" >
+            <form action="POST">
                 <span>Preencha os dados abaixo, que nós te retornaremos!</span>
                 <label for="">
                     <input type="text" name= "name" placeholder="Digite seu nome completo"><br><br>
@@ -493,7 +398,6 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
-        <a class="whats-anime" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20saber%20mais%20informações%20sobre%20um%20produto" target="_blank">..</a>
     </main>
     <footer>
         <div class="logo"></div>
@@ -501,7 +405,7 @@
             <h3>Contatos</h3>
             <p> Rua Serra de Japi, 739, sala 04, Tatuapé, São Paulo - SP</p>
             <p>contato@coachingseguros.com.br</p>
-            <p>11 2539-6687</p>
+            <p>11 XXXX-XXXX</p>
         </div>
         <div class="links">
             <h3>Links</h3>

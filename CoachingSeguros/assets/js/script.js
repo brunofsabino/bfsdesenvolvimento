@@ -13,12 +13,14 @@ menuToggle.addEventListener("click", ()=>{
     menuSection.classList.toggle("on", show)
     menuToggle.classList.toggle("on", show)
     menuNav.classList.toggle("on", show)
-    show = !show
-
-    
+    show = !show    
 })
 
-
+// DIV FLASH 
+const flash = document.querySelector(".flash")
+flash.addEventListener("click", ()=>{
+    flash.style.display = "none"
+})
 // const tamanho = document.querySelector(".banner-area2").clientWidth;
 
 
@@ -160,7 +162,7 @@ function abrir (e) {
         area1.style.height = "310vh"
     }
     if(body < 601) {
-        area1.style.height = "435vh"
+        area1.style.height = "auto"
     }
 }
 function abrir2 (e) {
@@ -177,7 +179,7 @@ function abrir2 (e) {
         area1.style.height = "310vh"
     }
     if(body < 601) {
-        area1.style.height = "435vh"
+        area1.style.height = "auto"
     }
 }
 buttonSimulador.addEventListener('click', abrir)
@@ -199,39 +201,535 @@ amil.forEach(click => {
     })
 });
 
+// area aparecer ao clicar descriçao dos serviços
 
-// scroll ao clicar em Simulador online
+const sessionAreaSeguros = document.querySelector(".area-seguros")
 
-const simuladorHeader = document.querySelector('.header .header-telefone-simulador')
+const areaSeguros1 = document.querySelector(".area-seguros-icon1")
+const areaSeguros2 = document.querySelector(".area-seguros-icon2")
+const areaSeguros3 = document.querySelector(".area-seguros-icon3")
+const areaSeguros4 = document.querySelector(".area-seguros-icon4")
+const areaSeguros5 = document.querySelector(".area-seguros-icon5")
+const areaSeguros6 = document.querySelector(".area-seguros-icon6")
+const areaSeguros7 = document.querySelector(".area-seguros-icon7")
+const areaSeguros8 = document.querySelector(".area-seguros-icon8")
 
-simuladorHeader.addEventListener("click", ()=>{
-    // const body = window.screen.width
-    abrir2()
-    setTimeout(() => {
-        const moverTela = document.querySelector(".area1-simulacao h1").getBoundingClientRect().y
-        console.log(moverTela)
-        if(body > 1399) {
-            window.scroll(0, 4500)
-        }
-        if(body < 1399) {
-            window.scroll(0, 3500)
-        } 
-        if(body < 1000) {
-            window.scroll(0, 4500)
-        } 
-        
-    }, 300);
-    
+const areaSeguros1Button = document.querySelector(".area-seguros-icon1 a")
+const areaSeguros2Button = document.querySelector(".area-seguros-icon2 a")
+const areaSeguros3Button = document.querySelector(".area-seguros-icon3 a")
+const areaSeguros4Button = document.querySelector(".area-seguros-icon4 a")
+const areaSeguros5Button = document.querySelector(".area-seguros-icon5 a")
+const areaSeguros6Button = document.querySelector(".area-seguros-icon6 a")
+const areaSeguros7Button = document.querySelector(".area-seguros-icon7 a")
+const areaSeguros8Button = document.querySelector(".area-seguros-icon8 a")
+
+const areaSeguros1Aparecer = document.querySelector(".area-seguros-icon1-aparecer")
+const areaSeguros2Aparecer = document.querySelector(".area-seguros-icon2-aparecer")
+const areaSeguros3Aparecer = document.querySelector(".area-seguros-icon3-aparecer")
+const areaSeguros4Aparecer = document.querySelector(".area-seguros-icon4-aparecer")
+const areaSeguros5Aparecer = document.querySelector(".area-seguros-icon5-aparecer")
+const areaSeguros6Aparecer = document.querySelector(".area-seguros-icon6-aparecer")
+const areaSeguros7Aparecer = document.querySelector(".area-seguros-icon7-aparecer")
+const areaSeguros8Aparecer = document.querySelector(".area-seguros-icon8-aparecer")
+
+
+const areaSeguros1AparecerButton = document.querySelector(".area-seguros-icon1-aparecer a")
+const areaSeguros2AparecerButton = document.querySelector(".area-seguros-icon2-aparecer a")
+const areaSeguros3AparecerButton = document.querySelector(".area-seguros-icon3-aparecer a")
+const areaSeguros4AparecerButton = document.querySelector(".area-seguros-icon4-aparecer a")
+const areaSeguros5AparecerButton = document.querySelector(".area-seguros-icon5-aparecer a")
+const areaSeguros6AparecerButton = document.querySelector(".area-seguros-icon6-aparecer a")
+const areaSeguros7AparecerButton = document.querySelector(".area-seguros-icon7-aparecer a")
+const areaSeguros8AparecerButton = document.querySelector(".area-seguros-icon8-aparecer a")
+
+areaSeguros1Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros1.style.position = "relative"
+        areaSeguros1.style.maxWidth = "85vw"
+        areaSeguros1.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros1.style.position = "absolute"
+        areaSeguros1.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros1.style.maxWidth = "50%"
+        areaSeguros1.style.padding = "40px"
+    }
+
+    areaSeguros1Aparecer.style.display = "flex"
+    areaSeguros1Button.style.display = 'none'
+   
+    console.log(body)
+})
+areaSeguros2Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros2.style.position = "relative"
+        areaSeguros2.style.maxWidth = "85vw"
+        areaSeguros2.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros2.style.position = "absolute"
+        areaSeguros2.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros2.style.maxWidth = "50%"
+        areaSeguros2.style.padding = "40px"
+    }
+
+    areaSeguros2Aparecer.style.display = "flex"
+    areaSeguros2Button.style.display = 'none'
+})
+areaSeguros3Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros1.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros3.style.position = "relative"
+        areaSeguros3.style.maxWidth = "85vw"
+        areaSeguros3.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros3.style.position = "absolute"
+        areaSeguros3.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros3.style.maxWidth = "50%"
+        areaSeguros3.style.padding = "40px"
+    }
+
+    areaSeguros3Aparecer.style.display = "flex"
+    areaSeguros3Button.style.display = 'none'
+})
+areaSeguros4Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros1.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros4.style.position = "relative"
+        areaSeguros4.style.maxWidth = "85vw"
+        areaSeguros4.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros4.style.position = "absolute"
+        areaSeguros4.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros4.style.maxWidth = "50%"
+        areaSeguros4.style.padding = "40px"
+    }
+
+    areaSeguros4Aparecer.style.display = "flex"
+    areaSeguros4Button.style.display = 'none'
+})
+areaSeguros5Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros1.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros5.style.position = "relative"
+        areaSeguros5.style.maxWidth = "85vw"
+        areaSeguros5.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros5.style.position = "absolute"
+        areaSeguros5.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros5.style.maxWidth = "50%"
+        areaSeguros5.style.padding = "40px"
+    }
+
+    areaSeguros5Aparecer.style.display = "flex"
+    areaSeguros5Button.style.display = 'none'
+})
+areaSeguros6Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros1.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros6.style.position = "relative"
+        areaSeguros6.style.maxWidth = "85vw"
+        areaSeguros6.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros6.style.position = "absolute"
+        areaSeguros6.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros6.style.maxWidth = "50%"
+        areaSeguros6.style.padding = "40px"
+    }
+
+    areaSeguros6Aparecer.style.display = "flex"
+    areaSeguros6Button.style.display = 'none'
+})
+areaSeguros7Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros1.style.display = "none"
+        areaSeguros8.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros7.style.position = "relative"
+        areaSeguros7.style.maxWidth = "85vw"
+        areaSeguros7.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros7.style.position = "absolute"
+        areaSeguros7.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros7.style.maxWidth = "50%"
+        areaSeguros7.style.padding = "40px"
+    }
+
+    areaSeguros7Aparecer.style.display = "flex"
+    areaSeguros7Button.style.display = 'none'
+})
+areaSeguros8Button.addEventListener("click", (e)=> {
+    e.preventDefault()
+    setTimeout( ()=>{
+        areaSeguros2.style.display = "none"
+        areaSeguros3.style.display = "none"
+        areaSeguros4.style.display = "none"
+        areaSeguros5.style.display = "none"
+        areaSeguros6.style.display = "none"
+        areaSeguros7.style.display = "none"
+        areaSeguros1.style.display = "none"
+    }, 300)
+    if(body < 937) {
+       
+        areaSeguros8.style.position = "relative"
+        areaSeguros8.style.maxWidth = "85vw"
+        areaSeguros8.style.padding = "40px"
+        sessionAreaSeguros.style.display = "flex"
+        sessionAreaSeguros.style.flexDirection = "column"
+    }
+    if(body > 938) {
+        areaSeguros8.style.position = "absolute"
+        areaSeguros8.style.maxWidth = "35%"
+        sessionAreaSeguros.style.justifyContent = "right"
+    }
+    if(body > 1600) {
+        areaSeguros8.style.maxWidth = "50%"
+        areaSeguros8.style.padding = "40px"
+    }
+
+    areaSeguros8Aparecer.style.display = "flex"
+    areaSeguros8Button.style.display = 'none'
 })
 
-// function posicao(e) {
-//     var el = this;
-//     var coordenadas = el.getBoundingClientRect();
-//     var res = 
-//     console.log('posição x', coordenadas.left, 'posição y', coordenadas.y)
-// }
+areaSeguros1AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros1Aparecer.style.display = "none"
+    areaSeguros1Button.style.display = 'flex'
 
-// document.querySelector('.area1-simulacao h1').addEventListener('click', posicao);
-// document.getElementById('fundo').addEventListener('click', posicao);
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
 
-// const body = window.screen.width
+    areaSeguros1.style.position = "relative"
+    areaSeguros1.style.maxWidth = "22vw"
+    areaSeguros1.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros1.style.maxWidth = "max-content"
+        areaSeguros1.style.padding = "0px"
+    }
+})
+
+areaSeguros2AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros2Aparecer.style.display = "none"
+    areaSeguros2Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+    
+
+    areaSeguros2.style.position = "relative"
+    areaSeguros2.style.maxWidth = "22vw"
+    areaSeguros2.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros2.style.maxWidth = "max-content"
+        areaSeguros2.style.padding = "0px"
+    }
+})
+areaSeguros3AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros3Aparecer.style.display = "none"
+    areaSeguros3Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros3.style.position = "relative"
+    areaSeguros3.style.maxWidth = "22vw"
+    areaSeguros3.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros3.style.maxWidth = "max-content"
+        areaSeguros3.style.padding = "0px"
+    }
+})
+areaSeguros4AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros4Aparecer.style.display = "none"
+    areaSeguros4Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros4.style.position = "relative"
+    areaSeguros4.style.maxWidth = "22vw"
+    areaSeguros4.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    
+    if(body < 600) {
+        console.log(body)
+        areaSeguros4.style.maxWidth = "max-content"
+        areaSeguros4.style.padding = "0px"
+    }
+})
+areaSeguros5AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros5Aparecer.style.display = "none"
+    areaSeguros5Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros5.style.position = "relative"
+    areaSeguros5.style.maxWidth = "22vw"
+    areaSeguros5.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros5.style.maxWidth = "max-content"
+        areaSeguros5.style.padding = "0px"
+    }
+})
+areaSeguros6AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros6Aparecer.style.display = "none"
+    areaSeguros6Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros6.style.position = "relative"
+    areaSeguros6.style.maxWidth = "22vw"
+    areaSeguros6.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros6.style.maxWidth = "max-content"
+        areaSeguros6.style.padding = "0px"
+    }
+})
+areaSeguros7AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros7Aparecer.style.display = "none"
+    areaSeguros7Button.style.display = 'flex'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros7.style.position = "relative"
+    areaSeguros7.style.maxWidth = "22vw"
+    areaSeguros7.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros7.style.maxWidth = "max-content"
+        areaSeguros7.style.padding = "0px"
+    }
+})
+areaSeguros8AparecerButton.addEventListener("click", (e)=> {
+    e.preventDefault()
+    areaSeguros8Aparecer.style.display = "none"
+    areaSeguros8Button.style.display = 'block'
+
+    setTimeout( ()=>{
+        areaSeguros1.style.display = "flex"
+        areaSeguros2.style.display = "flex"
+        areaSeguros3.style.display = "flex"
+        areaSeguros4.style.display = "flex"
+        areaSeguros5.style.display = "flex"
+        areaSeguros6.style.display = "flex"
+        areaSeguros7.style.display = "flex"
+        areaSeguros8.style.display = "flex"
+    }, 300)
+
+    areaSeguros8.style.position = "relative"
+    areaSeguros8.style.maxWidth = "22vw"
+    areaSeguros8.style.padding = "40px"
+    sessionAreaSeguros.style.display = "grid"
+    sessionAreaSeguros.style.flexDirection = "column"
+    if(body < 600) {
+        areaSeguros8.style.maxWidth = "max-content"
+        areaSeguros8.style.padding = "0px"
+    }
+})
+
+
+// aparecer whats
+const aparecerWhatss = document.querySelector(".whats-anime")
+window.onscroll = ()=> {
+    aparecerWhats();
+}
+function aparecerWhats() {
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500 )  {
+        if(body < 767) {
+            aparecerWhatss.style.display = 'block'
+        }   
+    } else {
+        
+        aparecerWhatss.style.display = 'none'
+            
+        
+        
+    }
+}
