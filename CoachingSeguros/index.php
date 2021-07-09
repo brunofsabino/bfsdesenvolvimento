@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Coaching Seguros - Consultoria em Planos de Saúde e Seguros" />
+    <meta property="og:description" content="A Coaching Seguros inovou nos modelos de consultoria sobre planos de saúde e seguros." />
+    <meta property="og:url" content="https://coachingseguros.com.br/" />
+    <meta property="og:site_name" content="Coaching Seguros" />
+    <meta property="article:modified_time" content="2021-07-01entaoT18:59:47+00:00" />
+    <meta property="og:image" content="https://coachingseguros.com.br/assets/images/empresarios2.jpg" />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="1000" />
     <title>Coaching Seguros e Benefícios</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,7 +34,7 @@
             } 
         ?>
     </div>
-    <header>
+    <header id="home">
         <div class="container">
             <div class="header">
                 <div class="logo">
@@ -32,7 +42,7 @@
                 </div>
                 <div class="header-telefone">
                    <div class="header-whats">
-                        <a class="whats" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20saber%20mais%20informações%20sobre%20um%20produto" target="_blank">
+                        <a class="whats" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20receber%20uma%20simulaçao%20por%20whatsapp" target="_blank">
                             <div class="header-telefone-area1">
                                 <div class="header-telefone-title">
                                     <h1>WHATSAPP</h1>
@@ -70,11 +80,10 @@
                     </div>
                     <nav class="nav">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Sobre</a></li>
-                            <li><a href="">Planos de Saúde</a></li>
-                            <li><a href="">Seguros</a></li>
-                            <li><a href="">Contato</a></li>
+                            <li><a href="#home" class="botao-planos">Home</a></li>
+                            <li><a href="#tiposPlanos" class="botao-planos">Planos de Saúde</a></li>
+                            <li><a href="#contato-form" class="botao-planos">Contato</a></li>
+                            <li><a href="#simulacao" class="botao-planos">Faça uma Simulação</a></li>
                         </ul>
             
                     </nav>
@@ -83,45 +92,46 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner"  >
             <div class="banner-area1">
                 <div class="slider-width-text">
                     <div class="slider--item--text1 active">
                         <div class="banner-area1-sub-title">
-                            Excelencia em
+                            Perfeição em
                         </div>
                         <div class="banner-area1-title">
                             Consultoria de planos <br>de Saúde e<br> Odontológicos.
                         </div>
-                        <div class="banner-area1-button"> <a href="">Fale Conosco</a></div>
+                        <div class="banner-area1-button"> <a href="#contato-form">Fale Conosco</a></div>
                     </div>
                     <div class="slider--item--text2">
                         <div class="banner-area1-sub-title">
-                            Contamos com
+                            Os melhores profissionais
                         </div>
                         <div class="banner-area1-title">
-                            Um Staff<br> especializado<br>á sua disposição
+                            Uma equipe<br> especializada<br>á sua disposição
                         </div>
-                        <div class="banner-area1-button"> <a href="">Saiba Mais</a></div>
+                        <div class="banner-area1-button"> <a href="#tiposPlanos">Saiba Mais</a></div>
                     </div>
                     <div class="slider--item--text3">
                         <div class="banner-area1-sub-title">
-                            Oferecemos
+                            Plano Familiar
                         </div>
                         <div class="banner-area1-title">
-                            Planos de Saúde e <br>Seguros para <br>você e sua família
+                            <!-- Planos de Saúde e <br>Seguros para <br>você e sua família -->
+                            Sua Família totalmente <br>assegurada com os <br>melhores planos
                         </div>
-                        <div class="banner-area1-button"> <a href="">Veja nossos Preços</a></div>
+                        <div class="banner-area1-button"> <a href="#simulacao">Veja nossos Preços</a></div>
                     </div>
                     <div class="slider--item--text4">
                         <div class="banner-area1-sub-title">
-                            Corporativo
+                            Empresarial
                         </div>
                         <div class="banner-area1-title">
                             Planos de Saúde<br> Empresarial
                             
                         </div>
-                        <div class="banner-area1-button"> <a href="">Saiba Como</a></div>
+                        <div class="banner-area1-button"> <a href="#simulacao">Saiba Como</a></div>
                     </div>
                     <div class="arrow">
                         <img src="assets/images/arrow-down.svg" alt="">
@@ -144,13 +154,13 @@
                 </div>    
             </div>
         </section>
-        <section class="area-seguros">
+        <section class="area-seguros" id="tiposPlanos">
             <div class="area-seguros--title">
                 <div class="area-seguros-subtitle">
                     Nossos Produtos
                 </div>
                 <div class="area-seguros-title"><h1>Customize seu plano de saúde ou seguro de acordo com a sua necessidade.</h1></div>
-                <div class="area-seguros-text"><p>A Coaching Seguros trabalha com as mais respeitadas operadoras e seguradoras do mercado brasileiro. Conheça nossas opções abaixo e peça sua cotação</p></div>
+                <div class="area-seguros-text"><p>A Coaching Seguros atua com as melhores seguradoras e operadoras do Brasil. Faça uma simulação e conheça nossos produtos.</p></div>
                 <div class="area-seguros-button"><a href="">Todos os Produtos</a></div>
             </div>
             
@@ -159,14 +169,13 @@
                     <img src="assets/images/building2.png" alt="Prédio empresárial" class="img-icon1">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Empresarial</h2></div>
-                <p>Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.</p>
+                <p>Planos empresariais a partir de 2 vidas. Com o CNPJ ou MEI você contrata qualquer plano de saúde empresarial com as melhores condições.</p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon1-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Contratando um plano empresarial, é possível incluir também os familiares dos funcionários, colaboradores aposentados e trabalhadores temporários.
+                    O plano empresarial pode apresentar melhores condições e benefícios, como uma menor mensalidade, descontos em medicamentos e uma maior cobertura.
+
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -176,14 +185,11 @@
                     <img src="assets/images/family2.png" alt="Familia">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Familiar</h2></div>
-                <p>Muitas operadoras e seguradoras oferecem planos de saúde familiar com excelentes condições de cobertura e preço. Proteja o bem mais precioso da sua família, a saúde.</p>
+                <p>Proteja a sua família com os melhores planos, oferecendo segurança e saúde! As seguradoras e operadoras oferecem excelentes condições. </p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon2-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    O plano de saúde familiar é constituído por um ou mais titulares e seus dependentes. Isso viabiliza um melhor preço na mensalidade dos planos. A Coaching Seguros trabalha com as melhores seguradoras e operadoras do mercado brasileiro. Solicite uma simulação e tenha em mãos os preços de todas as operadoras, para assim, escolher a que melhor se encaixar em sua família.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -193,14 +199,11 @@
                     <img src="assets/images/casal-idosos5.png" alt="Casal de idosos">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde para Idosos</h2></div>
-                <p>Contratar uma assistência médica para quem está na melhor idade pode ser menos burocrático do que você imagina. Veja os melhores planos de saúde para idosos.</p>
+                <p>A melhor idade merece também o melhor plano de saúde. Deixe que nós cuidamos de toda a burocracia e oferecemos para você o melhor plano personalizado.</p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon3-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Viva desfrutando o melhor que a vida tem a oferecer. Contrate uma assistência médica e você contará com os melhores profissionais da medicina, com os melhores laboratórios e com os melhores hospitais próximos da sua residência. Solicite uma simulação com a Coaching Seguros, que vamos te oferecer o plano que mais se adequa a sua realidade.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -210,14 +213,11 @@
                     <img src="assets/images/homem2.png" alt="Homem sozinho">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Plano de Saúde Individual</h2></div>
-                <p>Plano de saúde individual é ideal para pessoas que buscam um plano econômico e que atenda as suas necessidades primárias como consultas e exames simples na rede credenciada.</p>
+                <p>O plano de saúde individual é o melhor para as pessoas que procuram um custo mais econômico e que ao mesmo tempo atenda todas as suas necessidades primárias como exames simples e consultas na rede credenciada.</p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon4-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Com o plano individual, você terá um convênio médico personalizado somente para uma pessoa. Você terá muitas opções de planos que as operadoras oferecem. Deixe que nós te mostramos qual é o melhor plano de saúde para você. Solicite uma simulação.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -227,14 +227,11 @@
                     <img src="assets/images/car.png" alt="Carro">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Seguro Auto</h2></div>
-                <p>Aqui você encontra o seguro auto ideal para o seu veiculo, e pode personalizar de acordo com o que você precisa. Trabalhamos com as melhores seguradoras do mercado e atendimento de qualidade para te dar o melhor suporte possível.</p>
+                <p>Personalize o seu seguro auto do modo que você precisa. Na Coaching Seguros nós oferecemos o melhores seguros do mercado, visando que você tenha o melhor atendimento para o seu veículo. </p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon5-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Conseguimos oferecer um Seguro Auto sem juros e com parcelas que cabem no seu bolso. Benefícios do seguro auto: cobertura contra danos, cobertura contra roubo e furto, cobertura à terceiros, cobertura de carro extra, oficina com serviços gratuitos e assistência 24 horas. Solicite uma simulação que vamos encontrar o melhor seguro para você.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -244,14 +241,11 @@
                     <img src="assets/images/home.png" alt="Casa">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Seguro Residencial</h2></div>
-                <p>Com um Seguro Residencial sua casa fica protegida por um custo muito mais baixo do que você imagina. Ao contratar o produto, você protege a sua casa e ainda conta com profissionais especializados em casos de pequenos imprevistos do dia a dia. Sem riscos e dores de cabeça, tudo por um custo que cabe no seu bolso.</p>
+                <p>Proteja sua casa com o seguro residencial com o custo muito acessível. Além da segurança, você também vai contar com muitos profissionais especializados para pequenos reparos dos imprevistos do dia a dia.</p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon6-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Com um Seguro Residencial sua casa ficará protegida contra roubos, furtos, tempestades e muito mais. Solicite uma simulação e nós vamos encontrar o melhor seguro residencial para você. Fique livre da preocupação com os roubos, com a falta de segurança, contrate um seguro residencial por um preço muito baixo.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -261,31 +255,25 @@
                     <img src="assets/images/fianca.png" alt="mão com dinheiro">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Seguro Fiança</h2></div>
-                <p>O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
+                <p>Com o seguro fiança, você não precisa de fiador ou deposito caução. O seguro fiança é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. </p>
                 <a href="">Saiba mais</a>
                 <div class="area-seguros-icon7-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    Com a Coaching Seguros, você consegue realizar um seguro fiança sem juros e com parcelas que cabem no seu bolso. Solicite uma simulação que nós vamos encontrar o melhor seguro fiança que se adequa à sua realidade.
                     </p>
                     <a href="">Voltar</a>
                 </div>
             </div>
-            <div class="area-seguros-icon8">
+            <div class="area-seguros-icon8" id="oi"> 
                 <div class="area-seguros-icon-img">
                     <img src="assets/images/segurovida.png" alt="mão com dinheiro">
                 </div>
                 <div class="area-seguros-icon-title"><h2>Seguro de Vida</h2></div>
-                <p>O seguro de vida é uma garantia contratada pelo locatário para dar segurança ao proprietário do imóvel. Dessa forma, ele substitui outros tipos de garantia, como o caução ou o fiador. A vigência do seguro depende de cada contrato.</p>
-                <a href="">Saiba mais</a>
+                <p>Veja como é fácil proteger você, família e funcionários. A Coaching Seguros atua com as melhores seguradoras. Solicite agora uma simulação.</p>
+                <a href=""> Saiba mais</a>
                 <div class="area-seguros-icon8-aparecer">
                     <p>
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
-                        Para empresas a partir de 2 vidas, é possível contratar com CNPJ ou MEI (que possuam mais de 6 meses de abertura) plano de saúde empresarial com as melhores condições.
+                    O seguro de vida abrange diversas situações, como diária por incapacidade temporária, doença grave, invalidez e morte natural e acidental. Contate-nos e enviamos uma simulação com os melhores seguros de vida e com os melhores preços.
                     </p>
                     <a href="">Voltar</a>
                 </div>
@@ -334,7 +322,7 @@
                 
             </div>
         </section>
-        <section class="area1">
+        <section class="area1" id="simulacao">
             <!-- <div class="area1-sub-title"> Uma nova experiência para sua empresa</div> -->
             <div class="area1-title"><h1><span> Simule</span> os valores de todos os <span>Planos de Saúde </span></h1></div>
             <div class="area1-content">
@@ -347,7 +335,7 @@
                     <div class="area1-img"></div>
                 </div>
             </div>
-            <div class="area1-simulacao ">
+            <div class="area1-simulacao " >
                 <h1>Escolha um plano de Sáude e faça uma Simulação:</h1>
                 <div class="area1-simulacao-operadoras">
                     <div class="seguradoras-area0 operadoras-area1" data-id="0">
@@ -462,18 +450,18 @@
                 </div>
             </div>
         </section>
-        <section class="area2">
+        <section class="area2" >
             <div class="area2-text">
                 <div class="area2-subtitle">Quem somos</div>
-                <div class="area2-title"><h1>A Coaching inovou o conceito em consultoria em planos de saúde no Brasil</h1></div>
-                <p>Desde o atendimento inicial ao ato da contratação, procuramos oferecer a melhor experiência aos nossos clientes. Somente na Coaching Seguros você conta com um pós venda especializado e completo, atento a prestar todo o suporte necessário, sendo portanto, referência no ramo de consultoria.</p>
-                <div class="area2-button"><a href="">Saiba Mais</a></div>
+                <div class="area2-title"><h1>A Coaching Seguros inovou nos modelos de consultoria sobre planos de saúde e seguros.</h1></div>
+                <p>Buscamos oferecer a melhor experiência aos nossos clientes, proporcionando o melhor atendimento desde ao ato inicial até o momento da contratação. Contamos com uma equipe especializada e que garante a melhor prestação de serviços para os nossos clientes, visando todo o suporte necessário para que o objetivo final seja alcançado. A felicidade e a satisfação completa de nossos clientes.</p>
+                <!-- <div class="area2-button"><a href="">Saiba Mais</a></div> -->
             </div>
             <div class="area2-img">
                 <div class="area2-parallax"></div>
             </div>
         </section>
-        <section class="contato">
+        <section class="contato" id="contato-form">
             <div class="contato-subtitle">
                 <p>Contato</p>
                 <div class="contato-subtitle-border"></div>
@@ -493,7 +481,7 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
-        <a class="whats-anime" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20saber%20mais%20informações%20sobre%20um%20produto" target="_blank">..</a>
+        <a class="whats-anime" href="https://api.whatsapp.com/send?phone=5511913142018&text=Quero%20receber%20uma%20simulaçao%20por%20whatsapp" target="_blank"></a>
     </main>
     <footer>
         <div class="logo"></div>
@@ -505,9 +493,9 @@
         </div>
         <div class="links">
             <h3>Links</h3>
-            <a href="">Faça uma simulação</a>
-            <a href="">Planos de Saúde</a>
-            <a href="">Fale Conosco</a>
+            <a href="#simulacao">Faça uma simulação</a>
+            <a href="#tiposPlanos">Planos de Saúde</a>
+            <a href="#contato-form">Fale Conosco</a>
         </div>
         <div class="social">
             <h3>Siga-nos</h3>

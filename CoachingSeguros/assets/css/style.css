@@ -943,7 +943,17 @@ form .area1-area-form input[type="submit"] {
     flex-direction: column;
     margin-top: 30px;
     margin: 20px;
-    transition: 0.5s all;
+    transition: 0.3s all;
+}
+.area-seguros-icon1 h2,
+.area-seguros-icon2 h2,
+.area-seguros-icon3 h2,
+.area-seguros-icon4 h2,
+.area-seguros-icon5 h2,
+.area-seguros-icon6 h2,
+.area-seguros-icon7 h2,
+.area-seguros-icon8 h2 {
+   text-align: center;
 }
 .area-seguros-icon1 {
     grid-area: icon1;
@@ -1002,7 +1012,8 @@ form .area1-area-form input[type="submit"] {
 .area-seguros-icon6 p,
 .area-seguros-icon7 p,
 .area-seguros-icon8 p {
-    margin-bottom: 15px;
+    margin: 15px;
+    text-align: center;
 }
 .area-seguros-icon-img {
     width: 120px;
@@ -1279,7 +1290,7 @@ form .area1-area-form input[type="submit"] {
 
 .contato {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 80px 115px;
 }
 .contato-subtitle p {
@@ -1299,7 +1310,7 @@ form .area1-area-form input[type="submit"] {
 }
 .contato form {
     width: 50%;
-    /* height: 57vh; */
+    height: auto;
     font-family: 'Oswald', sans-serif;
     border: 2px solid;
     padding: 40px;
@@ -1756,6 +1767,7 @@ footer .baseboard p{
     }
     .slider--item--text1, .slider--item--text2, .slider--item--text3, .slider--item--text4 {
         height: calc(100vh - 125px);
+        margin-left: 0px;
     }
     .banner-area1-title, .banner-area1-sub-title, .banner-area1-button {
         text-align: center;

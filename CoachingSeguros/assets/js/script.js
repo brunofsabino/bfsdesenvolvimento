@@ -4,6 +4,7 @@ let show = true;
 const menuSection = document.querySelector(".menu-section")
 const menuToggle = document.querySelector(".menu-toggle")
 const menuNav = document.querySelector(".header .menu-section nav")
+const botaoPlanosSaude = document.querySelectorAll(".botao-planos")
 const body = window.screen.width
 
 menuToggle.addEventListener("click", ()=>{
@@ -15,7 +16,17 @@ menuToggle.addEventListener("click", ()=>{
     menuNav.classList.toggle("on", show)
     show = !show    
 })
-
+botaoPlanosSaude.forEach( (item)=>{
+    item.addEventListener("click", ()=> {
+        document.body.style.overflowY = show ? 'hidden' : 'initial'
+    
+        menuSection.classList.toggle("on", show)
+        menuToggle.classList.toggle("on", show)
+        menuNav.classList.toggle("on", show)
+        show = !show    
+    })
+})
+botaoPlanosSaud
 // DIV FLASH 
 const flash = document.querySelector(".flash")
 flash.addEventListener("click", ()=>{
@@ -733,3 +744,9 @@ function aparecerWhats() {
         
     }
 }
+
+
+// mover scroll ao clicar
+
+const formSessionContato = document.querySelector(".contato form")
+
