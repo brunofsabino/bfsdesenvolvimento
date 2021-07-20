@@ -26,7 +26,7 @@ botaoPlanosSaude.forEach( (item)=>{
         show = !show    
     })
 })
-botaoPlanosSaud
+
 // DIV FLASH 
 const flash = document.querySelector(".flash")
 flash.addEventListener("click", ()=>{
