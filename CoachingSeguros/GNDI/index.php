@@ -39,7 +39,7 @@
                             <h1>Central de Relacionamento <br>(11) 2539-6687</h1>
                             <div class="area-button--whats">
                                 <div class="button--whats">
-                                    <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px">
+                                    <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
                                     FALAR COM A GNDI
                                 </div>
                             </div>
@@ -97,35 +97,120 @@
                 <div class="section-02-area1-icon">
                     <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
                 </div>
-                <p>DESCONTO COM CNPJ</p>
+                <h4>DESCONTO COM CNPJ</h4>
                 <p>Pague menos usando seu CNPJ</p>
             </div>
             <div class="section-02-area1-icons">
                 <div class="section-02-area1-icon">
-                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                    <img src="assets/images/icons8-confiança-50.png" alt="carência">
                 </div>
-                <p>DESCONTO COM CNPJ</p>
-                <p>Pague menos usando seu CNPJ</p>
+                <h4>REDUÇÃO DE CARÊNCIA</h4>
+                <p>Mesmo sem ter plano de saúde</p>
             </div>
             <div class="section-02-area1-icons">
                 <div class="section-02-area1-icon">
-                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                    <img src="assets/images/icons8-clínica-50.png" alt="Farmácia">
                 </div>
-                <p>DESCONTO COM CNPJ</p>
-                <p>Pague menos usando seu CNPJ</p>
+                <h4>DESCONTO EN FARMÁCIAS</h4>
+                <p>Mais de 30.000 Medicamentos</p>
             </div>
             <div class="section-02-area1-icons">
                 <div class="section-02-area1-icon">
-                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                    <img src="assets/images/icons8-gosto-disso-50.png" alt="Qualidade">
                 </div>
-                <p>DESCONTO COM CNPJ</p>
-                <p>Pague menos usando seu CNPJ</p>
+                <h4>SEM PERDER A QUALIDADE</h4>
+                <p>Garantia de Cobertura</p>
             </div>
         </div>
         <div class="section-02-area2">
-            
+            <div class="section-02-area2-icons">
+                <div class="section-02-area2-icon">
+                    <img src="assets/images/icons8-whatsapp-48.png" alt="Whatsapp">
+                </div>
+                <h4>COTAÇÂO POR WHATSAPP</h4>
+                <span>Receba todas as informações sobre o plano de saúde INTERMÉDICA diretamente no seu smartphone ou tablet. Clique no botão  e inicie uma conversa agora mesmo.</span>
+                <div class="button--whats-02">
+                    <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                    FALAR COM A GNDI
+                </div>
             </div>
+            <div class="section-02-area2-icons">
+                <div class="section-02-area2-icon">
+                    <img src="assets/images/icons8-coração-com-pulso-50.png" alt="Saúde">
+                </div>
+                <h4>O MELHOR PLANO DE SAÚDE</h4>
+                <span>O plano de saúde INTERMÉDICA oferece os melhores benefícios por um preço acessível. Você, sua família e sua empresa merecem.  Clique no botão e inicie uma conversa agora mesmo</span>
+                <div class="button--whats-03">
+                    <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                    FALAR COM A GNDI
+                </div>
+            </div>
+            <div class="section-02-area2-icons">
+                <div class="section-02-area2-icon">
+                    <img src="assets/images/icons8-ambulância-50.png" alt="Atendimento">
+                </div>
+                <h4>ATENDIMENTO ESPECIAL</h4>
+                <span>O plano de saúde INTERMÉDICA oferece um atendimento especial, uma rede credenciada diferenciada e as melhores coberturas.  Clique no botão e inicie uma conversa agora mesmo.</span>
+                <div class="button--whats-03">
+                    <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                    FALAR COM A GNDI
+                </div>
+            </div>
+        </div>
     </section>
-    
+    <section class="section-03">
+        <div class="section-03-areas">
+            <div class="section-03-areas-image01"></div>
+            <h3>GNDI EMPRESAS</h3>
+            <p>Plano de Saúde INTERMÉDICA EMPRESAS é perfeito para sua empresa e seus funcionários. Entre em contato e faça uma cotação agora mesmo.</p>
+            <div class="button--whats-04">
+                <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                PLANO EMPRESA
+            </div>
+        </div>
+        <div class="section-03-areas">
+            <div class="section-03-areas-image01"></div>
+            <h3>GNDI COLETIVO</h3>
+            <p>Plano de saúde INTERMÉDICA COLETIVO perfeito para conselhos, sindicatos e associações profissionais. Entre em contato e faça uma cotação agora mesmo.</p>
+            <div class="button--whats-04">
+                <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                PLANO EMPRESA
+            </div>
+        </div>
+        <div class="section-03-areas">
+            <div class="section-03-areas-image01"></div>
+            <h3>GNDI FAMILIAR</h3>
+            <p>Plano de Saúde INTERMÉDICA FAMILIAR é feito para você, seus filhos, seus pais e toda a sua família. Entre em contato e faça uma cotação agora mesmo.</p>
+            <div class="button--whats-04">
+                <img src="assets/images/icons8-whatsapp-48.png" alt="" style="width:30px;height: 30px;padding-right: 15px;">
+                PLANO EMPRESA
+            </div>
+        </div>
+    </section>
+    <section class="section-04">
+        <div class="section-04-area1">
+            <div class="section-04-area1-icons">
+                <div class="section-04-area1-icon">
+                    <img src="assets/images/icons8-marcador-50 (1).png" alt="marcador">
+                </div>
+                <h4>São Paulo</h4>
+                <p>São Paulo</p>
+            </div>
+            <div class="section-04-area1-icons">
+                <div class="section-04-area1-icon">
+                    <img src="assets/images/icons8-email-64.png" alt="marcador">
+                </div>
+                <h4>E-mail</h4>
+                <p>contato@coachingseguros.com.br</p>
+            </div>
+            <div class="section-04-area1-icons">
+                <div class="section-04-area1-icon">
+                    <img src="assets/images/icons8-telefone-50.png" alt="marcador">
+                </div>
+                <h4>SAC</h4>
+                <p>(11) 2539-6687</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

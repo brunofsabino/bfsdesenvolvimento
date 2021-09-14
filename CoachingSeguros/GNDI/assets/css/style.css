@@ -7,7 +7,7 @@
 :root {
     --color-orange-base: #F39B04;
     --color-orange-dark: #D86602;
-    
+    --color-green-whats: #219653;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -118,6 +118,7 @@ header .header-menu-nav nav ul a{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
 }
 .section-01-formulario {
     width: 550px;
@@ -148,6 +149,7 @@ header .header-menu-nav nav ul a{
     border-radius: 10px;
     padding-left: 15px;
     border: 0;
+    box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.2);
 }
 .section-01-formulario form select  {
     width: 315px;
@@ -162,4 +164,153 @@ header .header-menu-nav nav ul a{
     font-size: 20px;
     font-weight: 900;
     color: #FFF;
+    box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
+}
+
+.section-02 {
+    height: 725px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: var(--color-orange-base);
+}
+.section-02 .section-02-area1 {
+    width: 90%;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    box-shadow: 1px 1px 12px 4px rgba(243,155,4,0.8);
+    background-color: #FFF;
+}
+.section-02 .section-02-area1-icons {
+    height: 225px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section-02 .section-02-area1-icon,
+.section-02 .section-02-area2-icon,
+.section-04 .section-04-area1-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-orange-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-02 .section-02-area1-icon img,
+.section-02 .section-02-area2 .section-02-area2-icon img,
+.section-04 .section-04-area1-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.section-02 .section-02-area2 {
+    width: 85%;
+    height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    box-shadow: 1px 1px 12px 4px rgba(243,155,4,0.8);
+    background-color: #FFF;
+    
+}
+.section-02 .section-02-area2 .section-02-area2-icons {
+    height: 325px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:black;
+}
+.section-02 .section-02-area2 .section-02-area2-icons span {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+.section-02 .section-02-area2 .button--whats-02,
+.section-02 .section-02-area2 .button--whats-03,
+.section-03 .button--whats-04 {
+    width: 260px;
+    height: 50px;
+    background-color: var(--color-green-whats);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.section-02 .section-02-area2 .button--whats-03 {
+    background-color: var(--color-orange-base);
+}
+.section-03 {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-orange-dark);
+    color: #FFF;
+    box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
+}
+.section-03 .section-03-areas {
+    width: 30%;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-03 .section-03-areas .section-03-areas-image01 {
+    width: 80%;
+    height: 200px;
+    box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
+}
+.section-03 .button--whats-04 {
+    background-color: rgba(243,155,4,0.46);
+    box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
+}
+.section-03 .section-03-areas p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.section-04 {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color-orange-base);
+}
+.section-04-area1 {
+    width: 85%;
+    height:250px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 70px;
+    box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
+}
+.section-04 .section-04-area1-icons {
+    height: 225px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
