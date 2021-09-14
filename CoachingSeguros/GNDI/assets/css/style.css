@@ -6,21 +6,46 @@
 }
 :root {
     --color-orange-base: #F39B04;
-    --color-orange-dark: #D86602;
+    --color-orange-dark: #d86602eb;
     --color-green-whats: #219653;
 }
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+.flash {
+    background-color: var(--color-yellow);
+    position: fixed;
+    color: #FFF;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    display: none;
+}
 .bg-01 {
     position:absolute;
     z-index: -1;
     width:100%;
 }
+.bg-02 {
+    position: relative;
+    z-index: -1;
+    right: -27%;
+    width: 50%;
+    bottom: -3%;
+    height: 95%;
+}
 header {
     height: 215px;
-    max-width: 1440px;
+    width: 100vw;
     margin: 0 auto;
     display:flex;
     justify-content: center;
@@ -57,8 +82,8 @@ header .header-menu-nav nav ul a{
     padding: 10px 25px;
 }
 .section-01 {
-    height: 720px;
     width: 100vw;
+    height: auto;
 }
 .section-01-bg {
     width: 100%;
@@ -71,7 +96,7 @@ header .header-menu-nav nav ul a{
 .section-01-bg-escuro {
     width: 100%;
     height: 100%;
-    background-color: rgba(243, 155, 4, 0.65);
+    background-color: rgba(243, 155, 4, 0.45);
 }
 .section-01-content {
     width: 100%;
@@ -100,6 +125,7 @@ header .header-menu-nav nav ul a{
     font-weight: 900;
     color: #FFF;
     text-align: center;
+    line-height: 60px;
 }
 .area-button--whats {
     width: 100%;
@@ -156,7 +182,7 @@ header .header-menu-nav nav ul a{
     height: 35px;
 }
 .section-01-formulario form button {
-    width: 300px;
+    width: 315px;
     height: 40px;
     border-radius: 8px;
     background-color: var(--color-orange-dark);
@@ -168,8 +194,8 @@ header .header-menu-nav nav ul a{
 }
 
 .section-02 {
-    height: 725px;
     width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -179,7 +205,7 @@ header .header-menu-nav nav ul a{
 }
 .section-02 .section-02-area1 {
     width: 90%;
-    height: 255px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +241,7 @@ header .header-menu-nav nav ul a{
 
 .section-02 .section-02-area2 {
     width: 85%;
-    height: 355px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,26 +284,44 @@ header .header-menu-nav nav ul a{
 }
 .section-03 {
     width: 100vw;
-    height: 450px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--color-orange-dark);
+    background-color: #d86602eb;
     color: #FFF;
     box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
 }
 .section-03 .section-03-areas {
     width: 30%;
-    height: 410px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.section-03 .section-03-areas .section-03-areas-image01 {
+.section-03 .section-03-areas .section-03-areas-image01,
+.section-03 .section-03-areas .section-03-areas-image02,
+.section-03 .section-03-areas .section-03-areas-image03 {
     width: 80%;
-    height: 200px;
+    height: 250px;
     box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
+    border-radius:25px;
+}
+.section-03-areas-image01 {
+    background-image: url(../images/Image1.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-03-areas-image02 {
+    background-image: url(../images/Image2.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-03-areas-image03 {
+    background-image: url(../images/Image3.png);
+    background-size: cover;
+    background-position: center;
 }
 .section-03 .button--whats-04 {
     background-color: rgba(243,155,4,0.46);
@@ -286,11 +330,12 @@ header .header-menu-nav nav ul a{
 .section-03 .section-03-areas p {
     text-align: center;
     font-size: 15px;
+    line-height: 22px;
 }
 
 .section-04 {
     width: 100vw;
-    height: 450px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -305,6 +350,7 @@ header .header-menu-nav nav ul a{
     align-items: center;
     border-radius: 70px;
     box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
+    position: absolute;
 }
 .section-04 .section-04-area1-icons {
     height: 225px;
@@ -313,4 +359,155 @@ header .header-menu-nav nav ul a{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.section-04-area1 p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+@media (min-width: 1540px) {
+    header .header-menu {
+        width: 95%;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        height: 185px;
+        width: 100%;
+    }
+    header .header-menu-logo {
+        width: 185px;
+        height: 50px;
+    }
+    header .header-menu {
+        height: 85px;
+    }
+    .header-menu-nav {
+        display: none;
+    }
+    .section-01-content-text, .section-01-content-formulario {
+        padding: 0;
+        width: 100%;
+    }
+    .section-01-content {
+        flex-direction: column;
+    }
+    .section-01-text {
+        width: 90%;
+    }
+    .section-01-text H1,
+    .area-button--whats {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    
+    .section-01-formulario {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .section-01-formulario form p {
+        margin-top: 20px;
+    }
+    .section-01-formulario form {
+        align-items: center;
+    }
+    .section-01-formulario form label {
+        padding: 0px 0px;
+        width: 75%;
+    }
+    .section-01-formulario form input[type="text"], .section-01-formulario form input[type="email"], .section-01-formulario form select {
+        width: 90%;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    .section-01-formulario form select {
+        width: 93%;
+        height: 45px;
+    }
+    .section-01-formulario form button {
+        margin-bottom: 30px;
+        height: 50px;
+    }
+
+    .section-02 {
+        width: 100%;
+        padding: 25px 0px;
+    }
+    .section-02 .section-02-area1,
+    .section-02 .section-02-area2 {
+        flex-direction: column;
+        width: 55%;
+        margin-bottom: 30px;
+    }
+    .section-02 .section-02-area1-icons {
+        height: auto;
+        width: 75%;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .section-02 .section-02-area2 {
+        width: 65%;
+        font-size: 16px;
+    }
+    .section-02 .section-02-area2 .section-02-area2-icons {
+        height: auto;
+        width: 75%;
+        text-align: center;
+        padding: 35px;
+    }
+    .section-02 .section-02-area1-icon, .section-02 .section-02-area2-icon, .section-04 .section-04-area1-icon, .section-02 h4, .section-02 span {
+        margin-bottom: 15px;
+    }
+    .section-02 .section-02-area2 .button--whats-02, .section-02 .section-02-area2 .button--whats-03, .section-03 .button--whats-04 {
+        width: 235px;
+        font-size: 16px;
+    }
+
+    .section-03 {
+        width: auto;
+        flex-direction: column;
+    }
+    .section-03 .section-03-areas {
+        width: 75%;
+        height: auto;
+        padding: 40px;
+    }
+    .section-03 .section-03-areas .section-03-areas-image01, .section-03 .section-03-areas .section-03-areas-image02, .section-03 .section-03-areas .section-03-areas-image03, .section-03 h3, .section-03 p {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .section-03 .section-03-areas p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .section-04 {
+        padding: 25px 0px;
+    }
+    .section-04-area1 {
+        height: auto;
+        flex-direction: column;
+        width: 65%;
+        position: initial;
+    }
+    .section-04-area1 p {
+        font-size: 16px; 
+    }
+    .section-04 .section-04-area1-icons {
+        width: 70%;
+        padding: 20px;
+    }
+    .section-04-area1 p {
+
+    }
+    .bg-02 {
+        position: absolute;
+    }
 }
