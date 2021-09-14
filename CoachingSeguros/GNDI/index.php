@@ -48,23 +48,23 @@
                     <div class="section-01-content-formulario">
                         <div class="section-01-formulario">
                             <form action="">
-                                <p>Digite seus dados:</p><br><br>
+                                <p>Digite seus dados:</p><br>
                                 <label for="">Nome:<br>
                                     <input type="text" class="input-text" placeholder="Digite seu nome">
-                                </label><br>
+                                </label>
                                 <label for="">DDD + Telefone:<br>
                                     <input type="text" class="input-text" placeholder="Digite seu telefone">
-                                </label><br>
+                                </label>
                                 <label for="">E-mail:<br>
                                     <input type="email" class="input-text" placeholder="Digite seu e-mail">
-                                </label><br>
+                                </label>
                                 <label for="">Você tem CNPJ?:<br>
                                     <select name="possui-cnpj" id="">
                                         <option value="0">Selecione</option>
                                         <option value="1">Sim</option>
                                         <option value="2">Não</option>
                                     </select>
-                                </label><br>
+                                </label>
                                 <label for="">Número de Vidas:<br>
                                     <select name="numero-vidas" id="">
                                         <option value="0">Selecione</option>
@@ -79,7 +79,7 @@
                                         <option value="9">9</option>
                                         <option value="Mais de 9">+ de 9</option>
                                     </select>
-                                </label><br>
+                                </label>
                                 <label for="">Idades:<br>
                                     <input type="email" class="input-text" placeholder="Digite as Idades">
                                 </label><br>
@@ -90,6 +90,41 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="section-02">
+        <div class="section-02-area1">
+            <div class="section-02-area1-icons">
+                <div class="section-02-area1-icon">
+                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                </div>
+                <p>DESCONTO COM CNPJ</p>
+                <p>Pague menos usando seu CNPJ</p>
+            </div>
+            <div class="section-02-area1-icons">
+                <div class="section-02-area1-icon">
+                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                </div>
+                <p>DESCONTO COM CNPJ</p>
+                <p>Pague menos usando seu CNPJ</p>
+            </div>
+            <div class="section-02-area1-icons">
+                <div class="section-02-area1-icon">
+                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                </div>
+                <p>DESCONTO COM CNPJ</p>
+                <p>Pague menos usando seu CNPJ</p>
+            </div>
+            <div class="section-02-area1-icons">
+                <div class="section-02-area1-icon">
+                    <img src="assets/images/icons8-saco-de-dinheiro-50 (1).png" alt="desconto">
+                </div>
+                <p>DESCONTO COM CNPJ</p>
+                <p>Pague menos usando seu CNPJ</p>
+            </div>
+        </div>
+        <div class="section-02-area2">
+            
+            </div>
     </section>
     
 </body>

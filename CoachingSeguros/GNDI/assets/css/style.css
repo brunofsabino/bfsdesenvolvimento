@@ -71,7 +71,7 @@ header .header-menu-nav nav ul a{
 .section-01-bg-escuro {
     width: 100%;
     height: 100%;
-    background-color: rgba(243, 155, 4, 0.6);
+    background-color: rgba(243, 155, 4, 0.65);
 }
 .section-01-content {
     width: 100%;
@@ -88,7 +88,7 @@ header .header-menu-nav nav ul a{
 }
 .section-01-text {
     width: 550px;
-    height:500px;
+    height:auto;
     background-color: rgba(243, 155, 4, 0.45);
     display: flex;
     flex-direction: column;
@@ -128,6 +128,8 @@ header .header-menu-nav nav ul a{
     justify-content: flex-start;
 }
 .section-01-formulario form {
+    display: flex;
+    flex-direction: column;
     color: #FFF;
     font-size: 20px;
 }
@@ -135,15 +137,21 @@ header .header-menu-nav nav ul a{
     font-size: 20px;
     font-weight: 900;
 }
-
+.section-01-formulario form label {
+    padding: 6px 0px;
+}
 .section-01-formulario form input[type="text"], 
 .section-01-formulario form input[type="email"],
-.section-01-formulario form select  {
+.section-01-formulario form select {
     width: 300px;
     height: 35px;
     border-radius: 10px;
     padding-left: 15px;
     border: 0;
+}
+.section-01-formulario form select  {
+    width: 315px;
+    height: 35px;
 }
 .section-01-formulario form button {
     width: 300px;
