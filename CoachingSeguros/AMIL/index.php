@@ -117,7 +117,7 @@
                     <img src="assets/images/icons8-confiança-50.png" alt="carência">
                 </div>
                 <h4>REDUÇÃO DE CARÊNCIA</h4>
-                <p>Com portabilidade </p>
+                <p>Com portabilidade de um outro plano</p>
             </div>
             <div class="section-02-area1-icons">
                 <div class="section-02-area1-icon">
