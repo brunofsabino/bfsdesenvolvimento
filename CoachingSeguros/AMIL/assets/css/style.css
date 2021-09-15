@@ -5,8 +5,8 @@
     text-decoration: none;
 }
 :root {
-    --color-orange-base: #F39B04;
-    --color-orange-dark: #d86602eb;
+    --color-blue-base: #4E14FF;
+    --color-blue-light: #82BBF2;
     --color-green-whats: #219653;
 }
 body {
@@ -66,7 +66,7 @@ header .header-menu-logo {
     height: 60px
 }
 header .header-menu-logo img {
-    width: 100%;
+    width: 80%;
 }
 header .header-menu-nav nav ul {
     display: flex;
@@ -78,7 +78,7 @@ header .header-menu-nav nav ul {
 header .header-menu-nav nav ul a{
     font-size: 25px;
     font-weight: bold;
-    color: var(--color-orange-base);
+    color: var(--color-blue-base);
     padding: 10px 25px;
 }
 .section-01 {
@@ -96,7 +96,7 @@ header .header-menu-nav nav ul a{
 .section-01-bg-escuro {
     width: 100%;
     height: 100%;
-    background-color: rgba(243, 155, 4, 0.45);
+    background-color: rgba(78, 20, 255, 0.45);
 }
 .section-01-content {
     width: 100%;
@@ -114,7 +114,7 @@ header .header-menu-nav nav ul a{
 .section-01-text {
     width: 550px;
     height:auto;
-    background-color: rgba(243, 155, 4, 0.45);
+    background-color: rgba(78, 20, 255, 0.45);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -135,7 +135,7 @@ header .header-menu-nav nav ul a{
 .button--whats {
     width: 270px;
     height: 50px;
-    background-color: var(--color-orange-dark);
+    background-color: var(--color-blue-light);
     border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -185,7 +185,7 @@ header .header-menu-nav nav ul a{
     width: 385px;
     height: 45px;
     border-radius: 8px;
-    background-color: var(--color-orange-dark);
+    background-color: var(--color-blue-light);
     border: 0;
     font-size: 20px;
     font-weight: 900;
@@ -201,7 +201,7 @@ header .header-menu-nav nav ul a{
     justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
-    color: var(--color-orange-base);
+    color: var(--color-blue-base);
     padding: 45px 0px;
 }
 .section-02 .section-02-area1 {
@@ -211,7 +211,7 @@ header .header-menu-nav nav ul a{
     align-items: center;
     justify-content: center;
     border-radius: 70px;
-    box-shadow: 1px 1px 12px 4px rgba(243,155,4,0.8);
+    box-shadow: 1px 1px 12px 4px rgba(78, 20, 255, 0.8);
     background-color: #FFF;
     margin-bottom: 40px;
 }
@@ -229,7 +229,7 @@ header .header-menu-nav nav ul a{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: var(--color-orange-base);
+    background-color: var(--color-blue-base);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +248,7 @@ header .header-menu-nav nav ul a{
     align-items: center;
     justify-content: center;
     border-radius: 70px;
-    box-shadow: 1px 1px 12px 4px rgba(243,155,4,0.8);
+    box-shadow: 1px 1px 12px 4px rgba(78, 20, 255, 0.8);
     background-color: #FFF;
     
 }
@@ -282,7 +282,7 @@ header .header-menu-nav nav ul a{
     cursor: pointer; 
 }
 .section-02 .section-02-area2 .button--whats-03 {
-    background-color: var(--color-orange-base);
+    background-color: var(--color-blue-base);
 }
 .section-03 {
     width: 100vw;
@@ -290,9 +290,9 @@ header .header-menu-nav nav ul a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #d86602eb;
+    background-color: #4e14ffe3;
     color: #FFF;
-    box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
+    box-shadow: 1px 1px 12px 4px rgba(78, 20, 255, 0.71);
 }
 .section-03 .section-03-areas {
     width: 30%;
@@ -326,7 +326,7 @@ header .header-menu-nav nav ul a{
     background-position: center;
 }
 .section-03 .button--whats-04 {
-    background-color: rgba(243,155,4,0.46);
+    background-color: rgba(78, 20, 255, 0.46);
     box-shadow: 1px 1px 12px 4px rgba(255,255,255,0.71);
 }
 .section-03 .section-03-areas p {
@@ -341,7 +341,7 @@ header .header-menu-nav nav ul a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--color-orange-base);
+    color: var(--color-blue-base);
 }
 .section-04-area1 {
     width: 85%;
@@ -351,7 +351,7 @@ header .header-menu-nav nav ul a{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 70px;
-    box-shadow: 1px 1px 12px 4px rgba(216,102,2,0.71);
+    box-shadow: 1px 1px 12px 4px rgba(78, 20, 255, 0.71);
     position: absolute;
 }
 .section-04 .section-04-area1-icons {
@@ -368,11 +368,11 @@ header .header-menu-nav nav ul a{
 }
 
 
-@media (min-width: 1540px) {
+/*@media (min-width: 1540px) {
     header .header-menu {
         width: 95%;
     }
-}
+}*/
 @media (max-width: 600px) {
     header {
         height: 185px;
@@ -381,6 +381,9 @@ header .header-menu-nav nav ul a{
     header .header-menu-logo {
         width: 185px;
         height: 50px;
+    }
+    header .header-menu-logo img {
+        width: 70%;
     }
     header .header-menu {
         height: 85px;
@@ -410,9 +413,10 @@ header .header-menu-nav nav ul a{
     .section-01-formulario {
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 20px 0px;
     }
-    .section-01-formulario form p {
+    .section-01-formulario form p {,
+        font-size: 30px;
         margin-top: 20px;
     }
     .section-01-formulario form {
@@ -420,18 +424,19 @@ header .header-menu-nav nav ul a{
     }
     .section-01-formulario form label {
         padding: 0px 0px;
-        width: 75%;
+        width: 85%;
     }
     .section-01-formulario form input[type="text"], .section-01-formulario form input[type="email"], .section-01-formulario form select {
-        width: 90%;
+        width: 96%;
         height: 45px;
         margin-bottom: 15px;
     }
     .section-01-formulario form select {
-        width: 93%;
+        width: 99%;
         height: 45px;
     }
     .section-01-formulario form button {
+        width: 85%;
         margin-bottom: 30px;
         height: 50px;
     }
@@ -455,12 +460,12 @@ header .header-menu-nav nav ul a{
     }
 
     .section-02 .section-02-area2 {
-        width: 65%;
+        width: 70%;
         font-size: 16px;
     }
     .section-02 .section-02-area2 .section-02-area2-icons {
         height: auto;
-        width: 75%;
+        width: 90%;
         text-align: center;
         padding: 35px;
     }
@@ -500,16 +505,13 @@ header .header-menu-nav nav ul a{
         position: initial;
     }
     .section-04-area1 p {
-        font-size: 16px; 
+        font-size: 15px; 
     }
     .section-04 .section-04-area1-icons {
-        width: 70%;
+        width: 80%;
         padding: 20px;
     }
-    .section-04-area1 p {
-
-    }
     .bg-02 {
-        position: absolute;
+        display: none;
     }
 }
