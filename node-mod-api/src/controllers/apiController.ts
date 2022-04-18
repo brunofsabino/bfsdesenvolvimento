@@ -1,5 +1,7 @@
+import { unlink } from 'fs/promises'
 import { Request, Response } from 'express'
 import { Sequelize } from 'sequelize'
+import sharp from 'sharp'
 import { Phrase } from '../models/Phrase'
 
 export const ping = (req: Request, res: Response) => {
@@ -73,5 +75,35 @@ export const randomPhrase = async (req: Request, res: Response ) => {
     } else {
         res.status(404)
         res.json({ error: 'Não há frases cadastradas'})
+    }
+}
+
+export const uploadFile = async (req: Request, res: Response) => {
+    // type UploadTypes = {
+    //     avatar: Express.Multer.File[],
+    //     gallery: Express.Multer.File[]
+    // }
+
+    // const files = req.files as UploadTypes
+    // console.log("FILE: ", req.file)
+    // console.log("FILES: ", req.files)
+
+    if(req.file) {
+        const fileName = `${req.file.filename}.jpg`
+        await sharp(req.file.path)
+            .resize(300, 300, {
+                // fit: sharp.fit.fill
+                // fit: sharp.fit.contain
+                // fit: sharp.fit.cover,
+                //position: 'bottom' // center. top, 
+            })
+            .toFormat('jpeg')
+            .toFile(`./public/media/${fileName}`)
+
+            await unlink(req.file.path)
+
+        res.json({ image: `${fileName}`})
+    } else {
+        res.status(400).json({ error: 'Arquivo inválido.'})
     }
 }
