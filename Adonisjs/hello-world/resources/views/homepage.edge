@@ -1,0 +1,45 @@
+@include('partials/header')
+    <main>
+    <h1>Hello World</h1>
+    {{--  <h2>Usuario: {{ usuario.nome }} </h2>
+    <h3>Idade: {{ usuario.idade }}</h3>
+    <h4>Apelido: {{ usuario.apelido }}</h4>
+    <br><br>
+    <h2>Tecnologia: {{ usuario.tecnologias }}</h2>  --}}
+
+    <h2>Usuários: </h2>
+        <ul>
+            @each( (usuario) in usuarios)
+                <li>  {{ usuario.nome }} - {{ usuario.admin ? 'Administrador' : 'Usuário' }}</li>
+            @end
+        </ul>
+
+    <code>
+        Para imprimir uma variavel que vem do Controller, vc vai usar o codigo assim @{{ variavel }}
+    </code>
+
+    {{--  {{{ script }}}  --}}
+    <br><br>
+    {{ await getUser()}}
+    </main>
+   
+    {{--  <h2>Administradores:</h2>
+    <ul>
+        @each(user in usuarios)
+            @if(user.admin)
+                <li>{{ user.nome }}</li>
+            @end
+        @end
+    </ul>
+
+    <h2>Usuários: </h2>
+    <ul>
+        @each(user in usuarios)
+            @if(user.admin)
+                
+            @else
+                <li>{{ user.nome }}</li>
+            @end
+        @end
+    </ul>  --}}
+@include('partials/footer')
