@@ -1,0 +1,17 @@
+ {{>partials/header}}
+ <div class="top"></div>
+    <div class="middle">
+        <h1>{{ horas }}</h1>
+        {{ #periodo.manha}}<h3>Bom dia, Fulano.</h3> {{/periodo.manha}}
+        {{ #periodo.tarde}}<h3>Boa tarde, Fulano.</h3> {{/periodo.tarde}}
+        {{ #periodo.noite}}<h3>Boa noite, Fulano.</h3> {{/periodo.noite}}
+        
+    </div>
+    <div class="bottom">
+
+        <div class="phrase">
+            "{{ phrase.data }}"
+            <div class="author">Desconhecido</div>
+        </div>
+    </div>
+ {{>partials/footer}}
